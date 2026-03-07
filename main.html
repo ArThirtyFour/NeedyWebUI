@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needy UI Test</title>
+    <link rel="stylesheet" href="nso_ui.css">
+</head>
+<body>
+    <div class="nightbg">
+    <div class="container">
+        <main> 
+            <nav>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Profile</a>
+                    <a href="#">Messages</a>
+                    <span class="special"><a href="#">Special</a></span>
+                </div>
+            </nav>
+
+            <section style="padding: 12px;">
+
+                <div class="profile" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Background Selector</h4></div>
+                        <div class="inner">
+                            <div class="noonbutton">
+                                <a href="#">Noon</a>
+                                <i class="hn hn-analytics" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="duskbutton">
+                                <a href="#">Dusk</a>
+                                <i class="hn hn-angle-down" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="nightbutton">
+                                <a href="#">Night</a>
+                                <i class="hn hn-cloud" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="contact" style="margin-top: 16px;">
+                        <div class="heading"><h4>Contact</h4></div>
+                        <div class="inner">
+                            <div class="f-row">
+                                <div class="f-col"><a href="#">Add Friend <i class="hn hn-angle-right" aria-hidden="true"></i></a></div>
+                                <div class="f-col"><a href="#">Favorite <i class="hn hn-angellist" aria-hidden="true"></i></a></div>
+                            </div>
+                            <div class="f-row">
+                                <div class="f-col"><a href="#">Message <i class="hn hn-discourse" aria-hidden="true"></i></a></div>
+                                <div class="f-col"><a href="#">Share <i class="hn hn-arrow-right" aria-hidden="true"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 16px;">
+                    Button tests:
+                    <button class="nso-btn">Default Button</button>
+                    <button class="nso-btn nso-btn--ghost">Ghost Button</button>
+                    <button class="nso-btn nso-btn--primary">Primary Button</button>
+                </p>
+
+                <p style="margin-top: 16px;">
+                    Form elements test:<br>
+                    <label><input type="radio" name="test" value="1" checked> Option 1</label>
+                    <label><input type="radio" name="test" value="2"> Option 2</label><br>
+                    <label><input type="checkbox" checked> Checkbox</label><br>
+                    <input type="range" min="0" max="100" value="50" style="width: 200px;"><br><br>
+                    <input type="text" placeholder="Text input" style="width: 200px;"><br><br>
+                    <input type="password" placeholder="Password" style="width: 200px;"><br><br>
+                    <textarea placeholder="Textarea" style="width: 300px;"></textarea>
+                </p>
+
+                <h3 style="margin-top: 24px;">Window Size Demos:</h3>
+
+                <div class="profile nso-window nso-window--small nso-window--left" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Small Window (250px)</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Small Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--medium" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Medium Window (400px)</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Medium Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--large" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Large Window (600px)</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Large Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--wide nso-window--right" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Wide Window (800px) - Right</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Right Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 24px;">Alignment Demos (Medium Size):</h3>
+
+                <div class="profile nso-window nso-window--medium nso-window--left" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Left Aligned</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Left Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--medium nso-window--center" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Center Aligned</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Center Button</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--medium nso-window--right" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Right Aligned</h4></div>
+                        <div class="inner">
+                            <button class="nso-btn">Right Button</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

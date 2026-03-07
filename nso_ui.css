@@ -1,0 +1,2445 @@
+           @font-face {
+    font-family: "dinkie9px";
+    src: url('https://chairfiles.vercel.app/DinkieBitmap-9px.woff2') format('woff2');
+}
+
+:root {
+
+    --window-width: 400px;
+    --window-padding: 12px;
+    --window-heading-height: 32px;
+
+    --heading-font-size: 18px;
+    --button-font-size: 15px;
+    --body-font-size: 12px;
+
+    --color-primary: #4D23CD;
+    --color-secondary: #90F3E1;
+    --color-accent: #EFCFEF;
+    --color-bg: #FDF8FD;
+}
+
+.nso-window--small {
+    --window-width: 250px;
+    --window-padding: 8px;
+    --window-heading-height: 24px;
+    --heading-font-size: 14px;
+    --button-font-size: 12px;
+    --body-font-size: 10px;
+}
+
+.nso-window--medium {
+    --window-width: 400px;
+    --window-padding: 12px;
+    --window-heading-height: 32px;
+    --heading-font-size: 18px;
+    --button-font-size: 15px;
+    --body-font-size: 12px;
+}
+
+.nso-window--large {
+    --window-width: 600px;
+    --window-padding: 16px;
+    --window-heading-height: 40px;
+    --heading-font-size: 22px;
+    --button-font-size: 18px;
+    --body-font-size: 14px;
+}
+
+.nso-window--wide {
+    --window-width: 800px;
+    --window-padding: 16px;
+    --window-heading-height: 40px;
+    --heading-font-size: 22px;
+    --button-font-size: 18px;
+    --body-font-size: 14px;
+}
+
+.nso-window--full {
+    --window-width: 100%;
+    --window-padding: 20px;
+    --window-heading-height: 48px;
+    --heading-font-size: 26px;
+    --button-font-size: 20px;
+    --body-font-size: 16px;
+}
+
+.nso-window {
+    width: var(--window-width);
+    max-width: 100%;
+    margin: 0 auto 12px;
+}
+
+.nso-window--left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.nso-window--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nso-window--right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.nso-window--left .nso-btn,
+.nso-window--left .noonbutton,
+.nso-window--left .duskbutton,
+.nso-window--left .nightbutton {
+    align-self: flex-start;
+    margin-left: 0;
+}
+
+.nso-window--center .nso-btn,
+.nso-window--center .noonbutton,
+.nso-window--center .duskbutton,
+.nso-window--center .nightbutton {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nso-window--right .nso-btn,
+.nso-window--right .noonbutton,
+.nso-window--right .duskbutton,
+.nso-window--right .nightbutton {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.nso-window .table-section,
+.nso-window--small .table-section,
+.nso-window--medium .table-section,
+.nso-window--large .table-section,
+.nso-window--wide .table-section,
+.nso-window--full .table-section {
+    width: 100%;
+}
+
+.nso-window .table-section .heading,
+.nso-window .profile .blurbs .heading {
+    font-size: var(--heading-font-size);
+    padding: calc(var(--window-padding) / 2) var(--window-padding);
+    height: var(--window-heading-height);
+    line-height: var(--window-heading-height);
+}
+
+.nso-window .table-section .heading h4 {
+    font-size: var(--heading-font-size);
+    margin: 0;
+}
+
+.nso-window .noonbutton,
+.nso-window .duskbutton,
+.nso-window .nightbutton,
+.nso-window .nso-btn {
+    font-size: var(--button-font-size);
+    padding: calc(var(--window-padding) / 2) var(--window-padding);
+    align-self: flex-start;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.nso-window .table-section .inner {
+    font-size: var(--body-font-size);
+    padding: var(--window-padding);
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: dinkie9px;
+    font-weight: normal;
+    text-decoration-color: #4D21CB;
+}
+
+i.hn {
+     font-size: 18px;
+     display: inline-block;
+     vertical-align: text-bottom;
+ }
+main {
+    background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
+.comments-table td *, .bulletin-table td * {
+    max-width:60%;
+}
+
+.profile .contact, .profile .url-info, .profile .table-section, .home-actions
+{
+    width: 100%;
+}
+
+
+@media(min-width: 30em){ 
+    .col.w-40 {
+        width: 55%;
+    }
+    .blog-preview p {
+        background-image: url("https://chairfiles.vercel.app/speechbubble.png");
+        width:75%;
+        background-size:95%;
+    }
+}
+
+@media(max-width: 30em){ 
+    .col.w-40 {
+        width: 100%;
+    }
+    .blog-preview p {
+        background-image: url("https://chairfiles.vercel.app/speechbubblemobile.png");
+        width:85%;
+        background-size:145%;
+    }
+}
+
+.profile .contact {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 7px;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+            }
+
+            .profile .contact .inner {
+                padding-left: 4px;
+                padding-right: 4px;
+                color: #4D21CB;
+            }
+
+            .profile .contact .innertime {
+                padding: 8px;
+                color: #000;
+            }
+
+            .profile .contact .inner .f-row .f-col a {
+                color: #000;
+                font-weight: 400;
+            }
+
+
+            .url-info {
+                height: 172px;
+                width: 343px;
+                background-image: url("https://chairfiles.vercel.app/mrreow.png");
+                font-weight: 400;
+            }
+
+
+
+            main .left, main .right {
+                padding: clamp(5px, 5%, 40px);
+            }
+
+            main {
+                image-rendering: pixelated;
+            }
+
+            .container {
+                background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+                background-repeat: repeat;
+                min-height: 100vh;
+                width: 1440px;
+                max-width: 100%;
+                margin: 0 auto 10px;
+            }
+
+            .profile .url-info
+            {
+                border: 0px;
+                width: 343px;
+                font-weight: 400;
+            }
+
+            .url-info p {
+                padding-top: 4px;
+                font-weight: 400;
+            }
+
+            button:not(.logout-btn) {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 4px;
+            }
+
+            #comments button {
+                background: #FDF8FD;
+                box-shadow: none;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: none;
+                border: none;
+                padding: 4px;
+            }
+
+            .comments-table .comment-replies {
+                border: 0px solid white;
+                max-width: 100%;
+            }
+
+            .comments-table .comment-replies .comment-reply {
+                max-width: 100%;
+                padding-left: 40px;
+                background-image: url("https://chairfiles.vercel.app/reparrow.png");
+                background-repeat: no-repeat;
+            }
+
+            :root {
+                --light-gray: #f2f0f0;
+                --gray: #e3e3e3;
+                --dark-gray: #919191;
+                --darker-gray: #545454;
+                --logo-blue: #1D4ED8;
+                --darker-blue: #1E40AF;
+                --lighter-blue: #60A5FA;
+                --even-lighter-blue: #BFDBFE;
+                --lightest-blue: #DBEAFE;
+                --red: #FF0000;
+                --dark-orange: #ED0707;
+                --light-orange: #f9c56c;
+                --even-lighter-orange: #fcdbb8;
+                --strange-yellow: #dbae2e;
+                --green: #34D399;
+                --light-green: #E6F8DD;
+                --medium-green: #A0C99C;
+                --dark-green: #059669;
+                accent-color: #1D4ED8;
+                accent-color: var(--logo-blue);
+            }
+
+            .profile .contact .heading {
+                padding: 0 12px;
+                height: 32px;
+                line-height: 32px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                letter-spacing: 0.045em;
+                display: flex;
+                align-items: center;
+            }
+            
+            .timeselector .contact {
+                border: 2px solid #4D23CD;
+            }
+
+            .timeselector {
+                width: 180px;
+                height: 91.85px;
+            }
+
+            .timeselector .contact .heading {
+                padding: 0 12px;
+                height: 32px;
+                line-height: 32px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                letter-spacing: 0.045em;
+                display: flex;
+                align-items: center;
+            }
+            
+
+            .profile .contact .heading h4 {
+                margin: 0;
+                line-height: 1;
+            }
+
+            .timeselector .contact .heading h4 {
+                font-weight: 400;
+                margin: 0;
+                line-height: 1;
+            }
+
+            .profile .table-section .heading h4 {
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            .profile .table-section .inner {
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-bottom: 6px;
+            }
+
+            .profile .table-section {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                background-color:#FDF8FD;
+                box-sizing: border-box;
+            }
+
+            .details-table td {
+                background: #F7E1FA3d;
+            }
+
+            .innertime {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .details-table td:first-child {
+                color: #4D21CB;
+                font-weight: 400;
+            }
+
+            .details-table td:first-child {
+                background: #805cdc3d;
+            }
+
+            .profile .table-section .heading {
+                padding: 0 12px;
+                height: 32px;
+                line-height: 32px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                letter-spacing: 0.045em;
+                display: flex;
+                align-items: center;
+            }
+            .profile .table-section .heading h4 {
+                margin: 0;
+                line-height: 1;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            .general-about .profile-pic .pfp-fallback {
+                box-shadow: 8px 8px #4e23cd48;
+            }
+
+            .general-about .profile-pic {
+                padding-bottom: 40px;
+                box-sizing: content-box; 
+            }
+
+            .general-about .profile-pic:before {
+                display: block;
+                background-color: #EFCFEF;
+                box-shadow: 0px 0px 0px 4px #90F3E1, 0px 0px 0px 6px #4D23CD, 10px 10px #4e23cd48;
+                border: 2px solid #4D23CD;
+                border-bottom: 0px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/misalignednavbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                font-weight: 400;
+                content: "Webcam";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+                padding: 4px;
+                margin-left: 6px;
+            }
+
+            .general-about .profile-pic .pfp-fallback {
+                border: 2px solid #4D23CD;
+                box-shadow: 0px 0px 0px 4px #90F3E1, 0px 0px 0px 6px #4D23CD, 10px 10px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                image-rendering: optimizeQuality;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                text-align: center;
+                display: block;
+                justify-content: center;
+                margin-left: 6px;
+            }
+            
+            .mood {
+                padding-top:8px;
+            }
+
+            .contact .inner a img {
+                image-rendering: pixelated;
+                font-size: 0;
+            }
+            .contact .inner a img:before {
+                font-size: 1em;
+                display: block;
+            }
+            .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
+                content: url("https://chairfiles.vercel.app/1heart.png");
+            }
+            .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
+                content: url("https://chairfiles.vercel.app/2doubleheart.png");
+            }
+            .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
+                content: url("https://chairfiles.vercel.app/32fingers.png");
+            }
+            .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
+                content: url("https://chairfiles.vercel.app/4sparkle.png");
+            }
+            .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
+                content: url("https://chairfiles.vercel.app/5musicalnote.png");
+            }
+            .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
+                content: url("https://chairfiles.vercel.app/6explosion.png");
+            }
+            .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
+                content: url("https://chairfiles.vercel.app/7confetti.png");
+            }
+            .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
+                content: url("https://chairfiles.vercel.app/8angrysign.png");
+            }
+
+            .blog-preview p .pinned .icon {
+                content: url("https://chairfiles.vercel.app/pin.png");
+                width: 20px;
+                height: 20px;
+                position: relative;
+            }
+
+
+            .friends .heading a.more {
+                margin-right: 75px;
+            }
+
+            
+
+            .blog-preview h4 {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+                margin: auto;
+            }
+
+            .blog-preview {
+                display: inline-block;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                background-color: #FDF8FD;
+                width: 100%;
+                background: url("https://chairfiles.vercel.app/JINEBG.png");
+                background-repeat: repeat;
+                background-size: 50%;
+            }
+            .blog-preview p {
+                margin-left:32px;
+                background-repeat: no-repeat;
+                height:72px;
+                padding-top:12px;
+                text-indent: 16px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+
+            li {
+                font-size: 18px;
+            }
+
+            .urlinfo {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            h4 {
+                font-size: 18px;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            a:hover {
+                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+            }
+            * {
+                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+            }
+
+            .innertime {
+                padding: 4px;
+                background-color:#F7E0FA;
+            }
+
+            .noonbutton, .duskbutton, .nightbutton {
+                box-sizing: border-box;
+                overflow: hidden;
+                clear: both;
+            }
+
+            .table-section .inner {
+                padding: 2px 4px 2px 4px;
+                box-sizing: border-box;
+            }
+
+            .table-section .inner .noonbutton,
+            .table-section .inner .duskbutton,
+            .table-section .inner .nightbutton {
+                float: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: calc(100% - 0px);
+                height: 22px;
+                line-height: 22px;
+                padding: 0 2px;
+                margin: 0 0 2px 0;
+                overflow: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+            }
+
+            .table-section .inner .noonbutton:last-child,
+            .table-section .inner .duskbutton:last-child,
+            .table-section .inner .nightbutton:last-child {
+                margin-bottom: 0;
+            }
+
+            .table-section .inner .noonbutton a,
+            .table-section .inner .duskbutton a,
+            .table-section .inner .nightbutton a {
+                float: none;
+                display: inline-block;
+                line-height: 20px;
+                padding-left: 0;
+            }
+
+            .table-section .inner .noonbutton i.hn,
+            .table-section .inner .duskbutton i.hn,
+            .table-section .inner .nightbutton i.hn {
+                float: none;
+                display: inline-block;
+                line-height: 20px;
+            }
+
+            .noonbutton i.hn, .duskbutton i.hn, .nightbutton i.hn {
+                float: right;
+                line-height: 1;
+            }
+
+            .noonbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                justify-content: center;
+                float:left;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .noonbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .noonbutton img {
+                padding: 2px;
+                float:right;
+            }
+
+            .duskbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                justify-content: center;
+                float:left;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .duskbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .duskbutton img {
+                float:right;
+                padding: 2px;
+            }
+
+            .nightbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                display:inline-block;
+                justify-content: center;
+                float:right;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .nightbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .nightbutton img {
+                float:right;
+                padding: 2px;
+            }
+
+
+
+            .fakebgthing {
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center;
+                background-size: 100% 100%, calc(calc(100vw - 1440px) / 2) auto, calc(calc(100vw - 1440px) / 2) auto, 100% 100%;
+                image-rendering: pixelated;
+                background-repeat: repeat-y;
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+                background-color:#ff0000;
+            }
+
+            .origbg {
+                background:
+                        linear-gradient(to right, transparent, transparent),
+                        url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
+                        url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                        linear-gradient(to left, transparent, transparent);
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center;
+                image-rendering: pixelated;
+                background-repeat: repeat-y;
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                z-index: -2;
+
+            }
+
+            .profile .blurbs .heading h4 {
+                font-weight: normal;
+                letter-spacing: 0.045em;
+            }
+
+            @media(max-width:1840px) {
+                .fakebgthing {
+                    background-size: 100% 100%, 180px 100%, 180px 100%, 100% 100%;
+                }
+                .timeselectorwrapper {
+                    right: 0;
+                }
+            }
+
+            @media(min-width:1840px) {
+                .timeselectorwrapper {
+                    right: calc(((((100% - 1440px) / 2) - 180px) / 2) - 13px);
+                }
+                .fakebgthing {
+                    background-size: 100% 100%, calc(calc(100% - 1440px) / 2) auto, calc(calc(100% - 1440px) / 2) auto, 100% 100%;
+                }
+            }
+
+            .profile-info {
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border: 2px solid #4D23CD;
+            }
+
+            b, strong {
+                font-weight: normal;
+            }
+
+            .col h1 {
+                font-weight: normal;
+                font-size: 36px;
+            }
+
+            .profile .friends {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                background-color: #FCF0FD;
+                font-weight: normal;
+                image-rendering: optimizeQuality;
+            }
+
+            .profile #comments {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                background-color: #90F3E1;
+                font-weight: normal;
+                image-rendering: optimizeQuality;
+            }
+
+            .profile .friends .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #E2E2E1;
+                box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+            }
+
+            .profile .friends .heading h4 {
+                font-weight: normal;
+                letter-spacing: 0.045em;
+            }
+
+            .profile .friends .inner .section .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            .profile .blurbs .inner .section .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            @media(min-width: 1440px){
+
+                .timeselector {
+                    transform: scale(100%);
+                }
+                .profile .blurbs {
+                    border: 2px solid #4D23CD;
+                    box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                    background-color: #FCF0FD;
+                    font-weight: normal;
+                    font-family: 'dinkie9px', sans-serif;
+                }
+
+                .profile .blurbs .heading {
+                    padding: 8px;
+                    padding-left: 12px;
+                    background-color: #E2E2E1;
+                    box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                    border-bottom: 2px solid #4D23CD;
+                    color: #4D21CB;
+                    font-family: 'dinkie9px', sans-serif;
+                    background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    padding-right: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.045em;
+                }
+                .inner .section {
+                    color: rgb(37, 37, 37);
+                    font-size: 18px;
+                    padding:4px;
+                }
+
+                .profile .blurbs .section h4 {
+                    color: rgb(37, 37, 37);
+                    font-size: 18px;
+                }
+
+            }
+
+            @media(max-width: 1440px){
+                .profile .blurbs .heading h4 {
+                    font-weight: normal;
+                    letter-spacing: 0.045em;
+                    font-family: 'dinkie9px', sans-serif;
+                }
+
+                .inner .section {
+                    color: #4D21CB;
+                    font-size: 18px;
+                    padding:4px;
+                }
+
+                .profile .blurbs .section h4 {
+                    color: #4D21CB;
+                    font-size: 18px;
+                }
+
+                .timeselector {
+                    transform: scale(0);
+                    display: none;
+                }
+                .profile .blurbs {
+                    border: 2px solid #4D23CD;
+                    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                    font-weight: 400;
+                    font-family: 'dinkie9px', sans-serif;
+                    font-size: 7px;
+                    color: #4D21CB;
+                    background-color:#FDF8FD;
+                }
+
+                .profile .blurbs .heading {
+                    padding: 8px;
+                    padding-left: 12px;
+                    background-color: #EFCFEF;
+                    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                    border-bottom: 2px solid #4D23CD;
+                    color: #4D21CB;
+                    font-family: 'dinkie9px', sans-serif;
+                    font-weight: 400;
+                    background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    padding-right: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.045em;
+                }
+            }
+
+            .details-table tbody tr td p {
+                font-family: "dinkie9px";
+            }
+
+            .profile .friends .person p {
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                padding: 4px;
+                background-color: #EFCFEF;
+                width: 101px;
+                font-weight:normal;
+            }
+
+            #comments .inner {
+                background: url("https://chairfiles.vercel.app/result_bg_tile.png"), rgb(216, 230, 242);
+                background-size:contain;
+                background-repeat:repeat-x;
+                margin: 6px;
+                margin-top: auto;
+            }
+
+            #comments .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            #comments {
+                margin: 20px 0;
+                padding-left: -4px;
+            }
+
+            .comments-table td:first-child {
+                background: #FDF8FD;
+                font-weight: normal;
+                max-width:25%;
+                justify-content: left;
+                direction: rtl;
+                color: #4883CD;
+                outline:#00000000;
+                border: none;
+            }
+
+            .comments-table td:first-child a {
+                color: #4883CD;
+                outline:#00000000;
+                border: none;
+                max-width: 100%;
+            }
+
+            .comments-table td:last-child {
+                background: #FDF8FD;
+                font-weight: normal;
+                color: #4F1CCF;
+                font-size:18px;
+                outline:#00000000;
+                border: none;
+                max-width:75%;
+            }
+
+            .comments-table td:last-child a {
+                color: #4F1CCF;
+                font-size:18px;
+                outline:#00000000;
+                border: none;
+                max-width: 100%;
+            }
+
+            .comments-table td:first-child p {
+                max-width: 100%;
+            }
+
+            .comments-table td:last-child p {
+                max-width: 100%;
+            }
+
+            .profile .friends .person {
+                width: 105px;
+                display: inline-block;
+                padding: 0 20px 15px 0;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                background-color: #FDF8FD;
+            }
+
+            .profile .friends .person img:not(.icon) {
+                max-width: 85px;
+                max-height: 85px;
+                display: block;
+                margin: 0 auto;
+                align-self: center;
+                padding-left: 16px;
+            }
+
+            .friends .inner .comments-table tr td .report a img {
+                image-rendering: pixelated;
+                font-size: 0;
+            }
+            .friends .inner .comments-table tr td .report a img:before {
+                font-size: 1em;
+                display: block;
+            }
+            .friends .inner .comments-table tr td .report a:before {
+                content: url("https://chairfiles.vercel.app/priv.png");
+            }
+
+            .comments-table td:first-child img:not(.icon) {
+                width: 50px;
+                max-width: 100%;
+                max-height: 100px;
+                padding-right: 4px;
+            }
+
+
+            .comments-table tbody {
+                background-color: #FDF8FD;
+                border: none;
+            }
+
+            .comments-table {
+                padding: 6px;
+                border: none;
+            }
+
+            footer {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                width: 95%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            footer p {
+                width: 95%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            footer ul {
+                width: 95%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+
+            footer:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Footer";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+
+            .mood {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                margin-bottom: 8px;
+            }
+
+            .mood:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Mood";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+            
+            .profile .mood p {
+                margin-left: 12px;
+            }
+
+            span[itemprop="name"]:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Name";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+            
+            span[itemprop="name"] {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                background-color:#FDF8FD;
+                width: auto;
+                max-width: 450px;
+                text-align: center;
+                display: block;
+                justify-content: center;
+            }
+
+            nav {
+                margin-top: 4px;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                width: 95%;
+                align-content: center;
+
+                margin-top: 4px;
+            }
+
+            nav .top {
+                margin-left:4px;
+                margin-right:4px;
+                background-color: #FDF8FD;
+                box-shadow: inset 0px 0px 0px 2px #4D23CD;
+                margin-bottom: -2px;
+                margin-top:-2px;
+            }
+
+            .top .left a img {
+                filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(3681%) hue-rotate(256deg) brightness(79%) contrast(110%);
+            }
+
+            .logout-btn {
+                color: #4D23CD;
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 18px;
+            }
+
+            .center form label {
+                font-size: 18px;
+            }
+
+            #q {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 4px;
+            }
+
+            nav .links {
+                background:none;
+                margin-bottom:-2px;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                padding:8px;
+                padding-left: 16px;
+                background-color: #FDF8FD;
+                margin-top:2px;
+
+            }
+
+            nav .links a {
+                text-shadow: 0 0 7px #00000000;
+                color: #4D23CD;
+            }
+
+            nav .links .special a  {
+                text-shadow: 0 0 7px #00000000;
+                color: #4D23CD;
+            }
+
+            nav:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Header";
+                font-size: 18px;
+                letter-spacing: 0.045em;
+            }
+
+            a:hover {
+                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+            }
+            * {
+                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+            }
+
+            .innertime {
+                padding: 4px;
+                background-color:#F7E0FA;
+            }
+
+            .noonbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                justify-content: center;
+                float:left;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .noonbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .noonbutton img {
+                padding: 2px;
+                float:right;
+            }
+
+            .duskbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                justify-content: center;
+                float:left;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .duskbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .duskbutton img {
+                float:right;
+                padding: 2px;
+            }
+
+            .nightbutton{
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                background-color:#F7E0FA;
+                display:inline-block;
+                justify-content: center;
+                float:right;
+                width:100%;
+                padding:3px;
+
+            }
+
+            .nightbutton a {
+                font-family:"dinkie9px";
+                font-weight: normal;
+                float:left;
+                padding-left: 8px;
+                color: #4D23CD;
+            }
+
+            .nightbutton img {
+                float:right;
+                padding: 2px;
+            }
+
+
+
+            .fakebgthing {
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center;
+                background-size: 100% 100%, calc(calc(100vw - 1440px) / 2) auto, calc(calc(100vw - 1440px) / 2) auto, 100% 100;
+                image-rendering: pixelated;
+                background-repeat: repeat-y;
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: -1;
+                background-color:#ff0000;
+            }
+
+            .origbg {
+                background:
+                        linear-gradient(to right, transparent, transparent),
+                        url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
+                        url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                        linear-gradient(to left, transparent, transparent);
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center;
+                image-rendering: pixelated;
+                background-repeat: repeat-y;
+                content: "";
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                z-index: -2;
+
+            }
+
+            .profile .blurbs .heading h4 {
+                font-weight: normal;
+                letter-spacing: 0.045em;
+            }
+
+            @media(max-width:1840px) {
+                .fakebgthing {
+                    background-size: 100% 100%, 180px 100%, 180px 100%, 100% 100%;
+                }
+                .timeselectorwrapper {
+                    right: 0;
+                }
+            }
+
+            @media(min-width:1840px) {
+                .timeselectorwrapper {
+                    right: calc(calc(calc(calc(calc(100% - 1440px) / 2) - 180px) / 2) - 13px);
+                }
+                .fakebgthing {
+                    background-size: 100% 100%, calc(calc(100% - 1440px) / 2) auto, calc(calc(100% - 1440px) / 2) auto, 100% 100%;
+                }
+            }
+
+            .profile-info {
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border: 2px solid #4D23CD;
+            }
+
+            b, strong {
+                font-weight: normal;
+            }
+
+            .col h1 {
+                font-weight: normal;
+                font-size: 36px
+            }
+
+            .profile .friends {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                background-color: #FCF0FD;
+                font-weight: normal;
+                image-rendering: optimizeQuality;
+            }
+
+            .profile #comments {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                background-color: #90F3E1;
+                font-weight: normal;
+                image-rendering: optimizeQuality;
+            }
+
+            .profile .friends .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #E2E2E1;
+                box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+            }
+
+            .profile .friends .heading h4 {
+                font-weight: normal;
+                letter-spacing: 0.045em;
+            }
+
+            .profile .friends .inner .section .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            .profile .blurbs .inner .section .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            @media(min-width: 1440px){
+
+                .timeselector {
+                    transform: scale(100%);
+                }
+                .profile .blurbs {
+                    border: 2px solid #4D23CD;
+                    box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                    background-color: #FCF0FD;
+                    font-weight: normal;
+                    font-family: 'dinkie9px', sans-serif;
+                }
+
+                .profile .blurbs .heading {
+                    padding: 8px;
+                    padding-left: 12px;
+                    background-color: #E2E2E1;
+                    box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
+                    border-bottom: 2px solid #4D23CD;
+                    color: #4D21CB;
+                    font-family: 'dinkie9px', sans-serif;
+                    background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    padding-right: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.045em;
+                }
+                .inner .section {
+                    color: rgb(37, 37, 37);
+                    font-size: 18px;
+                    padding:4px;
+                }
+
+                .profile .blurbs .section h4 {
+                    color: rgb(37, 37, 37);
+                    font-size: 18px;
+                }
+
+            }
+
+            @media(max-width: 1440px){
+                .profile .blurbs .heading h4 {
+                    font-weight: normal;
+                    letter-spacing: 0.045em;
+                    font-family: 'dinkie9px', sans-serif;
+                }
+
+                .inner .section {
+                    color: #4D21CB;
+                    font-size: 18px;
+                    padding:4px;
+                }
+
+                .profile .blurbs .section h4 {
+                    color: #4D21CB;
+                    font-size: 18px;
+                }
+
+                .timeselector {
+                    transform: scale(0);
+                    display: none;
+                }
+                .profile .blurbs {
+                    border: 2px solid #4D23CD;
+                    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                    font-weight: 400;
+                    font-family: 'dinkie9px', sans-serif;
+                    font-size: 7px;
+                    color: #4D21CB;
+                    background-color:#FDF8FD;
+                }
+
+                .profile .blurbs .heading {
+                    padding: 8px;
+                    padding-left: 12px;
+                    background-color: #EFCFEF;
+                    box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                    border-bottom: 2px solid #4D23CD;
+                    color: #4D21CB;
+                    font-family: 'dinkie9px', sans-serif;
+                    font-weight: 400;
+                    background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                    background-position: right center;
+                    background-repeat: no-repeat;
+                    padding-right: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.045em;
+                }
+            }
+
+            .details-table tbody tr td p {
+                font-family: "dinkie9px";
+            }
+
+            .profile .friends .person p {
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                padding: 4px;
+                background-color: #EFCFEF;
+                width: 101px;
+                font-weight:normal;
+            }
+
+            #comments .inner {
+                background: url("https://chairfiles.vercel.app/result_bg_tile.png"), rgb(216, 230, 242);
+                background-size:contain;
+                background-repeat:repeat-x;
+                margin: 6px;
+                margin-top: auto;
+            }
+
+            #comments .heading {
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                font-weight: 400;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+            }
+
+            #comments {
+                margin: 20px 0;
+                padding-left: -4px;
+            }
+
+            .comments-table td:first-child {
+                background: #FDF8FD;
+                font-weight: normal;
+                max-width:25%;
+                justify-content: left;
+                direction: rtl;
+                color: #4883CD;
+                outline:#00000000;
+                border: none;
+            }
+
+            .comments-table td:first-child a {
+                color: #4883CD;
+                outline:#00000000;
+                border: none;
+                max-width: 100%;
+            }
+
+            .comments-table td:last-child {
+                background: #FDF8FD;
+                font-weight: normal;
+                color: #4F1CCF;
+                font-size:18px;
+                outline:#00000000;
+                border: none;
+                max-width:75%;
+            }
+
+            .comments-table td:last-child a {
+                color: #4F1CCF;
+                font-size:18px;
+                outline:#00000000;
+                border: none;
+                max-width: 100%;
+            }
+
+            .comments-table td:first-child p {
+                max-width: 100%;
+            }
+
+            .comments-table td:last-child p {
+                max-width: 100%;
+            }
+
+            .profile .friends .person {
+                width: 105px;
+                display: inline-block;
+                padding: 0 20px 15px 0;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                background-color: #FDF8FD;
+            }
+
+            .profile .friends .person img:not(.icon) {
+                max-width: 85px;
+                max-height: 85px;
+                display: block;
+                margin: 0 auto;
+                align-self: center;
+                padding-left: 16px;
+            }
+
+            .friends .inner .comments-table tr td .report a img {
+                image-rendering: pixelated;
+                font-size: 0;
+            }
+            .friends .inner .comments-table tr td .report a img:before {
+                font-size: 1em;
+                display: block;
+            }
+            .friends .inner .comments-table tr td .report a:before {
+                content: url("https://chairfiles.vercel.app/priv.png");
+            }
+
+            .comments-table td:first-child img:not(.icon) {
+                width: 50px;
+                max-width: 100%;
+                max-height: 100px;
+                padding-right: 4px;
+            }
+
+
+            .comments-table tbody {
+                background-color: #FDF8FD;
+                border: none;
+            }
+
+            .comments-table {
+                padding: 6px;
+                border: none;
+            }
+
+            footer {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                width: 95%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            footer p {
+                width: 95%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            footer ul {
+                width: 95%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+
+
+            footer:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Footer";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+
+            .mood {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                margin-bottom: 8px;
+            }
+
+            .mood:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Mood";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+            
+            .profile .mood p {
+                margin-left: 12px;
+            }
+
+            span[itemprop="name"]:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Name";
+                font-size: 18px;
+                text-align: left;
+                letter-spacing: 0.045em;
+            }
+            
+            span[itemprop="name"] {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                letter-spacing: 0.045em;
+                color: #4D21CB;
+                font-family: 'dinkie9px', sans-serif;
+                background-color:#FDF8FD;
+                width: auto;
+                max-width: 450px;
+                text-align: center;
+                display: block;
+                justify-content: center;
+            }
+
+            nav {
+                margin-top: 4px;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                background-color:#FDF8FD;
+                margin: 0px auto;
+                padding: 0 0 3px 0;
+                width: 95%;
+                align-content: center;
+
+                margin-top: 4px;
+            }
+
+            nav .top {
+                margin-left:4px;
+                margin-right:4px;
+                background-color: #FDF8FD;
+                box-shadow: inset 0px 0px 0px 2px #4D23CD;
+                margin-bottom: -2px;
+                margin-top:-2px;
+            }
+
+            .top .left a img {
+                filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(3681%) hue-rotate(256deg) brightness(79%) contrast(110%);
+            }
+
+            .logout-btn {
+                color: #4D23CD;
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 18px;
+            }
+
+            .center form label {
+                font-size: 18px;
+            }
+
+            #q {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 4px;
+            }
+
+            nav .links {
+                background:none;
+                margin-bottom:-2px;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                padding:8px;
+                padding-left: 16px;
+                background-color: #FDF8FD;
+                margin-top:2px;
+
+            }
+
+            nav .links a {
+                text-shadow: 0 0 7px #00000000;
+                color: #4D23CD;
+            }
+
+            nav .links .special a  {
+                text-shadow: 0 0 7px #00000000;
+                color: #4D23CD;
+            }
+
+            nav:before {
+                display: block;
+                padding: 8px;
+                padding-left: 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                color: #4D21CB;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                padding-right: 12px;
+                font-weight: 400;
+                content: "Header";
+                font-size: 18px;
+                letter-spacing: 0.045em;
+            }
+
+            html, body {
+                height: 100%;
+                min-height: 100vh;
+            }
+            body {
+                margin: 0;
+                background-color: #05010a;
+                background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+                background-repeat: repeat;
+                color: #4D21CB;
+            }
+            .nightbg {
+                min-height: 100vh;
+                height: 100vh;
+                position: relative;
+                z-index: 0;
+                visibility: visible;
+                isolation: isolate;
+                padding: 0 10px 40px;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+            }
+            .nightbg > .container {
+                flex: 1 1 auto;
+                min-height: 100vh ;
+                height: 100vh;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1440px;
+                background: #FDF8FD;
+                background-image: none !important;
+            }
+            .noonbg, .duskbg, .nightbg {
+                min-height: 100vh;
+                height: 100vh;
+                position: relative;
+                z-index: 0;
+                visibility: visible;
+                isolation: isolate;
+                padding: 0 10px 40px;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+            }
+            .noonbg > .container, .duskbg > .container, .nightbg > .container {
+                flex: 1 1 auto;
+                min-height: 100vh;
+                height: 100vh;
+                margin: 0 auto;
+                width: 100%;
+                max-width: 1440px;
+                background: #FDF8FD;
+                background-image: none !important;
+            }
+            .noonbg::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: -5;
+                background:
+                    linear-gradient(to right, transparent, transparent),
+                    url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
+                    url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                    linear-gradient(to left, transparent, transparent),
+                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center, left top;
+                background-size: auto, contain, contain, auto, auto;
+                image-rendering: pixelated;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+            }
+            .duskbg::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: -5;
+                background:
+                    linear-gradient(to right, transparent, transparent),
+                    url("https://chairfiles.vercel.app/spaceheyleftduskbg.png") no-repeat,
+                    url("https://chairfiles.vercel.app/spaceheyrightduskbg.png") no-repeat,
+                    linear-gradient(to left, transparent, transparent),
+                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center, left top;
+                background-size: auto, contain, contain, auto, auto;
+                image-rendering: pixelated;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+            }
+            .nightbg::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: -5;
+                background:
+                    linear-gradient(to right, transparent, transparent),
+                    url("https://chairfiles.vercel.app/spaceheyleftnightbg.png") no-repeat,
+                    url("https://chairfiles.vercel.app/spaceheyrightnightbg.png") no-repeat,
+                    linear-gradient(to left, transparent, transparent),
+                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                background-attachment: fixed;
+                background-position: left center, left center, right center, right center, left top;
+                background-size: auto, contain, contain, auto, auto;
+                image-rendering: pixelated;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+            }
+            .nightbg::after {
+                content: "";
+                position: fixed;
+                inset: 0;
+                z-index: -4;
+                background:
+                    radial-gradient(1200px 700px at 50% 10%, rgba(144, 243, 225, 0.18), transparent 55%),
+                    radial-gradient(900px 600px at 15% 70%, rgba(239, 207, 239, 0.22), transparent 60%),
+                    radial-gradient(900px 600px at 85% 70%, rgba(77, 35, 205, 0.20), transparent 60%);
+                pointer-events: none;
+            }
+            .nso-shell {
+                width: 1440px;
+                max-width: calc(100% - 20px);
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+            @media (max-width: 980px) {
+                .nso-shell {
+                    grid-template-columns: 1fr;
+                }
+            }
+            .nso-panel {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 8px 8px #4e23cd48;
+                background: #FDF8FD;
+            }
+            .nso-panel__title {
+                padding: 8px 12px;
+                background-color: #EFCFEF;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+                border-bottom: 2px solid #4D23CD;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+                letter-spacing: 0.045em;
+            }
+            .nso-panel__title h2 {
+                margin: 0;
+                font-size: 18px;
+                font-weight: 400;
+                font-family: 'dinkie9px', sans-serif;
+            }
+            .nso-panel__body {
+                padding: 10px;
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 12px;
+                color: #251f33;
+            }
+            .nso-btn {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 8px 10px;
+                text-align: left;
+                font-family: 'dinkie9px', sans-serif;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .nso-btn:active {
+                transform: translate(1px, 1px);
+            }
+            .nso-btn--ghost {
+                background: #FDF8FD;
+                box-shadow: none;
+                border: 2px solid #4D23CD;
+            }
+            .nso-btn--primary {
+                background: #90F3E1;
+                box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
+                border: 2px solid #90F3E1;
+                color: #4D23CD;
+            }
+            .nso-brand {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+            .nso-brand__logo {
+                font-size: 36px;
+                line-height: 1;
+                font-family: 'dinkie9px', sans-serif;
+                color: #4D21CB;
+                text-shadow: 0 0 0 rgba(0,0,0,0);
+            }
+            .nso-brand__tag {
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 12px;
+                color: #4D21CB;
+                background: #F7E0FA;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                border: 2px solid #F0D1F1;
+                padding: 6px 8px;
+            }
+            .nso-nav {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            .nso-nav button {
+                width: 100%;
+            }
+            .nso-btn {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 8px 10px;
+                text-align: left;
+                font-family: 'dinkie9px', sans-serif;
+            }
+            .nso-btn:active {
+                transform: translate(1px, 1px);
+            }
+            .nso-btn--ghost {
+                background: #FDF8FD;
+                box-shadow: none;
+                border: 2px solid #4D23CD;
+            }
+            .nso-btn--primary {
+                background: #90F3E1;
+                box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
+                border: 2px solid #90F3E1;
+                color: #4D23CD;
+            }
+
+            input[type="radio"] {
+                appearance: none;
+                -webkit-appearance: none;
+                width: 16px;
+                height: 16px;
+                border: 2px solid #4D23CD;
+                background: #FDF8FD;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                cursor: pointer;
+                position: relative;
+                vertical-align: middle;
+                margin-right: 6px;
+            }
+            input[type="radio"]:checked {
+                background: #90F3E1;
+                box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
+            }
+            input[type="radio"]:checked::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 8px;
+                height: 8px;
+                background: #4D23CD;
+            }
+            input[type="range"] {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 100%;
+                height: 12px;
+                background: #F7E0FA;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                cursor: pointer;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 20px;
+                height: 20px;
+                background: #f0d1f1;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                cursor: pointer;
+            }
+            input[type="range"]::-moz-range-thumb {
+                width: 20px;
+                height: 20px;
+                background: #f0d1f1;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                cursor: pointer;
+            }
+            input[type="checkbox"] {
+                appearance: none;
+                -webkit-appearance: none;
+                width: 16px;
+                height: 16px;
+                border: 2px solid #4D23CD;
+                background: #FDF8FD;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                cursor: pointer;
+                position: relative;
+                vertical-align: middle;
+                margin-right: 6px;
+            }
+            input[type="checkbox"]:checked {
+                background: #90F3E1;
+                box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
+            }
+            input[type="checkbox"]:checked::after {
+                content: "✓";
+                position: absolute;
+                top: -2px;
+                left: 2px;
+                color: #4D23CD;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="number"],
+            input[type="url"],
+            textarea {
+                background: #f0d1f1;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+                color: #4d23cf;
+                font-size: 15px;
+                font-weight: normal;
+                text-shadow: #f0d1f1 0px 2px 5px;
+                border: 2px solid #f0d1f1;
+                border-radius: 2px;
+                padding: 8px 10px;
+                font-family: 'dinkie9px', sans-serif;
+                outline: none;
+                box-sizing: border-box;
+            }
+            input[type="text"]:focus,
+            input[type="email"]:focus,
+            input[type="password"]:focus,
+            input[type="number"]:focus,
+            input[type="url"]:focus,
+            textarea:focus {
+                border-color: #4D23CD;
+                background: #FDF8FD;
+            }
+            textarea {
+                resize: vertical;
+                min-height: 80px;
+            }
+
+            .nso-kpi {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+                gap: 8px;
+            }
+            @media (max-width: 520px) {
+                .nso-kpi {
+                    grid-template-columns: 1fr;
+                }
+            }
+            .nso-kpi__item {
+                background: #F7E1FA3d;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px rgba(144, 243, 225, 0.35);
+                padding: 8px;
+            }
+            .nso-kpi__label {
+                font-size: 10px;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: #4D23CD;
+            }
+            .nso-kpi__value {
+                font-size: 18px;
+                margin-top: 6px;
+                color: #251f33;
+            }
+            .nso-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 14px;
+            }
+            .nso-footer {
+                margin-top: 14px;
+                text-align: center;
+                font-family: 'dinkie9px', sans-serif;
+                font-size: 11px;
+                color: rgba(77, 33, 203, 0.85);
+            }
+            .nso-fixed-controls {
+                position: fixed;
+                left: 12px;
+                bottom: 12px;
+                z-index: 50;
+                display: grid;
+                gap: 8px;
+            }
+            #waves-background {
+                position: fixed;
+                inset: 0;
+                z-index: 0;
+                opacity: 0.18;
+                pointer-events: none;
+            }
+            #waves-background svg {
+                width: 100%;
+                height: 100%;
+            }
+            #snowfall-container {
+                position: fixed;
+                inset: 0;
+                z-index: 2;
+                pointer-events: none;
+            }
+            .snow-particle {
+                position: absolute;
+                border-radius: 999px;
+                opacity: 0.8;
+            }
+            #toast-container {
+                position: fixed;
+                inset: 0;
+                pointer-events: none;
+                z-index: 100;
+            }
+            .reveal {
+                opacity: 0;
+                transform: translateY(10px);
+                transition: opacity 500ms ease, transform 500ms ease;
+            }
+            .reveal.reveal-active {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .glitch-overlay {
+                position: fixed;
+                inset: 0;
+                z-index: 1;
+                pointer-events: none;
+                opacity: 0.22;
+                background:
+                    repeating-linear-gradient(0deg, rgba(0,0,0,0.0), rgba(0,0,0,0.0) 2px, rgba(77, 35, 205, 0.06) 3px),
+                    repeating-linear-gradient(90deg, rgba(0,0,0,0.0), rgba(0,0,0,0.0) 10px, rgba(144, 243, 225, 0.04) 11px);
+                mix-blend-mode: multiply;
+            }
+
+            @keyframes wave-glitch {
+                0% { transform: translate(0, 0); opacity: 0.9; }
+                20% { transform: translate(1px, -1px); opacity: 0.6; }
+                40% { transform: translate(-1px, 1px); opacity: 0.8; }
+                60% { transform: translate(2px, 0); opacity: 0.5; }
+                80% { transform: translate(-2px, -1px); opacity: 0.85; }
+                100% { transform: translate(0, 0); opacity: 0.9; }
+            }
