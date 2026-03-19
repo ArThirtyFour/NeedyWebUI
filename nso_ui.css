@@ -8,6 +8,8 @@
     --window-width: 400px;
     --window-padding: 12px;
     --window-heading-height: 32px;
+    --bg-side-width: 210px;
+    --bg-safe-extra: 20px;
 
     --heading-font-size: 18px;
     --button-font-size: 15px;
@@ -255,8 +257,9 @@ main {
                 background-repeat: repeat;
                 min-height: 100vh;
                 width: 1440px;
-                max-width: 100%;
+                max-width: calc(100vw - (var(--bg-side-width) * 2) - 20px);
                 margin: 0 auto 10px;
+                box-sizing: border-box;
             }
 
             .profile .url-info
@@ -2009,7 +2012,7 @@ main {
                 height: 100vh;
                 margin: 0 auto;
                 width: 100%;
-                max-width: 1440px;
+                max-width: calc(100vw - (var(--bg-side-width) * 2) - 20px);
                 background: #FDF8FD;
                 background-image: none !important;
             }
@@ -2020,7 +2023,7 @@ main {
                 z-index: 0;
                 visibility: visible;
                 isolation: isolate;
-                padding: 0 10px 40px;
+                padding: 0 calc(var(--bg-side-width) + var(--bg-safe-extra)) 40px;
                 display: flex;
                 flex-direction: column;
                 box-sizing: border-box;
@@ -2032,8 +2035,11 @@ main {
                 margin: 0 auto;
                 width: 100%;
                 max-width: 1440px;
-                background: #FDF8FD;
-                background-image: none !important;
+                background: transparent;
+            }
+
+            .noonbg main, .duskbg main, .nightbg main {
+                background: transparent;
             }
             .noonbg::before {
                 content: "";
@@ -2099,7 +2105,7 @@ main {
             }
             .nso-shell {
                 width: 1440px;
-                max-width: calc(100% - 20px);
+                max-width: calc(100vw - (var(--bg-side-width) * 2) - 20px);
                 margin: 0 auto;
                 display: grid;
                 grid-template-columns: 1fr;
