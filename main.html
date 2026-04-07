@@ -171,6 +171,31 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="inner">
+                            <div class="nso-progress-group">
+                                <div class="nso-progress-row">
+                                    <div class="nso-progress-meta">
+                                        <span class="nso-progress-label">Stress</span>
+                                        <span class="nso-progress-value" id="barStressValue">11/100</span>
+                                    </div>
+                                    <div id="barStress" class="nso-progress nso-progress--sm" data-max="100" data-value="11"></div>
+                                </div>
+                                <div class="nso-progress-row">
+                                    <div class="nso-progress-meta">
+                                        <span class="nso-progress-label">Affection</span>
+                                        <span class="nso-progress-value" id="barAffectionValue">109/120</span>
+                                    </div>
+                                    <div id="barAffection" class="nso-progress" data-max="120" data-value="109"></div>
+                                </div>
+                                <div class="nso-progress-row">
+                                    <div class="nso-progress-meta">
+                                        <span class="nso-progress-label">Darkness</span>
+                                        <span class="nso-progress-value" id="barDarknessValue">18/100</span>
+                                    </div>
+                                    <div id="barDarkness" class="nso-progress nso-progress--lg" data-max="100" data-value="18"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -214,6 +239,136 @@
         };
         slider.addEventListener('input', sync);
         sync();
+    })();
+    (function () {
+        const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+        const graphState = new WeakMap();
+        const ensureGraph = (el) => {
+            let state = graphState.get(el);
+            if (state) return state;
+            let canvas = el.querySelector('.nso-progress-canvas');
+            if (!canvas) {
+                canvas = document.createElement('canvas');
+                canvas.className = 'nso-progress-canvas';
+                el.appendChild(canvas);
+            }
+            state = { canvas, history: [] };
+            graphState.set(el, state);
+            return state;
+        };
+        const drawGraph = (el) => {
+            const state = ensureGraph(el);
+            const canvas = state.canvas;
+            const w = Math.max(1, Math.floor(el.clientWidth));
+            const h = Math.max(1, Math.floor(el.clientHeight));
+            if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w;
+                canvas.height = h;
+            }
+            const max = Number(el.dataset.max || 100) || 100;
+            const pixel = 3;
+            const gw = Math.max(8, Math.floor(w / pixel));
+            const gh = Math.max(8, Math.floor(h / pixel));
+            const samples = gw;
+            while (state.history.length < samples) {
+                state.history.push(Number(el.dataset.value || 0));
+            }
+            if (state.history.length > samples) {
+                state.history.splice(0, state.history.length - samples);
+            }
+            const ctx = canvas.getContext('2d');
+            if (!ctx) return;
+            if (!state.buffer) state.buffer = document.createElement('canvas');
+            const buffer = state.buffer;
+            if (buffer.width !== gw || buffer.height !== gh) {
+                buffer.width = gw;
+                buffer.height = gh;
+            }
+            const bctx = buffer.getContext('2d');
+            if (!bctx) return;
+            const fill = getComputedStyle(el).getPropertyValue('--nso-progress-fill').trim() || '#58a6d5';
+            bctx.imageSmoothingEnabled = false;
+            bctx.clearRect(0, 0, gw, gh);
+            for (let x = 0; x < state.history.length; x += 1) {
+                const value = clamp(state.history[x], 0, max);
+                const y = gh - Math.round((value / max) * gh);
+                const yy = Math.min(Math.max(y, 0), gh - 1);
+                bctx.fillStyle = fill;
+                bctx.fillRect(x, yy, 1, gh - yy);
+            }
+            ctx.imageSmoothingEnabled = false;
+            ctx.clearRect(0, 0, w, h);
+            ctx.drawImage(buffer, 0, 0, w, h);
+        };
+        const render = (el, value) => {
+            const max = Number(el.dataset.max || 100) || 100;
+            const next = clamp(Number(value) || 0, 0, max);
+            el.dataset.value = String(next);
+            const state = ensureGraph(el);
+            state.history.push(next);
+            drawGraph(el);
+        };
+        const animate = (el, to, duration, onUpdate, onDone) => {
+            const max = Number(el.dataset.max || 100) || 100;
+            const from = clamp(Number(el.dataset.value || 0), 0, max);
+            const target = clamp(Number(to) || 0, 0, max);
+            const start = performance.now();
+            const step = (t) => {
+                const p = Math.min((t - start) / Math.max(duration, 1), 1);
+                const eased = 1 - Math.pow(1 - p, 3);
+                const current = from + (target - from) * eased;
+                render(el, current);
+                if (onUpdate) onUpdate(current, max);
+                if (p < 1) requestAnimationFrame(step);
+                else if (onDone) onDone();
+            };
+            requestAnimationFrame(step);
+        };
+        window.setNsoProgress = (target, value, opts = {}) => {
+            const el = typeof target === 'string' ? document.getElementById(target) : target;
+            if (!el) return;
+            if (opts.animate) {
+                animate(el, value, Number(opts.duration) || 450, opts.onUpdate, opts.onDone);
+            } else {
+                render(el, value);
+                if (opts.onUpdate) {
+                    const max = Number(el.dataset.max || 100) || 100;
+                    opts.onUpdate(Number(el.dataset.value || 0), max);
+                }
+                if (opts.onDone) opts.onDone();
+            }
+        };
+        document.querySelectorAll('.nso-progress[data-value]').forEach((el) => {
+            render(el, Number(el.dataset.value));
+        });
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('.nso-progress[data-value]').forEach((el) => drawGraph(el));
+        });
+        const runPath = (elId, txtId, points, duration, pause) => {
+            const el = document.getElementById(elId);
+            const txt = document.getElementById(txtId);
+            if (!el || !txt || !Array.isArray(points) || points.length < 2) return;
+            let idx = 0;
+            const step = () => {
+                idx = (idx + 1) % points.length;
+                window.setNsoProgress(el, points[idx], {
+                    animate: true,
+                    duration,
+                    onUpdate: (current, max) => {
+                        txt.textContent = Math.round(current) + '/' + max;
+                    },
+                    onDone: () => {
+                        setTimeout(step, pause);
+                    }
+                });
+            };
+            const max = Number(el.dataset.max || 100) || 100;
+            txt.textContent = Math.round(Number(el.dataset.value || 0)) + '/' + max;
+            setTimeout(step, pause);
+        };
+        runPath('barStress', 'barStressValue', [72, 8, 76, 22, 64], 900, 140);
+        runPath('barAffection', 'barAffectionValue', [96, 35, 92, 48, 88], 1200, 180);
+        runPath('barDarkness', 'barDarknessValue', [80, 12, 84, 20, 70], 1000, 160);
     })();
 </script>
 </body>

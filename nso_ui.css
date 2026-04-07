@@ -2510,6 +2510,59 @@ main {
                 background: #EFCFEF;
                 box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
             }
+            .nso-progress-group {
+                display: grid;
+                gap: 10px;
+                margin-top: 10px;
+            }
+            .nso-progress-row {
+                display: grid;
+                grid-template-columns: 120px 1fr;
+                gap: 8px;
+                align-items: center;
+            }
+            .nso-progress-meta {
+                color: #4D23CD;
+                line-height: 1.1;
+            }
+            .nso-progress-label {
+                display: block;
+                font-size: 12px;
+                color: #59b1dd;
+            }
+            .nso-progress-value {
+                font-size: 18px;
+            }
+            .nso-progress {
+                --nso-progress-value: 0;
+                --nso-progress-track: #c8b0d8;
+                --nso-progress-fill: #58a6d5;
+                --nso-progress-line: #8fd2f5;
+                --nso-progress-height: 64px;
+                height: var(--nso-progress-height);
+                position: relative;
+                overflow: hidden;
+                background: var(--nso-progress-track);
+            }
+            .nso-progress-canvas {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                image-rendering: pixelated;
+                display: block;
+            }
+            .nso-progress--sm {
+                --nso-progress-height: 28px;
+            }
+            .nso-progress--lg {
+                --nso-progress-height: 110px;
+            }
+            @media (max-width: 40em) {
+                .nso-progress-row {
+                    grid-template-columns: 1fr;
+                }
+            }
 
             .jine-window {
                 margin-top: 14px;
