@@ -2502,61 +2502,11 @@ main {
                 box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
             }
 
-            .jine-shell {
-                margin-top: 14px;
-                border: 3px solid #3f2cbe;
-                box-shadow: inset 0 0 0 2px #7cd9e6, inset 0 0 0 5px #3f2cbe;
-                background: #b68ed0;
-                padding: 10px;
-            }
-            .jine-window {
-                border: 2px solid #3f2cbe;
-                box-shadow: inset 0 0 0 2px #7cd9e6;
-                background: #e3c7f4;
-            }
-            .jine-title {
-                height: 30px;
-                border-bottom: 2px solid #3f2cbe;
-                background: #d9c0ed;
-                color: #3f2cbe;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                padding: 0 8px;
-                font-size: 15px;
-            }
-            .jine-title-left {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                font-weight: 700;
-                letter-spacing: 1px;
-            }
-            .jine-dot {
-                width: 16px;
-                height: 16px;
-                background: #5a2fce;
-                border: 1px solid #3f2cbe;
-            }
-            .jine-controls {
-                display: flex;
-                gap: 4px;
-            }
-            .jine-controls span {
-                width: 16px;
-                height: 16px;
-                border: 1px solid #3f2cbe;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 12px;
-                line-height: 1;
-                background: #d7b8ef;
-            }
             .jine-chat {
                 min-height: 370px;
                 padding: 12px 12px 14px;
-                background: url("background/JINEBG.png") center/cover --no-repeat, #dd98e4;
+                border: 2px solid #4D23CD;
+                background: url("background/JINEBG.png") center/cover no-repeat, #dd98e4;
             }
             .jine-msg {
                 display: flex;
