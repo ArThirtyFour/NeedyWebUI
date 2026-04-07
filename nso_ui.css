@@ -1,4 +1,4 @@
-           @font-face {
+@font-face {
     font-family: "dinkie9px";
     src: url('https://chairfiles.vercel.app/DinkieBitmap-9px.woff2') format('woff2');
 }
@@ -7,7 +7,7 @@
 
     --window-width: 400px;
     --window-padding: 12px;
-    --window-heading-height: 32px;
+    --window-heading-height: 38px;
     --bg-side-width: 210px;
     --bg-safe-extra: 20px;
 
@@ -24,7 +24,7 @@
 .nso-window--small {
     --window-width: 250px;
     --window-padding: 8px;
-    --window-heading-height: 24px;
+    --window-heading-height: 28px;
     --heading-font-size: 14px;
     --button-font-size: 12px;
     --body-font-size: 10px;
@@ -33,7 +33,7 @@
 .nso-window--medium {
     --window-width: 400px;
     --window-padding: 12px;
-    --window-heading-height: 32px;
+    --window-heading-height: 38px;
     --heading-font-size: 18px;
     --button-font-size: 15px;
     --body-font-size: 12px;
@@ -42,7 +42,7 @@
 .nso-window--large {
     --window-width: 600px;
     --window-padding: 16px;
-    --window-heading-height: 40px;
+    --window-heading-height: 46px;
     --heading-font-size: 22px;
     --button-font-size: 18px;
     --body-font-size: 14px;
@@ -51,7 +51,7 @@
 .nso-window--wide {
     --window-width: 800px;
     --window-padding: 16px;
-    --window-heading-height: 40px;
+    --window-heading-height: 46px;
     --heading-font-size: 22px;
     --button-font-size: 18px;
     --body-font-size: 14px;
@@ -60,7 +60,7 @@
 .nso-window--full {
     --window-width: 100%;
     --window-padding: 20px;
-    --window-heading-height: 48px;
+    --window-heading-height: 54px;
     --heading-font-size: 26px;
     --button-font-size: 20px;
     --body-font-size: 16px;
@@ -128,11 +128,16 @@
     padding: calc(var(--window-padding) / 2) var(--window-padding);
     height: var(--window-heading-height);
     line-height: var(--window-heading-height);
+    padding-right: calc(var(--window-padding) + 56px);
+    overflow: hidden;
 }
 
 .nso-window .table-section .heading h4 {
     font-size: var(--heading-font-size);
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .nso-window .noonbutton,
@@ -259,6 +264,7 @@ main {
                 width: 1440px;
                 max-width: calc(100vw - (var(--bg-side-width) * 2) - 20px);
                 margin: 0 auto 10px;
+                padding: 8px 12px 14px;
                 box-sizing: border-box;
             }
 
@@ -333,7 +339,7 @@ main {
             }
 
             .profile .contact .heading {
-                padding: 0 12px;
+                padding: 0 56px 0 14px;
                 height: 32px;
                 line-height: 32px;
                 background-color: #EFCFEF;
@@ -360,7 +366,7 @@ main {
             }
 
             .timeselector .contact .heading {
-                padding: 0 12px;
+                padding: 0 56px 0 14px;
                 height: 32px;
                 line-height: 32px;
                 background-color: #EFCFEF;
@@ -429,7 +435,7 @@ main {
             }
 
             .profile .table-section .heading {
-                padding: 0 12px;
+                padding: 0 56px 0 14px;
                 height: 32px;
                 line-height: 32px;
                 background-color: #EFCFEF;
@@ -450,6 +456,9 @@ main {
                 line-height: 1;
                 font-weight: 400;
                 letter-spacing: 0.045em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
             }
 
             .general-about .profile-pic .pfp-fallback {
@@ -2502,11 +2511,74 @@ main {
                 box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
             }
 
+            .jine-window {
+                margin-top: 14px;
+                width: min(620px, 100%);
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
+                background: #FDF8FD;
+                padding: 10px;
+            }
+            .jine-window--demo {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .jine-window > .jine-title,
+            .jine-window > .jine-chat {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+            }
+            .jine-title {
+                height: 30px;
+                background: #EFCFEF;
+                color: #4D21CB;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 8px 0 14px;
+                font-size: 15px;
+                border-bottom: 0;
+                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-position: right center;
+                background-repeat: no-repeat;
+            }
+            .jine-title-left {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            .jine-dot {
+                width: 16px;
+                height: 16px;
+                background: #5a2fce;
+                border: 1px solid #3f2cbe;
+            }
+            .jine-controls {
+                display: flex;
+                gap: 4px;
+            }
+            .jine-controls span {
+                width: 16px;
+                height: 16px;
+                border: 1px solid #3f2cbe;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                line-height: 1;
+                background: #d7b8ef;
+            }
             .jine-chat {
                 min-height: 370px;
                 padding: 12px 12px 14px;
-                border: 2px solid #4D23CD;
-                background: url("background/JINEBG.png") center/cover no-repeat, #dd98e4;
+                background-color: #dd98e4;
+                background-image: url("background/JINEBG.png");
+                background-position: top left;
+                background-repeat: repeat;
+                background-size: auto;
+                box-sizing: border-box;
             }
             .jine-msg {
                 display: flex;
@@ -2531,6 +2603,8 @@ main {
                 line-height: 1.36;
                 padding: 8px 12px;
                 border-radius: 8px;
+                overflow-wrap: anywhere;
+                word-break: break-word;
             }
             .jine-bubble--self {
                 margin: 4px 12px 0 auto;
@@ -2546,6 +2620,32 @@ main {
                 }
             }
 
+            .jine-panel .table-section .inner {
+                padding: 0;
+            }
+            .jine-panel .table-section .heading {
+                height: 34px;
+                line-height: 34px;
+                padding-left: 16px;
+                padding-right: 72px;
+            }
+            .jine-panel .table-section .heading h4 {
+                max-width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .profile .table-section .heading,
+            .profile .contact .heading,
+            .timeselector .contact .heading {
+                min-height: 38px;
+                line-height: 38px;
+                padding-right: 72px;
+            }
+            .jine-panel .jine-chat {
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
+            }
 .nso-icon{display:inline-block;width:var(--nso-icon-size,28px);height:var(--nso-icon-size,28px);background:var(--nso-icon) center/contain no-repeat;vertical-align:middle}
 .nso-icon--achivement-un-happy-end-world{--nso-icon:url("Icons/Achivement/(Un)happy%20End%20World.png")}
 .nso-icon--achivement-21-42{--nso-icon:url("Icons/Achivement/21%2042.png")}
