@@ -143,9 +143,96 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="profile nso-window nso-window--medium" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="heading"><h4>Icons Test</h4></div>
+                        <div class="inner" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;--nso-icon-size:36px;">
+                            <span class="nso-icon nso-icon--icon-emotes-youtube" title="Icon Emotes / Youtube"></span>
+                            <span class="nso-icon nso-icon--icon-emotes-tinder" title="Icon Emotes / Tinder"></span>
+                            <span class="nso-icon nso-icon--icon-emotes-go-to-sleep" title="Icon Emotes / GO TO SLEEP"></span>
+                            <span class="nso-icon nso-icon--achivement-needy-girl-overdose" title="Achivement / Needy Girl Overdose"></span>
+                            <span class="nso-icon nso-icon--achivement-internet-overdose" title="Achivement / INTERNET OVERDOSE"></span>
+                            <span class="nso-icon nso-icon--shinanegen-kangelhappy" title="Shinanegen / KangelHAPPY"></span>
+                            <span class="nso-icon nso-icon--shinanegen-kangelheart" title="Shinanegen / KangelHeart"></span>
+                            <span class="nso-icon nso-icon--shinanegen-peace-sign" style="--nso-icon-size:52px;" title="Shinanegen / peace sign"></span>
+                        </div>
+                        <div class="inner" style="padding-top:0;">
+                            <div class="nso-time-wrap">
+                                <div class="nso-time-head">
+                                    <span>Time Progress</span>
+                                    <span id="nsoTimeCurrent" class="nso-time-current">17:00</span>
+                                </div>
+                                <input id="nsoTimeSlider" class="nso-time-slider" type="range" min="480" max="1380" step="15" value="1020">
+                                <div class="nso-time-foot">
+                                    <span id="nsoTimeStart">08:00</span>
+                                    <span id="nsoTimeRemain">Remaining: 6h 00m</span>
+                                    <span id="nsoTimeEnd">23:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile nso-window nso-window--large" style="margin-top: 12px;">
+                    <div class="table-section">
+                        <div class="inner">
+                            <div class="jine-shell">
+                                <div class="jine-window">
+                                    <div class="jine-title">
+                                        <div class="jine-title-left">
+                                            <span class="jine-dot"></span>
+                                            <span>JINE</span>
+                                        </div>
+                                        <div class="jine-controls"><span>_</span><span>□</span><span>×</span></div>
+                                    </div>
+                                    <div class="jine-chat">
+                                        <div class="jine-msg">
+                                            <span class="nso-icon nso-icon--icon-emotes-ame-sad jine-avatar"></span>
+                                            <div class="jine-bubble">so ill do everything you tell me to. really</div>
+                                        </div>
+                                        <div class="jine-msg">
+                                            <span class="nso-icon nso-icon--icon-emotes-ame-sad jine-avatar"></span>
+                                            <div class="jine-bubble">i have complete faith in you, p-chan. ill follow all your orders perfectly. and i promise you ill become the best streamer...</div>
+                                        </div>
+                                        <div class="jine-msg">
+                                            <span class="nso-icon nso-icon--icon-emotes-ame-sad jine-avatar"></span>
+                                            <div class="jine-bubble">coz if not, i... i think ill just break and fall apart</div>
+                                        </div>
+                                        <div class="jine-bubble jine-bubble--self">Or I could break you myself.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     </div>
 </div>
+<script>
+    (function () {
+        const slider = document.getElementById('nsoTimeSlider');
+        const current = document.getElementById('nsoTimeCurrent');
+        const remain = document.getElementById('nsoTimeRemain');
+        if (!slider || !current || !remain) return;
+        const fmt = (mins) => {
+            const h = String(Math.floor(mins / 60)).padStart(2, '0');
+            const m = String(mins % 60).padStart(2, '0');
+            return h + ':' + m;
+        };
+        const sync = () => {
+            const min = Number(slider.min);
+            const max = Number(slider.max);
+            const val = Number(slider.value);
+            slider.style.setProperty('--value', slider.value);
+            current.textContent = fmt(val);
+            const left = Math.max(max - val, 0);
+            remain.textContent = 'Remaining: ' + Math.floor(left / 60) + 'h ' + String(left % 60).padStart(2, '0') + 'm';
+        };
+        slider.addEventListener('input', sync);
+        sync();
+    })();
+</script>
 </body>
 </html>

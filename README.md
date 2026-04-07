@@ -7,6 +7,7 @@ Plans:
 - [X] Windows
 - [X] Buttons
 - [X] Inputs 
+- [X] Icons 
 - [ ] Customization
 - [ ] JINE UI
 

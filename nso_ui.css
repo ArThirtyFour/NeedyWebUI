@@ -2449,3 +2449,311 @@ main {
                 80% { transform: translate(-2px, -1px); opacity: 0.85; }
                 100% { transform: translate(0, 0); opacity: 0.9; }
             }
+
+            .nso-time-wrap {
+                width: 100%;
+                margin-top: 12px;
+                border: 2px solid #4D23CD;
+                box-shadow: inset 0 0 0 2px #90F3E1, 2px 2px #4e23cd48;
+                background: #FDF8FD;
+                padding: 8px;
+            }
+            .nso-time-head,
+            .nso-time-foot {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+                color: #4D23CD;
+                font-size: 12px;
+            }
+            .nso-time-head {
+                margin-bottom: 6px;
+            }
+            .nso-time-current {
+                font-size: 16px;
+                color: #2f1491;
+                letter-spacing: 0.4px;
+            }
+            .nso-time-slider {
+                --min: 480;
+                --max: 1380;
+                --value: 1020;
+                width: 100%;
+                height: 16px;
+                margin: 0;
+                background:
+                    linear-gradient(90deg, #90F3E1 0%, #a3f7e8 100%) left / calc((var(--value) - var(--min)) * 100% / (var(--max) - var(--min))) 100% no-repeat,
+                    repeating-linear-gradient(90deg, rgba(77,35,205,0.35) 0 1px, transparent 1px 24px),
+                    #f4e8fb;
+            }
+            .nso-time-slider::-webkit-slider-thumb {
+                width: 22px;
+                height: 22px;
+                border: 2px solid #4D23CD;
+                background: #EFCFEF;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+            }
+            .nso-time-slider::-moz-range-thumb {
+                width: 22px;
+                height: 22px;
+                border: 2px solid #4D23CD;
+                background: #EFCFEF;
+                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+            }
+
+            .jine-shell {
+                margin-top: 14px;
+                border: 3px solid #3f2cbe;
+                box-shadow: inset 0 0 0 2px #7cd9e6, inset 0 0 0 5px #3f2cbe;
+                background: #b68ed0;
+                padding: 10px;
+            }
+            .jine-window {
+                border: 2px solid #3f2cbe;
+                box-shadow: inset 0 0 0 2px #7cd9e6;
+                background: #e3c7f4;
+            }
+            .jine-title {
+                height: 30px;
+                border-bottom: 2px solid #3f2cbe;
+                background: #d9c0ed;
+                color: #3f2cbe;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 8px;
+                font-size: 15px;
+            }
+            .jine-title-left {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+            .jine-dot {
+                width: 16px;
+                height: 16px;
+                background: #5a2fce;
+                border: 1px solid #3f2cbe;
+            }
+            .jine-controls {
+                display: flex;
+                gap: 4px;
+            }
+            .jine-controls span {
+                width: 16px;
+                height: 16px;
+                border: 1px solid #3f2cbe;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                line-height: 1;
+                background: #d7b8ef;
+            }
+            .jine-chat {
+                min-height: 370px;
+                padding: 12px 12px 14px;
+                background: url("background/JINEBG.png") center/cover --no-repeat, #dd98e4;
+            }
+            .jine-msg {
+                display: flex;
+                align-items: flex-start;
+                gap: 9px;
+                margin-bottom: 10px;
+            }
+            .jine-avatar {
+                --nso-icon-size: 46px;
+                width: var(--nso-icon-size);
+                height: var(--nso-icon-size);
+                border-radius: 50%;
+                border: 2px solid rgba(88, 67, 172, 0.45);
+                background-color: #9f90c8;
+                flex: 0 0 auto;
+            }
+            .jine-bubble {
+                max-width: 84%;
+                background: #bad0eb;
+                color: #4330b4;
+                font-size: 20px;
+                line-height: 1.36;
+                padding: 8px 12px;
+                border-radius: 8px;
+            }
+            .jine-bubble--self {
+                margin: 4px 12px 0 auto;
+                background: #5eff3a;
+                color: #2a3db8;
+                max-width: 72%;
+                padding: 7px 12px;
+                border-radius: 8px;
+            }
+            @media (max-width: 30em) {
+                .jine-bubble {
+                    font-size: 15px;
+                }
+            }
+
+.nso-icon{display:inline-block;width:var(--nso-icon-size,28px);height:var(--nso-icon-size,28px);background:var(--nso-icon) center/contain no-repeat;vertical-align:middle}
+.nso-icon--achivement-un-happy-end-world{--nso-icon:url("Icons/Achivement/(Un)happy%20End%20World.png")}
+.nso-icon--achivement-21-42{--nso-icon:url("Icons/Achivement/21%2042.png")}
+.nso-icon--achivement-blazing-hell{--nso-icon:url("Icons/Achivement/Blazing%20Hell.png")}
+.nso-icon--achivement-bomber-girl{--nso-icon:url("Icons/Achivement/Bomber%20Girl.png")}
+.nso-icon--achivement-catastrophe{--nso-icon:url("Icons/Achivement/Catastrophe.png")}
+.nso-icon--achivement-comment-te-dire-adieu{--nso-icon:url("Icons/Achivement/Comment%20te%20dire%20adieu.png")}
+.nso-icon--achivement-cucked{--nso-icon:url("Icons/Achivement/Cucked.png")}
+.nso-icon--achivement-cut-wrists{--nso-icon:url("Icons/Achivement/Cut%20wrists.png")}
+.nso-icon--achivement-dark-angel-aka-ame-turned-emo{--nso-icon:url("Icons/Achivement/DARK%20ANGEL%20(aka.%20Ame%20turned%20Emo).png")}
+.nso-icon--achivement-fallen-angel{--nso-icon:url("Icons/Achivement/Fallen%20Angel.png")}
+.nso-icon--achivement-flatline{--nso-icon:url("Icons/Achivement/Flatline.png")}
+.nso-icon--achivement-galactic-express{--nso-icon:url("Icons/Achivement/Galactic%20Express.png")}
+.nso-icon--achivement-ground-control-to-psychoelectric-angel{--nso-icon:url("Icons/Achivement/Ground%20Control%20to%20Psychoelectric%20Angel.png")}
+.nso-icon--achivement-happy-end-world{--nso-icon:url("Icons/Achivement/Happy%20End%20World.png")}
+.nso-icon--achivement-internet-overdose{--nso-icon:url("Icons/Achivement/INTERNET%20OVERDOSE.png")}
+.nso-icon--achivement-internet-runaway-angel-be-invoked{--nso-icon:url("Icons/Achivement/Internet%20Runaway%20Angel%3A%20Be%20Invoked.png")}
+.nso-icon--achivement-labor-is-evil{--nso-icon:url("Icons/Achivement/Labor%20is%20evil.png")}
+.nso-icon--achivement-milestone{--nso-icon:url("Icons/Achivement/Milestone.png")}
+.nso-icon--achivement-monetization{--nso-icon:url("Icons/Achivement/Monetization.png")}
+.nso-icon--achivement-needy-girl-overdose{--nso-icon:url("Icons/Achivement/Needy%20Girl%20Overdose.png")}
+.nso-icon--achivement-nerdy-girl-overload{--nso-icon:url("Icons/Achivement/Nerdy%20Girl%20Overload.png")}
+.nso-icon--achivement-normie-life{--nso-icon:url("Icons/Achivement/Normie%20Life.png")}
+.nso-icon--achivement-nymphomania{--nso-icon:url("Icons/Achivement/Nymphomania.png")}
+.nso-icon--achivement-overdosed{--nso-icon:url("Icons/Achivement/Overdosed.png")}
+.nso-icon--achivement-painful-future{--nso-icon:url("Icons/Achivement/Painful%20Future.png")}
+.nso-icon--achivement-rainbow-girl{--nso-icon:url("Icons/Achivement/Rainbow%20Girl.png")}
+.nso-icon--achivement-smoked-grass{--nso-icon:url("Icons/Achivement/Smoked%20grass.png")}
+.nso-icon--achivement-smt{--nso-icon:url("Icons/Achivement/SMT.png")}
+.nso-icon--achivement-so-close-yet-so-far{--nso-icon:url("Icons/Achivement/So%20Close%20Yet%20So%20Far.png")}
+.nso-icon--achivement-there-are-no-angels{--nso-icon:url("Icons/Achivement/There%20Are%20No%20Angels.png")}
+.nso-icon--achivement-took-psychedelics{--nso-icon:url("Icons/Achivement/Took%20psychedelics.png")}
+.nso-icon--achivement-utopian-parody{--nso-icon:url("Icons/Achivement/Utopian%20Parody.png")}
+.nso-icon--achivement-welcome-to-my-religion{--nso-icon:url("Icons/Achivement/Welcome%20To%20My%20Religion.png")}
+.nso-icon--icon-emotes-a-jar-a-pot{--nso-icon:url("Icons/Icon%20Emotes/A%20jar%2C%20A%20pot.png")}
+.nso-icon--icon-emotes-a-very-comfy-bed{--nso-icon:url("Icons/Icon%20Emotes/A%20very%20comfy%20bed.png")}
+.nso-icon--icon-emotes-a-very-small-letters{--nso-icon:url("Icons/Icon%20Emotes/A%20very%20small%20letters.png")}
+.nso-icon--icon-emotes-activity{--nso-icon:url("Icons/Icon%20Emotes/Activity.png")}
+.nso-icon--icon-emotes-ame-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Ame-happy%20%3AD.png")}
+.nso-icon--icon-emotes-ame-sad{--nso-icon:url("Icons/Icon%20Emotes/Ame-sad.png")}
+.nso-icon--icon-emotes-ame-stare{--nso-icon:url("Icons/Icon%20Emotes/Ame-stare.png")}
+.nso-icon--icon-emotes-cake{--nso-icon:url("Icons/Icon%20Emotes/cake.png")}
+.nso-icon--icon-emotes-candies{--nso-icon:url("Icons/Icon%20Emotes/candies.png")}
+.nso-icon--icon-emotes-computer-but-cute{--nso-icon:url("Icons/Icon%20Emotes/Computer%20but%20cute.png")}
+.nso-icon--icon-emotes-cookie-p-chan{--nso-icon:url("Icons/Icon%20Emotes/Cookie%20P-chan%3F%3F.png")}
+.nso-icon--icon-emotes-don-t-smoke-be-ame-chan-example{--nso-icon:url("Icons/Icon%20Emotes/Don't%20smoke%2C%20Be%20Ame-chan%20example.png")}
+.nso-icon--icon-emotes-don-t-take-it-too-much{--nso-icon:url("Icons/Icon%20Emotes/don't%20take%20it%20too%20much.png")}
+.nso-icon--icon-emotes-dont-forget-to-take-your-med{--nso-icon:url("Icons/Icon%20Emotes/dont%20forget%20to%20take%20your%20med.png")}
+.nso-icon--icon-emotes-donut-without-topping{--nso-icon:url("Icons/Icon%20Emotes/donut%20without%20topping.png")}
+.nso-icon--icon-emotes-emo-ame-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Emo-Ame-happy%20%3AD.png")}
+.nso-icon--icon-emotes-emo-ame-sad{--nso-icon:url("Icons/Icon%20Emotes/Emo-Ame-sad.png")}
+.nso-icon--icon-emotes-folder1{--nso-icon:url("Icons/Icon%20Emotes/Folder1.png")}
+.nso-icon--icon-emotes-folder2{--nso-icon:url("Icons/Icon%20Emotes/Folder2.png")}
+.nso-icon--icon-emotes-folderbutevil{--nso-icon:url("Icons/Icon%20Emotes/Folderbutevil%3F.png")}
+.nso-icon--icon-emotes-gaming-but-pink{--nso-icon:url("Icons/Icon%20Emotes/Gaming%20but%20pink.png")}
+.nso-icon--icon-emotes-go-to-sleep{--nso-icon:url("Icons/Icon%20Emotes/GO%20TO%20SLEEP.png")}
+.nso-icon--icon-emotes-i-just-feel-like-putting-it-here{--nso-icon:url("Icons/Icon%20Emotes/I%20just%20feel%20like%20putting%20it%20here.png")}
+.nso-icon--icon-emotes-i-stole-this-design-again{--nso-icon:url("Icons/Icon%20Emotes/I%20stole%20this%20design%20again.png")}
+.nso-icon--icon-emotes-i-stole-this-design{--nso-icon:url("Icons/Icon%20Emotes/I%20stole%20this%20design.png")}
+.nso-icon--icon-emotes-image{--nso-icon:url("Icons/Icon%20Emotes/Image.png")}
+.nso-icon--icon-emotes-internet{--nso-icon:url("Icons/Icon%20Emotes/Internet.png")}
+.nso-icon--icon-emotes-it-is-day{--nso-icon:url("Icons/Icon%20Emotes/It%20is%20day.png")}
+.nso-icon--icon-emotes-kangel-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Kangel%20happy%20%3AD.png")}
+.nso-icon--icon-emotes-kangel-sad{--nso-icon:url("Icons/Icon%20Emotes/Kangel%20sad.png")}
+.nso-icon--icon-emotes-keep-the-meter-down{--nso-icon:url("Icons/Icon%20Emotes/Keep%20the%20meter%20down.png")}
+.nso-icon--icon-emotes-klender{--nso-icon:url("Icons/Icon%20Emotes/Klender.png")}
+.nso-icon--icon-emotes-location{--nso-icon:url("Icons/Icon%20Emotes/location.png")}
+.nso-icon--icon-emotes-metflix{--nso-icon:url("Icons/Icon%20Emotes/metflix%3F.png")}
+.nso-icon--icon-emotes-note{--nso-icon:url("Icons/Icon%20Emotes/Note.png")}
+.nso-icon--icon-emotes-otopus{--nso-icon:url("Icons/Icon%20Emotes/otopus.png")}
+.nso-icon--icon-emotes-p-chan-d{--nso-icon:url("Icons/Icon%20Emotes/P-chan%20%3AD.png")}
+.nso-icon--icon-emotes-phone{--nso-icon:url("Icons/Icon%20Emotes/Phone.png")}
+.nso-icon--icon-emotes-pinkthingy-sus{--nso-icon:url("Icons/Icon%20Emotes/Pinkthingy(sus).png")}
+.nso-icon--icon-emotes-pleading{--nso-icon:url("Icons/Icon%20Emotes/Pleading.png")}
+.nso-icon--icon-emotes-purplethingy{--nso-icon:url("Icons/Icon%20Emotes/Purplethingy.png")}
+.nso-icon--icon-emotes-search{--nso-icon:url("Icons/Icon%20Emotes/Search.png")}
+.nso-icon--icon-emotes-setting{--nso-icon:url("Icons/Icon%20Emotes/setting.png")}
+.nso-icon--icon-emotes-sun-is-down{--nso-icon:url("Icons/Icon%20Emotes/Sun%20is%20down.png")}
+.nso-icon--icon-emotes-sweet1{--nso-icon:url("Icons/Icon%20Emotes/sweet1.png")}
+.nso-icon--icon-emotes-sweet2{--nso-icon:url("Icons/Icon%20Emotes/sweet2.png")}
+.nso-icon--icon-emotes-sweet3{--nso-icon:url("Icons/Icon%20Emotes/sweet3.png")}
+.nso-icon--icon-emotes-sweet4{--nso-icon:url("Icons/Icon%20Emotes/sweet4.png")}
+.nso-icon--icon-emotes-sweet5{--nso-icon:url("Icons/Icon%20Emotes/sweet5.png")}
+.nso-icon--icon-emotes-sweet6-5{--nso-icon:url("Icons/Icon%20Emotes/sweet6.5.png")}
+.nso-icon--icon-emotes-sweet6{--nso-icon:url("Icons/Icon%20Emotes/sweet6.png")}
+.nso-icon--icon-emotes-take-your-med{--nso-icon:url("Icons/Icon%20Emotes/TAKE%20YOUR%20MED.png")}
+.nso-icon--icon-emotes-task-manager{--nso-icon:url("Icons/Icon%20Emotes/Task%20Manager.png")}
+.nso-icon--icon-emotes-teddybear{--nso-icon:url("Icons/Icon%20Emotes/TeddyBear.png")}
+.nso-icon--icon-emotes-this-is-ame-s-love{--nso-icon:url("Icons/Icon%20Emotes/This%20is%20Ame's%20love.png")}
+.nso-icon--icon-emotes-this-waste-my-time{--nso-icon:url("Icons/Icon%20Emotes/This%20waste%20my%20time.png")}
+.nso-icon--icon-emotes-tinder{--nso-icon:url("Icons/Icon%20Emotes/Tinder.png")}
+.nso-icon--icon-emotes-trash{--nso-icon:url("Icons/Icon%20Emotes/trash.png")}
+.nso-icon--icon-emotes-twitch{--nso-icon:url("Icons/Icon%20Emotes/twitch.png")}
+.nso-icon--icon-emotes-twitter{--nso-icon:url("Icons/Icon%20Emotes/Twitter.png")}
+.nso-icon--icon-emotes-two-hearts{--nso-icon:url("Icons/Icon%20Emotes/two%20hearts.png")}
+.nso-icon--icon-emotes-vid{--nso-icon:url("Icons/Icon%20Emotes/Vid.png")}
+.nso-icon--icon-emotes-yellowthingy{--nso-icon:url("Icons/Icon%20Emotes/Yellowthingy.png")}
+.nso-icon--icon-emotes-you-need-this{--nso-icon:url("Icons/Icon%20Emotes/You%20need%20this.png")}
+.nso-icon--icon-emotes-youtube{--nso-icon:url("Icons/Icon%20Emotes/Youtube.png")}
+.nso-icon--icon-emotes-zipfolder{--nso-icon:url("Icons/Icon%20Emotes/ZipFolder.png")}
+.nso-icon--shinanegen-3{--nso-icon:url("Icons/Shinanegen/%3A3.png")}
+.nso-icon--shinanegen-3-again{--nso-icon:url("Icons/Shinanegen/%3C3%20again.png")}
+.nso-icon--shinanegen-3-2{--nso-icon:url("Icons/Shinanegen/%3C3.png")}
+.nso-icon--shinanegen-aidle-be-angel{--nso-icon:url("Icons/Shinanegen/aidle%20be%20angel.png")}
+.nso-icon--shinanegen-battery-dont-swallow-it{--nso-icon:url("Icons/Shinanegen/Battery%2C%20dont%20swallow%20it.png")}
+.nso-icon--shinanegen-blush{--nso-icon:url("Icons/Shinanegen/blush%20%E2%81%84%E2%81%84%E2%81%84%E2%81%84.png")}
+.nso-icon--shinanegen-boo{--nso-icon:url("Icons/Shinanegen/Boo!.png")}
+.nso-icon--shinanegen-cake-just-a-cake{--nso-icon:url("Icons/Shinanegen/Cake%2C%20just%20a%20cake.png")}
+.nso-icon--shinanegen-chart{--nso-icon:url("Icons/Shinanegen/chart.png")}
+.nso-icon--shinanegen-clap{--nso-icon:url("Icons/Shinanegen/clap.png")}
+.nso-icon--shinanegen-congrat-thingy{--nso-icon:url("Icons/Shinanegen/congrat%20thingy.png")}
+.nso-icon--shinanegen-crying{--nso-icon:url("Icons/Shinanegen/Crying.png")}
+.nso-icon--shinanegen-devilish{--nso-icon:url("Icons/Shinanegen/Devilish.png")}
+.nso-icon--shinanegen-dog-why-do-i-waste-my-time-on-this{--nso-icon:url("Icons/Shinanegen/dog...%20why%20do%20I%20waste%20my%20time%20on%20this%3F.png")}
+.nso-icon--shinanegen-dont-spin-it{--nso-icon:url("Icons/Shinanegen/dont%20spin%20it.png")}
+.nso-icon--shinanegen-dress{--nso-icon:url("Icons/Shinanegen/Dress.png")}
+.nso-icon--shinanegen-fist-bump-classic{--nso-icon:url("Icons/Shinanegen/fist%20bump(classic).png")}
+.nso-icon--shinanegen-green-tea{--nso-icon:url("Icons/Shinanegen/Green%20Tea.png")}
+.nso-icon--shinanegen-haaa{--nso-icon:url("Icons/Shinanegen/haaa.png")}
+.nso-icon--shinanegen-happy-d{--nso-icon:url("Icons/Shinanegen/HAPPY%20%3AD.png")}
+.nso-icon--shinanegen-heart-but-very-red{--nso-icon:url("Icons/Shinanegen/heart%20but%20very%20red.png")}
+.nso-icon--shinanegen-heart{--nso-icon:url("Icons/Shinanegen/Heart.png")}
+.nso-icon--shinanegen-hmph{--nso-icon:url("Icons/Shinanegen/hmph.png")}
+.nso-icon--shinanegen-i-doubt-that-this-is-a-dog-again{--nso-icon:url("Icons/Shinanegen/I%20doubt%20that%20this%20is%20a%20dog%20again.png")}
+.nso-icon--shinanegen-it-so-pixel{--nso-icon:url("Icons/Shinanegen/IT%20SO%20PIXEL.png")}
+.nso-icon--shinanegen-kangel-s-bow{--nso-icon:url("Icons/Shinanegen/Kangel's%20bow.png")}
+.nso-icon--shinanegen-kangeldepressed{--nso-icon:url("Icons/Shinanegen/KangelDEPRESSED.png")}
+.nso-icon--shinanegen-kangeldoomscrolling{--nso-icon:url("Icons/Shinanegen/KangelDOOMSCROLLING.png")}
+.nso-icon--shinanegen-kangelhappy{--nso-icon:url("Icons/Shinanegen/KangelHAPPY.png")}
+.nso-icon--shinanegen-kangelheart{--nso-icon:url("Icons/Shinanegen/KangelHeart.png")}
+.nso-icon--shinanegen-kangelpissed{--nso-icon:url("Icons/Shinanegen/KangelPISSED.png")}
+.nso-icon--shinanegen-laugh{--nso-icon:url("Icons/Shinanegen/laugh.png")}
+.nso-icon--shinanegen-linux{--nso-icon:url("Icons/Shinanegen/Linux%3F.png")}
+.nso-icon--shinanegen-lock{--nso-icon:url("Icons/Shinanegen/Lock.png")}
+.nso-icon--shinanegen-look{--nso-icon:url("Icons/Shinanegen/Look.png")}
+.nso-icon--shinanegen-music{--nso-icon:url("Icons/Shinanegen/music.png")}
+.nso-icon--shinanegen-nerd{--nso-icon:url("Icons/Shinanegen/Nerd.png")}
+.nso-icon--shinanegen-oouggh{--nso-icon:url("Icons/Shinanegen/oouggh.png")}
+.nso-icon--shinanegen-owww{--nso-icon:url("Icons/Shinanegen/owww.png")}
+.nso-icon--shinanegen-peace-sign{--nso-icon:url("Icons/Shinanegen/peace%20sign.png")}
+.nso-icon--shinanegen-point-down{--nso-icon:url("Icons/Shinanegen/point%20down.png")}
+.nso-icon--shinanegen-point-up{--nso-icon:url("Icons/Shinanegen/point%20up.png")}
+.nso-icon--shinanegen-pov-you-watch-kangel{--nso-icon:url("Icons/Shinanegen/POV%3B%20you%20watch%20Kangel.png")}
+.nso-icon--shinanegen-red-bow{--nso-icon:url("Icons/Shinanegen/Red%20bow.png")}
+.nso-icon--shinanegen-sad{--nso-icon:url("Icons/Shinanegen/sad.png")}
+.nso-icon--shinanegen-shush{--nso-icon:url("Icons/Shinanegen/shush.png")}
+.nso-icon--shinanegen-sigh{--nso-icon:url("Icons/Shinanegen/sigh.png")}
+.nso-icon--shinanegen-silent{--nso-icon:url("Icons/Shinanegen/Silent.png")}
+.nso-icon--shinanegen-simp{--nso-icon:url("Icons/Shinanegen/Simp.png")}
+.nso-icon--shinanegen-sus{--nso-icon:url("Icons/Shinanegen/sus.png")}
+.nso-icon--shinanegen-sweating{--nso-icon:url("Icons/Shinanegen/sweating.png")}
+.nso-icon--shinanegen-think{--nso-icon:url("Icons/Shinanegen/Think.png")}
+.nso-icon--shinanegen-this-might-be-you{--nso-icon:url("Icons/Shinanegen/This%20might%20be%20you.png")}
+.nso-icon--shinanegen-two-hearts{--nso-icon:url("Icons/Shinanegen/two%20hearts.png")}
+.nso-icon--shinanegen-uogghh{--nso-icon:url("Icons/Shinanegen/uogghh.png")}
+.nso-icon--shinanegen-whack{--nso-icon:url("Icons/Shinanegen/whack.png")}
+.nso-icon--shinanegen-yayyyy{--nso-icon:url("Icons/Shinanegen/yayyyy.png")}
+.nso-icon--shinanegen-yikes{--nso-icon:url("Icons/Shinanegen/yikes.png")}
+.nso-icon--shinanegen-you-burned-your-house{--nso-icon:url("Icons/Shinanegen/you%20burned%20your%20house.png")}
+.nso-icon--shinanegen-you-need-this-when-angry{--nso-icon:url("Icons/Shinanegen/you%20need%20this%20when%20angry.png")}
+.nso-icon--shinanegen-you-threw-this{--nso-icon:url("Icons/Shinanegen/you%20threw%20this.png")}
