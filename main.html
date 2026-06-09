@@ -3,226 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Needy UI Test</title>
+    <title>Needy UI — Component Library</title>
     <link rel="stylesheet" href="nso_ui.css">
 </head>
 <body>
-    <div class="nightbg">
-    <div class="container">
-        <main> 
-            <nav>
-                <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Messages</a>
-                    <span class="special"><a href="#">Special</a></span>
+<div class="nightbg">
+<div class="container">
+    <main>
+
+        
+        <div class="nso-brand">
+            <span class="nso-brand__logo">NEEDY UI</span>
+            <span class="nso-brand__tag">v0.1 pre-beta</span>
+        </div>
+
+        
+        <div class="nso-nav">
+            <button class="nso-btn" onclick="document.getElementById('sect-buttons').scrollIntoView({behavior:'smooth'})">Buttons</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-forms').scrollIntoView({behavior:'smooth'})">Forms</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-windows').scrollIntoView({behavior:'smooth'})">Windows</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-icons').scrollIntoView({behavior:'smooth'})">Icons</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-jine').scrollIntoView({behavior:'smooth'})">JINE</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'})">Modals</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'})">Tabs</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'})">Misc</button>
+        </div>
+
+        
+        <div class="profile" style="margin-top:16px;">
+            <div class="table-section">
+                <div class="heading"><h4>Background Selector</h4></div>
+                <div class="inner">
+                    <div class="noonbutton"><a href="#">Noon</a><span class="nso-icon nso-icon--icon-emotes-it-is-day" style="--nso-icon-size:18px"></span></div>
+                    <div class="duskbutton"><a href="#">Dusk</a><span class="nso-icon nso-icon--icon-emotes-sun-is-down" style="--nso-icon-size:18px"></span></div>
+                    <div class="nightbutton"><a href="#">Night</a><span class="nso-icon nso-icon--icon-emotes-go-to-sleep" style="--nso-icon-size:18px"></span></div>
                 </div>
-            </nav>
+            </div>
+        </div>
 
-            <section style="padding: 12px;">
+        
+        <div class="profile">
+            <div class="contact" style="margin-top:16px;">
+                <div class="heading"><h4>Contact</h4></div>
+                <div class="inner">
+                    <div class="f-row">
+                        <div class="f-col"><a href="#">Add Friend</a></div>
+                        <div class="f-col"><a href="#">Favorite</a></div>
+                    </div>
+                    <div class="f-row">
+                        <div class="f-col"><a href="#">Message</a></div>
+                        <div class="f-col"><a href="#">Share</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                <div class="profile" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Background Selector</h4></div>
-                        <div class="inner">
-                            <div class="noonbutton">
-                                <a href="#">Noon</a>
-                                <i class="hn hn-analytics" aria-hidden="true"></i>
+        
+        <h3 id="sect-buttons" style="margin-top:24px;">Buttons</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="display:flex;gap:10px;flex-wrap:wrap;">
+                <button class="nso-btn">Default</button>
+                <button class="nso-btn nso-btn--ghost">Ghost</button>
+                <button class="nso-btn nso-btn--primary">Primary</button>
+                <button class="nso-btn" disabled>Disabled</button>
+                <button class="nso-btn nso-btn--sm">Small</button>
+                <button class="nso-btn nso-btn--lg">Large</button>
+            </div>
+        </div>
+
+        
+        <h3 id="sect-forms" style="margin-top:24px;">Form Elements</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+                    <div>
+                        <label><input type="radio" name="demo-radio" value="1" checked> Option 1</label><br>
+                        <label><input type="radio" name="demo-radio" value="2"> Option 2</label><br>
+                        <label><input type="radio" name="demo-radio" value="3"> Option 3</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" checked> Checked</label><br>
+                        <label><input type="checkbox"> Unchecked</label><br>
+                        <label><input type="checkbox" disabled> Disabled</label>
+                    </div>
+                </div>
+                <hr style="border-color:#90F3E1;margin:12px 0;">
+                <input type="text" placeholder="Text input" style="width:100%;margin-bottom:8px;">
+                <input type="password" placeholder="Password" style="width:100%;margin-bottom:8px;">
+                <input type="email" placeholder="Email" style="width:100%;margin-bottom:8px;">
+                <input type="number" placeholder="Number" style="width:100%;margin-bottom:8px;">
+                <input type="url" placeholder="URL" style="width:100%;margin-bottom:8px;">
+                <textarea placeholder="Textarea" style="width:100%;margin-bottom:8px;"></textarea>
+                <label>Range slider:</label>
+                <input type="range" min="0" max="100" value="42" style="width:100%;">
+            </div>
+        </div>
+
+        
+        <h3 style="margin-top:24px;">KPI Cards</h3>
+        <div class="nso-kpi">
+            <div class="nso-kpi__item">
+                <div class="nso-kpi__label">Followers</div>
+                <div class="nso-kpi__value">133,742</div>
+            </div>
+            <div class="nso-kpi__item">
+                <div class="nso-kpi__label">Stream Time</div>
+                <div class="nso-kpi__value">420h</div>
+            </div>
+            <div class="nso-kpi__item">
+                <div class="nso-kpi__label">Donations</div>
+                <div class="nso-kpi__value">$6,942</div>
+            </div>
+            <div class="nso-kpi__item">
+                <div class="nso-kpi__label">Stress</div>
+                <div class="nso-kpi__value">66%</div>
+            </div>
+        </div>
+
+        
+        <h3 style="margin-top:24px;">Badges</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="display:flex;gap:8px;flex-wrap:wrap;">
+                <span class="nso-badge">Default</span>
+                <span class="nso-badge nso-badge--primary">Primary</span>
+                <span class="nso-badge nso-badge--ghost">Ghost</span>
+                <span class="nso-badge nso-badge--sm">Small</span>
+                <span class="nso-badge nso-badge--lg">Large</span>
+                <span class="nso-badge">69</span>
+            </div>
+        </div>
+
+        
+        <h3 id="sect-windows" style="margin-top:24px;">Windows</h3>
+        <div class="profile nso-window nso-window--small nso-window--left" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Small 250px</h4></div>
+                <div class="inner"><button class="nso-btn">Small Button</button></div>
+            </div>
+        </div>
+
+        <div class="profile nso-window nso-window--medium" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Medium 400px</h4></div>
+                <div class="inner"><button class="nso-btn">Medium Button</button></div>
+            </div>
+        </div>
+
+        <div class="profile nso-window nso-window--large" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Large 600px</h4></div>
+                <div class="inner"><button class="nso-btn">Large Button</button></div>
+            </div>
+        </div>
+
+        <div class="profile nso-window nso-window--wide nso-window--right" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Wide 800px — Right</h4></div>
+                <div class="inner"><button class="nso-btn">Right Button</button></div>
+            </div>
+        </div>
+
+        <h3 style="margin-top:24px;">Alignment</h3>
+        <div class="profile nso-window nso-window--medium nso-window--left" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Left</h4></div>
+                <div class="inner"><button class="nso-btn">Left Aligned</button></div>
+            </div>
+        </div>
+        <div class="profile nso-window nso-window--medium nso-window--center" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Center</h4></div>
+                <div class="inner"><button class="nso-btn">Center Aligned</button></div>
+            </div>
+        </div>
+        <div class="profile nso-window nso-window--medium nso-window--right" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Right</h4></div>
+                <div class="inner"><button class="nso-btn">Right Aligned</button></div>
+            </div>
+        </div>
+
+        
+        <h3 id="sect-icons" style="margin-top:24px;">Icons</h3>
+        <div class="profile nso-window nso-window--large" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Icon Emotes</h4></div>
+                <div class="inner" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;--nso-icon-size:36px;">
+                    <span class="nso-icon nso-icon--icon-emotes-youtube" title="Youtube"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-twitch" title="Twitch"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-twitter" title="Twitter"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-tinder" title="Tinder"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-go-to-sleep" title="GO TO SLEEP"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-ame-happy-d" title="Ame happy"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-ame-sad" title="Ame sad"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-ame-stare" title="Ame stare"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-kangel-happy-d" title="Kangel happy"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-kangel-sad" title="Kangel sad"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-p-chan-d" title="P-chan"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-cake" title="Cake"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-phone" title="Phone"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-search" title="Search"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-setting" title="Settings"></span>
+                    <span class="nso-icon nso-icon--icon-emotes-task-manager" title="Task Manager"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile nso-window nso-window--large" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Achievements</h4></div>
+                <div class="inner" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;--nso-icon-size:36px;">
+                    <span class="nso-icon nso-icon--achivement-needy-girl-overdose" title="Needy Girl Overdose"></span>
+                    <span class="nso-icon nso-icon--achivement-internet-overdose" title="INTERNET OVERDOSE"></span>
+                    <span class="nso-icon nso-icon--achivement-happy-end-world" title="Happy End World"></span>
+                    <span class="nso-icon nso-icon--achivement-flatline" title="Flatline"></span>
+                    <span class="nso-icon nso-icon--achivement-rainbow-girl" title="Rainbow Girl"></span>
+                    <span class="nso-icon nso-icon--achivement-nymphomania" title="Nymphomania"></span>
+                    <span class="nso-icon nso-icon--achivement-blazing-hell" title="Blazing Hell"></span>
+                    <span class="nso-icon nso-icon--achivement-fallen-angel" title="Fallen Angel"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile nso-window nso-window--large" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Shinanegen</h4></div>
+                <div class="inner" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;--nso-icon-size:36px;">
+                    <span class="nso-icon nso-icon--shinanegen-kangelhappy" title="KangelHAPPY"></span>
+                    <span class="nso-icon nso-icon--shinanegen-kangelheart" title="KangelHeart"></span>
+                    <span class="nso-icon nso-icon--shinanegen-kangeldepressed" title="KangelDEPRESSED"></span>
+                    <span class="nso-icon nso-icon--shinanegen-kangeldoomscrolling" title="KangelDOOMSCROLLING"></span>
+                    <span class="nso-icon nso-icon--shinanegen-kangelpissed" title="KangelPISSED"></span>
+                    <span class="nso-icon nso-icon--shinanegen-peace-sign" title="peace sign" style="--nso-icon-size:52px;"></span>
+                    <span class="nso-icon nso-icon--shinanegen-heart" title="Heart"></span>
+                    <span class="nso-icon nso-icon--shinanegen-laugh" title="laugh"></span>
+                    <span class="nso-icon nso-icon--shinanegen-crying" title="Crying"></span>
+                    <span class="nso-icon nso-icon--shinanegen-sus" title="sus"></span>
+                    <span class="nso-icon nso-icon--shinanegen-think" title="Think"></span>
+                    <span class="nso-icon nso-icon--shinanegen-simp" title="Simp"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="profile nso-window nso-window--medium" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>Stream Timer</h4></div>
+                <div class="inner">
+                    <div class="nso-time-wrap">
+                        <div class="nso-time-head">
+                            <span>Time Progress</span>
+                            <span id="nsoTimeCurrent" class="nso-time-current">17:00</span>
+                        </div>
+                        <input id="nsoTimeSlider" class="nso-time-slider" type="range" min="480" max="1380" step="15" value="1020">
+                        <div class="nso-time-foot">
+                            <span id="nsoTimeStart">08:00</span>
+                            <span id="nsoTimeRemain">Remaining: 6h 00m</span>
+                            <span id="nsoTimeEnd">23:00</span>
+                        </div>
+                    </div>
+                    <div class="nso-progress-group">
+                        <div class="nso-progress-row">
+                            <div class="nso-progress-meta">
+                                <span class="nso-progress-label">Stress</span>
+                                <span class="nso-progress-value" id="barStressValue">11/100</span>
                             </div>
-
-                            <div class="duskbutton">
-                                <a href="#">Dusk</a>
-                                <i class="hn hn-angle-down" aria-hidden="true"></i>
+                            <div id="barStress" class="nso-progress nso-progress--sm" data-max="100" data-value="11"></div>
+                        </div>
+                        <div class="nso-progress-row">
+                            <div class="nso-progress-meta">
+                                <span class="nso-progress-label">Affection</span>
+                                <span class="nso-progress-value" id="barAffectionValue">109/120</span>
                             </div>
-
-                            <div class="nightbutton">
-                                <a href="#">Night</a>
-                                <i class="hn hn-cloud" aria-hidden="true"></i>
+                            <div id="barAffection" class="nso-progress" data-max="120" data-value="109"></div>
+                        </div>
+                        <div class="nso-progress-row">
+                            <div class="nso-progress-meta">
+                                <span class="nso-progress-label">Darkness</span>
+                                <span class="nso-progress-value" id="barDarknessValue">18/100</span>
                             </div>
+                            <div id="barDarkness" class="nso-progress nso-progress--lg" data-max="100" data-value="18"></div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class="profile">
-                    <div class="contact" style="margin-top: 16px;">
-                        <div class="heading"><h4>Contact</h4></div>
-                        <div class="inner">
-                            <div class="f-row">
-                                <div class="f-col"><a href="#">Add Friend <i class="hn hn-angle-right" aria-hidden="true"></i></a></div>
-                                <div class="f-col"><a href="#">Favorite <i class="hn hn-angellist" aria-hidden="true"></i></a></div>
-                            </div>
-                            <div class="f-row">
-                                <div class="f-col"><a href="#">Message <i class="hn hn-discourse" aria-hidden="true"></i></a></div>
-                                <div class="f-col"><a href="#">Share <i class="hn hn-arrow-right" aria-hidden="true"></i></a></div>
-                            </div>
+        
+        <h3 id="sect-jine" style="margin-top:24px;">JINE Chat</h3>
+        <div class="profile nso-window nso-window--large jine-panel" style="margin-top:12px;">
+            <div class="table-section">
+                <div class="heading"><h4>■ JINE</h4></div>
+                <div class="inner">
+                    <div class="jine-chat">
+                        <div class="jine-msg">
+                            <span class="nso-icon nso-icon--icon-emotes-ame-sad jine-avatar"></span>
+                            <div class="jine-bubble">OH NOO CRINGEEE</div>
                         </div>
+                        <div class="jine-msg">
+                            <span class="nso-icon nso-icon--icon-emotes-kangel-happy-d jine-avatar"></span>
+                            <div class="jine-bubble">AME-CHAN !! YOU OK ??</div>
+                        </div>
+                        <div class="jine-bubble jine-bubble--self">BLYATTTT AME WHAT YOU SAY!?</div>
+                        <div class="jine-msg">
+                            <span class="nso-icon nso-icon--icon-emotes-ame-stare jine-avatar"></span>
+                            <div class="jine-bubble">i-i'm fine... just a little stressed...</div>
+                        </div>
+                        <div class="jine-bubble jine-bubble--self">TAKE A BREAK !! 🫵</div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <p style="margin-top: 16px;">
-                    Button tests:
-                    <button class="nso-btn">Default Button</button>
-                    <button class="nso-btn nso-btn--ghost">Ghost Button</button>
-                    <button class="nso-btn nso-btn--primary">Primary Button</button>
-                </p>
+        
+        <h3 id="sect-modals" style="margin-top:24px;">Modal / Dialog</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="display:flex;gap:10px;flex-wrap:wrap;">
+                <button class="nso-btn nso-btn--primary" onclick="document.getElementById('modal-demo').classList.add('nso-modal--open')">Open Modal</button>
+                <button class="nso-btn" onclick="document.getElementById('modal-demo2').classList.add('nso-modal--open')">Alert Dialog</button>
+            </div>
+        </div>
 
-                <p style="margin-top: 16px;">
-                    Form elements test:<br>
-                    <label><input type="radio" name="test" value="1" checked> Option 1</label>
-                    <label><input type="radio" name="test" value="2"> Option 2</label><br>
-                    <label><input type="checkbox" checked> Checkbox</label><br>
-                    <input type="range" min="0" max="100" value="50" style="width: 200px;"><br><br>
-                    <input type="text" placeholder="Text input" style="width: 200px;"><br><br>
-                    <input type="password" placeholder="Password" style="width: 200px;"><br><br>
-                    <textarea placeholder="Textarea" style="width: 300px;"></textarea>
-                </p>
-
-                <h3 style="margin-top: 24px;">Window Size Demos:</h3>
-
-                <div class="profile nso-window nso-window--small nso-window--left" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Small Window (250px)</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Small Button</button>
-                        </div>
-                    </div>
+        <div id="modal-demo" class="nso-modal">
+            <div class="nso-modal__backdrop" onclick="this.parentElement.classList.remove('nso-modal--open')"></div>
+            <div class="nso-modal__content">
+                <div class="nso-modal__title">Stream Settings
+                    <button class="nso-modal__close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
                 </div>
-
-                <div class="profile nso-window nso-window--medium" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Medium Window (400px)</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Medium Button</button>
-                        </div>
-                    </div>
+                <div class="nso-modal__body">
+                    <p style="margin:0 0 12px;">Configure your stream parameters:</p>
+                    <label style="display:block;margin-bottom:8px;">
+                        <span style="color:#4D23CD;">Stream Title</span>
+                        <input type="text" value="Just Chatting 🌸" style="width:100%;">
+                    </label>
+                    <label style="display:block;margin-bottom:8px;">
+                        <span style="color:#4D23CD;">Duration</span>
+                        <input type="range" min="30" max="480" value="120" style="width:100%;">
+                    </label>
                 </div>
-
-                <div class="profile nso-window nso-window--large" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Large Window (600px)</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Large Button</button>
-                        </div>
-                    </div>
+                <div class="nso-modal__footer">
+                    <button class="nso-btn" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Cancel</button>
+                    <button class="nso-btn nso-btn--primary" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Save</button>
                 </div>
+            </div>
+        </div>
 
-                <div class="profile nso-window nso-window--wide nso-window--right" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Wide Window (800px) - Right</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Right Button</button>
-                        </div>
-                    </div>
+        <div id="modal-demo2" class="nso-modal nso-modal--sm">
+            <div class="nso-modal__backdrop" onclick="this.parentElement.classList.remove('nso-modal--open')"></div>
+            <div class="nso-modal__content">
+                <div class="nso-modal__title">⚠ Warning
+                    <button class="nso-modal__close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
                 </div>
-
-                <h3 style="margin-top: 24px;">Alignment Demos (Medium Size):</h3>
-
-                <div class="profile nso-window nso-window--medium nso-window--left" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Left Aligned</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Left Button</button>
-                        </div>
-                    </div>
+                <div class="nso-modal__body">
+                    <p style="margin:0;">Stress levels are critically high!<br>Do you want to end the stream?</p>
                 </div>
-
-                <div class="profile nso-window nso-window--medium nso-window--center" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Center Aligned</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Center Button</button>
-                        </div>
-                    </div>
+                <div class="nso-modal__footer">
+                    <button class="nso-btn" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">No</button>
+                    <button class="nso-btn nso-btn--primary" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Yes, end stream</button>
                 </div>
+            </div>
+        </div>
 
-                <div class="profile nso-window nso-window--medium nso-window--right" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Right Aligned</h4></div>
-                        <div class="inner">
-                            <button class="nso-btn">Right Button</button>
-                        </div>
-                    </div>
-                </div>
+        
+        <h3 id="sect-tabs" style="margin-top:24px;">Tabs</h3>
+        <div class="nso-tabs">
+            <div class="nso-tabs__nav">
+                <button class="nso-tabs__tab nso-tabs__tab--active" data-tab="tab-stream">Stream</button>
+                <button class="nso-tabs__tab" data-tab="tab-chat">Chat</button>
+                <button class="nso-tabs__tab" data-tab="tab-stats">Stats</button>
+            </div>
+            <div class="nso-tabs__panel nso-tabs__panel--active" id="tab-stream">
+                <p>Stream is live! 1337 viewers watching.<br>
+                Current game: Just Chatting<br>
+                Stream duration: 3h 42m</p>
+            </div>
+            <div class="nso-tabs__panel" id="tab-chat">
+                <p><strong>AmeFan42:</strong> Hey! ❤<br>
+                <strong>KangelSimp:</strong> marry me ame-chan<br>
+                <strong>VodkaEnjoyer:</strong> BLYYAT</p>
+            </div>
+            <div class="nso-tabs__panel" id="tab-stats">
+                <p>Followers: +420 today<br>
+                Donations: $69.42<br>
+                Stress: ████████░░ 82%</p>
+            </div>
+        </div>
 
-                <div class="profile nso-window nso-window--medium" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>Icons Test</h4></div>
-                        <div class="inner" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;--nso-icon-size:36px;">
-                            <span class="nso-icon nso-icon--icon-emotes-youtube" title="Icon Emotes / Youtube"></span>
-                            <span class="nso-icon nso-icon--icon-emotes-tinder" title="Icon Emotes / Tinder"></span>
-                            <span class="nso-icon nso-icon--icon-emotes-go-to-sleep" title="Icon Emotes / GO TO SLEEP"></span>
-                            <span class="nso-icon nso-icon--achivement-needy-girl-overdose" title="Achivement / Needy Girl Overdose"></span>
-                            <span class="nso-icon nso-icon--achivement-internet-overdose" title="Achivement / INTERNET OVERDOSE"></span>
-                            <span class="nso-icon nso-icon--shinanegen-kangelhappy" title="Shinanegen / KangelHAPPY"></span>
-                            <span class="nso-icon nso-icon--shinanegen-kangelheart" title="Shinanegen / KangelHeart"></span>
-                            <span class="nso-icon nso-icon--shinanegen-peace-sign" style="--nso-icon-size:52px;" title="Shinanegen / peace sign"></span>
-                        </div>
-                        <div class="inner" style="padding-top:0;">
-                            <div class="nso-time-wrap">
-                                <div class="nso-time-head">
-                                    <span>Time Progress</span>
-                                    <span id="nsoTimeCurrent" class="nso-time-current">17:00</span>
-                                </div>
-                                <input id="nsoTimeSlider" class="nso-time-slider" type="range" min="480" max="1380" step="15" value="1020">
-                                <div class="nso-time-foot">
-                                    <span id="nsoTimeStart">08:00</span>
-                                    <span id="nsoTimeRemain">Remaining: 6h 00m</span>
-                                    <span id="nsoTimeEnd">23:00</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="inner">
-                            <div class="nso-progress-group">
-                                <div class="nso-progress-row">
-                                    <div class="nso-progress-meta">
-                                        <span class="nso-progress-label">Stress</span>
-                                        <span class="nso-progress-value" id="barStressValue">11/100</span>
-                                    </div>
-                                    <div id="barStress" class="nso-progress nso-progress--sm" data-max="100" data-value="11"></div>
-                                </div>
-                                <div class="nso-progress-row">
-                                    <div class="nso-progress-meta">
-                                        <span class="nso-progress-label">Affection</span>
-                                        <span class="nso-progress-value" id="barAffectionValue">109/120</span>
-                                    </div>
-                                    <div id="barAffection" class="nso-progress" data-max="120" data-value="109"></div>
-                                </div>
-                                <div class="nso-progress-row">
-                                    <div class="nso-progress-meta">
-                                        <span class="nso-progress-label">Darkness</span>
-                                        <span class="nso-progress-value" id="barDarknessValue">18/100</span>
-                                    </div>
-                                    <div id="barDarkness" class="nso-progress nso-progress--lg" data-max="100" data-value="18"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        
+        <h3 id="sect-misc" style="margin-top:24px;">Toast Notifications</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="display:flex;gap:10px;flex-wrap:wrap;">
+                <button class="nso-btn" onclick="showToast('Hello from Needy UI!','info')">Info Toast</button>
+                <button class="nso-btn nso-btn--primary" onclick="showToast('Stream started!','success')">Success Toast</button>
+                <button class="nso-btn nso-btn--ghost" onclick="showToast('Stress level critical!','warning')">Warning Toast</button>
+            </div>
+        </div>
 
-                <div class="profile nso-window nso-window--large jine-panel" style="margin-top: 12px;">
-                    <div class="table-section">
-                        <div class="heading"><h4>■ JINE</h4></div>
-                        <div class="inner">
-                            <div class="jine-chat">
-                                <div class="jine-msg">
-                                    <span class="nso-icon nso-icon--icon-emotes-ame-sad jine-avatar"></span>
-                                    <div class="jine-bubble">OH NOO CRINGEEE</div>
-                                </div>
-                                <div class="jine-bubble jine-bubble--self">BLYATTTT AME WHAT YOU SAY!? </div>
-                            </div>
-                        </div>
-                    </div>
+        
+        <h3 style="margin-top:24px;">Tooltips</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="display:flex;gap:16px;flex-wrap:wrap;">
+                <span class="nso-tooltip-wrap">Hover me
+                    <span class="nso-tooltip">Hello!</span>
+                </span>
+                <span class="nso-tooltip-wrap">Stress meter
+                    <span class="nso-tooltip nso-tooltip--top">42%</span>
+                </span>
+                <span class="nso-tooltip-wrap">Affection
+                    <span class="nso-tooltip nso-tooltip--bottom">Very high!</span>
+                </span>
+            </div>
+        </div>
+
+        
+        <h3 style="margin-top:24px;">Loading States</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body">
+                <div style="display:flex;gap:20px;align-items:center;">
+                    <div class="nso-spinner"></div>
+                    <div class="nso-spinner nso-spinner--sm"></div>
+                    <div class="nso-spinner nso-spinner--lg"></div>
+                    <span class="nso-spinner" style="--nso-spinner-color:#90F3E1;"></span>
                 </div>
-            </section>
-        </main>
-    </div>
+                <p style="margin:12px 0 0;">Loading<span class="nso-ellipsis"></span></p>
+            </div>
+        </div>
+
+        
+        <h3 style="margin-top:24px;">Tables</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body" style="padding:0;">
+                <table class="nso-table">
+                    <thead>
+                        <tr><th>Stat</th><th>Value</th><th>Change</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Followers</td><td>133,742</td><td class="nso-table--up">+4.20%</td></tr>
+                        <tr><td>Donations</td><td>$6,942</td><td class="nso-table--up">+12.3%</td></tr>
+                        <tr><td>Stress</td><td>82%</td><td class="nso-table--down">+15.0%</td></tr>
+                        <tr><td>Affection</td><td>96%</td><td class="nso-table--up">+2.1%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+        <div class="nso-footer">
+            <h1>
+            Needy UI — Fan project for Needy Streamer Overload<br>
+            Powered by Opencode & AR34 
+            </h1>
+        </div>
+
+        
+        <div class="glitch-overlay"></div>
+
+    </main>
 </div>
+</div>
+
+
+<div id="toast-container" class="nso-toast-container"></div>
+
+
 <script>
-    (function () {
-        const slider = document.getElementById('nsoTimeSlider');
-        const current = document.getElementById('nsoTimeCurrent');
-        const remain = document.getElementById('nsoTimeRemain');
-        if (!slider || !current || !remain) return;
+(function(){
+    const slider = document.getElementById('nsoTimeSlider');
+    const current = document.getElementById('nsoTimeCurrent');
+    const remain = document.getElementById('nsoTimeRemain');
+    if (slider && current && remain) {
         const fmt = (mins) => {
             const h = String(Math.floor(mins / 60)).padStart(2, '0');
             const m = String(mins % 60).padStart(2, '0');
@@ -239,137 +488,127 @@
         };
         slider.addEventListener('input', sync);
         sync();
-    })();
-    (function () {
-        const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
-        const graphState = new WeakMap();
-        const ensureGraph = (el) => {
-            let state = graphState.get(el);
-            if (state) return state;
-            let canvas = el.querySelector('.nso-progress-canvas');
-            if (!canvas) {
-                canvas = document.createElement('canvas');
-                canvas.className = 'nso-progress-canvas';
-                el.appendChild(canvas);
-            }
-            state = { canvas, history: [] };
-            graphState.set(el, state);
-            return state;
+    }
+})();
+(function(){
+    const clamp = (v, min, max) => Math.min(Math.max(v, min), max);
+    const graphState = new WeakMap();
+    const ensureGraph = (el) => {
+        let state = graphState.get(el);
+        if (state) return state;
+        let canvas = el.querySelector('.nso-progress-canvas');
+        if (!canvas) {
+            canvas = document.createElement('canvas');
+            canvas.className = 'nso-progress-canvas';
+            el.appendChild(canvas);
+        }
+        state = { canvas, history: [] };
+        graphState.set(el, state);
+        return state;
+    };
+    const drawGraph = (el) => {
+        const state = ensureGraph(el);
+        const canvas = state.canvas;
+        const w = Math.max(1, Math.floor(el.clientWidth));
+        const h = Math.max(1, Math.floor(el.clientHeight));
+        if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
+        const max = Number(el.dataset.max || 100) || 100;
+        const pixel = 3;
+        const gw = Math.max(8, Math.floor(w / pixel));
+        const gh = Math.max(8, Math.floor(h / pixel));
+        const samples = gw;
+        while (state.history.length < samples) state.history.push(Number(el.dataset.value || 0));
+        if (state.history.length > samples) state.history.splice(0, state.history.length - samples);
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+        if (!state.buffer) state.buffer = document.createElement('canvas');
+        const buffer = state.buffer;
+        if (buffer.width !== gw || buffer.height !== gh) { buffer.width = gw; buffer.height = gh; }
+        const bctx = buffer.getContext('2d');
+        if (!bctx) return;
+        const fill = getComputedStyle(el).getPropertyValue('--nso-progress-fill').trim() || '#58a6d5';
+        bctx.imageSmoothingEnabled = false;
+        bctx.clearRect(0, 0, gw, gh);
+        for (let x = 0; x < state.history.length; x += 1) {
+            const value = clamp(state.history[x], 0, max);
+            const y = gh - Math.round((value / max) * gh);
+            const yy = Math.min(Math.max(y, 0), gh - 1);
+            bctx.fillStyle = fill;
+            bctx.fillRect(x, yy, 1, gh - yy);
+        }
+        ctx.imageSmoothingEnabled = false;
+        ctx.clearRect(0, 0, w, h);
+        ctx.drawImage(buffer, 0, 0, w, h);
+    };
+    const render = (el, value) => {
+        const max = Number(el.dataset.max || 100) || 100;
+        const next = clamp(Number(value) || 0, 0, max);
+        el.dataset.value = String(next);
+        const state = ensureGraph(el);
+        state.history.push(next);
+        drawGraph(el);
+    };
+    const animate = (el, to, duration, onUpdate, onDone) => {
+        const max = Number(el.dataset.max || 100) || 100;
+        const from = clamp(Number(el.dataset.value || 0), 0, max);
+        const target = clamp(Number(to) || 0, 0, max);
+        const start = performance.now();
+        const step = (t) => {
+            const p = Math.min((t - start) / Math.max(duration, 1), 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            const current = from + (target - from) * eased;
+            render(el, current);
+            if (onUpdate) onUpdate(current, max);
+            if (p < 1) requestAnimationFrame(step);
+            else if (onDone) onDone();
         };
-        const drawGraph = (el) => {
-            const state = ensureGraph(el);
-            const canvas = state.canvas;
-            const w = Math.max(1, Math.floor(el.clientWidth));
-            const h = Math.max(1, Math.floor(el.clientHeight));
-            if (canvas.width !== w || canvas.height !== h) {
-                canvas.width = w;
-                canvas.height = h;
-            }
-            const max = Number(el.dataset.max || 100) || 100;
-            const pixel = 3;
-            const gw = Math.max(8, Math.floor(w / pixel));
-            const gh = Math.max(8, Math.floor(h / pixel));
-            const samples = gw;
-            while (state.history.length < samples) {
-                state.history.push(Number(el.dataset.value || 0));
-            }
-            if (state.history.length > samples) {
-                state.history.splice(0, state.history.length - samples);
-            }
-            const ctx = canvas.getContext('2d');
-            if (!ctx) return;
-            if (!state.buffer) state.buffer = document.createElement('canvas');
-            const buffer = state.buffer;
-            if (buffer.width !== gw || buffer.height !== gh) {
-                buffer.width = gw;
-                buffer.height = gh;
-            }
-            const bctx = buffer.getContext('2d');
-            if (!bctx) return;
-            const fill = getComputedStyle(el).getPropertyValue('--nso-progress-fill').trim() || '#58a6d5';
-            bctx.imageSmoothingEnabled = false;
-            bctx.clearRect(0, 0, gw, gh);
-            for (let x = 0; x < state.history.length; x += 1) {
-                const value = clamp(state.history[x], 0, max);
-                const y = gh - Math.round((value / max) * gh);
-                const yy = Math.min(Math.max(y, 0), gh - 1);
-                bctx.fillStyle = fill;
-                bctx.fillRect(x, yy, 1, gh - yy);
-            }
-            ctx.imageSmoothingEnabled = false;
-            ctx.clearRect(0, 0, w, h);
-            ctx.drawImage(buffer, 0, 0, w, h);
-        };
-        const render = (el, value) => {
-            const max = Number(el.dataset.max || 100) || 100;
-            const next = clamp(Number(value) || 0, 0, max);
-            el.dataset.value = String(next);
-            const state = ensureGraph(el);
-            state.history.push(next);
-            drawGraph(el);
-        };
-        const animate = (el, to, duration, onUpdate, onDone) => {
-            const max = Number(el.dataset.max || 100) || 100;
-            const from = clamp(Number(el.dataset.value || 0), 0, max);
-            const target = clamp(Number(to) || 0, 0, max);
-            const start = performance.now();
-            const step = (t) => {
-                const p = Math.min((t - start) / Math.max(duration, 1), 1);
-                const eased = 1 - Math.pow(1 - p, 3);
-                const current = from + (target - from) * eased;
-                render(el, current);
-                if (onUpdate) onUpdate(current, max);
-                if (p < 1) requestAnimationFrame(step);
-                else if (onDone) onDone();
-            };
-            requestAnimationFrame(step);
-        };
-        window.setNsoProgress = (target, value, opts = {}) => {
-            const el = typeof target === 'string' ? document.getElementById(target) : target;
-            if (!el) return;
-            if (opts.animate) {
-                animate(el, value, Number(opts.duration) || 450, opts.onUpdate, opts.onDone);
-            } else {
-                render(el, value);
-                if (opts.onUpdate) {
-                    const max = Number(el.dataset.max || 100) || 100;
-                    opts.onUpdate(Number(el.dataset.value || 0), max);
-                }
-                if (opts.onDone) opts.onDone();
-            }
-        };
-        document.querySelectorAll('.nso-progress[data-value]').forEach((el) => {
-            render(el, Number(el.dataset.value));
-        });
-        window.addEventListener('resize', () => {
-            document.querySelectorAll('.nso-progress[data-value]').forEach((el) => drawGraph(el));
-        });
-        const runPath = (elId, txtId, points, duration, pause) => {
-            const el = document.getElementById(elId);
-            const txt = document.getElementById(txtId);
-            if (!el || !txt || !Array.isArray(points) || points.length < 2) return;
-            let idx = 0;
-            const step = () => {
-                idx = (idx + 1) % points.length;
-                window.setNsoProgress(el, points[idx], {
-                    animate: true,
-                    duration,
-                    onUpdate: (current, max) => {
-                        txt.textContent = Math.round(current) + '/' + max;
-                    },
-                    onDone: () => {
-                        setTimeout(step, pause);
-                    }
-                });
-            };
-            const max = Number(el.dataset.max || 100) || 100;
-            txt.textContent = Math.round(Number(el.dataset.value || 0)) + '/' + max;
-            setTimeout(step, pause);
-        };
-        runPath('barStress', 'barStressValue', [72, 8, 76, 22, 64], 900, 140);
-        runPath('barAffection', 'barAffectionValue', [96, 35, 92, 48, 88], 1200, 180);
-        runPath('barDarkness', 'barDarknessValue', [80, 12, 84, 20, 70], 1000, 160);
-    })();
+        requestAnimationFrame(step);
+    };
+    window.setNsoProgress = (target, value, opts = {}) => {
+        const el = typeof target === 'string' ? document.getElementById(target) : target;
+        if (!el) return;
+        if (opts.animate) { animate(el, value, Number(opts.duration) || 450, opts.onUpdate, opts.onDone); }
+        else { render(el, value); if (opts.onUpdate) { const max = Number(el.dataset.max || 100) || 100; opts.onUpdate(Number(el.dataset.value || 0), max); } if (opts.onDone) opts.onDone(); }
+    };
+    document.querySelectorAll('.nso-progress[data-value]').forEach((el) => render(el, Number(el.dataset.value)));
+    window.addEventListener('resize', () => { document.querySelectorAll('.nso-progress[data-value]').forEach((el) => drawGraph(el)); });
+    const runPath = (elId, txtId, points, duration, pause) => {
+        const el = document.getElementById(elId);
+        const txt = document.getElementById(txtId);
+        if (!el || !txt || !Array.isArray(points) || points.length < 2) return;
+        let idx = 0;
+        const step = () => { idx = (idx + 1) % points.length; window.setNsoProgress(el, points[idx], { animate: true, duration, onUpdate: (c, m) => { txt.textContent = Math.round(c) + '/' + m; }, onDone: () => { setTimeout(step, pause); } }); };
+        const max = Number(el.dataset.max || 100) || 100;
+        txt.textContent = Math.round(Number(el.dataset.value || 0)) + '/' + max;
+        setTimeout(step, pause);
+    };
+    runPath('barStress', 'barStressValue', [72, 8, 76, 22, 64], 900, 140);
+    runPath('barAffection', 'barAffectionValue', [96, 35, 92, 48, 88], 1200, 180);
+    runPath('barDarkness', 'barDarknessValue', [80, 12, 84, 20, 70], 1000, 160);
+})();
+
+// Tabs
+document.querySelectorAll('.nso-tabs__tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+        const nav = tab.closest('.nso-tabs__nav');
+        nav.querySelectorAll('.nso-tabs__tab').forEach(t => t.classList.remove('nso-tabs__tab--active'));
+        tab.classList.add('nso-tabs__tab--active');
+        const container = tab.closest('.nso-tabs');
+        container.querySelectorAll('.nso-tabs__panel').forEach(p => p.classList.remove('nso-tabs__panel--active'));
+        const target = document.getElementById(tab.dataset.tab);
+        if (target) target.classList.add('nso-tabs__panel--active');
+    });
+});
+
+// Toast
+function showToast(msg, type) {
+    const container = document.getElementById('toast-container');
+    const toast = document.createElement('div');
+    toast.className = 'nso-toast nso-toast--' + (type || 'info');
+    toast.textContent = msg;
+    container.appendChild(toast);
+    setTimeout(() => { toast.classList.add('nso-toast--out'); setTimeout(() => toast.remove(), 400); }, 2500);
+}
 </script>
 </body>
 </html>

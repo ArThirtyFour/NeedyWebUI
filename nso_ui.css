@@ -1,6 +1,6 @@
 @font-face {
     font-family: "dinkie9px";
-    src: url('https://chairfiles.vercel.app/DinkieBitmap-9px.woff2') format('woff2');
+    src: url('fonts/DinkieBitmap-9px.woff2') format('woff2');
 }
 
 :root {
@@ -176,7 +176,7 @@ i.hn {
      vertical-align: text-bottom;
  }
 main {
-    background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+    background-image: url("background/nsotilebg.png");
     background-repeat: repeat;
     min-height: 100vh;
 }
@@ -196,7 +196,7 @@ main {
         width: 55%;
     }
     .blog-preview p {
-        background-image: url("https://chairfiles.vercel.app/speechbubble.png");
+        background-image: url("background/speechbubble.png");
         width:75%;
         background-size:95%;
     }
@@ -207,7 +207,7 @@ main {
         width: 100%;
     }
     .blog-preview p {
-        background-image: url("https://chairfiles.vercel.app/speechbubblemobile.png");
+        background-image: url("background/speechbubblemobile.png");
         width:85%;
         background-size:145%;
     }
@@ -243,7 +243,7 @@ main {
             .url-info {
                 height: 172px;
                 width: 343px;
-                background-image: url("https://chairfiles.vercel.app/mrreow.png");
+                background-image: url("ui/mrreow.png");
                 font-weight: 400;
             }
 
@@ -258,7 +258,7 @@ main {
             }
 
             .container {
-                background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+                background-image: url("background/nsotilebg.png");
                 background-repeat: repeat;
                 min-height: 100vh;
                 width: 1440px;
@@ -311,7 +311,7 @@ main {
             .comments-table .comment-replies .comment-reply {
                 max-width: 100%;
                 padding-left: 40px;
-                background-image: url("https://chairfiles.vercel.app/reparrow.png");
+                background-image: url("ui/reparrow.png");
                 background-repeat: no-repeat;
             }
 
@@ -348,7 +348,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 letter-spacing: 0.045em;
@@ -375,7 +375,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 letter-spacing: 0.045em;
@@ -444,7 +444,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 letter-spacing: 0.045em;
@@ -477,7 +477,7 @@ main {
                 border: 2px solid #4D23CD;
                 border-bottom: 0px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/misalignednavbuttons.png");
+                background-image: url("ui/misalignednavbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 font-weight: 400;
@@ -516,32 +516,32 @@ main {
                 display: block;
             }
             .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
-                content: url("https://chairfiles.vercel.app/1heart.png");
+                content: url("ui/1heart.png");
             }
             .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
-                content: url("https://chairfiles.vercel.app/2doubleheart.png");
+                content: url("ui/2doubleheart.png");
             }
             .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
-                content: url("https://chairfiles.vercel.app/32fingers.png");
+                content: url("ui/32fingers.png");
             }
             .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
-                content: url("https://chairfiles.vercel.app/4sparkle.png");
+                content: url("ui/4sparkle.png");
             }
             .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
-                content: url("https://chairfiles.vercel.app/5musicalnote.png");
+                content: url("ui/5musicalnote.png");
             }
             .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
-                content: url("https://chairfiles.vercel.app/6explosion.png");
+                content: url("ui/6explosion.png");
             }
             .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
-                content: url("https://chairfiles.vercel.app/7confetti.png");
+                content: url("ui/7confetti.png");
             }
             .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
-                content: url("https://chairfiles.vercel.app/8angrysign.png");
+                content: url("ui/8angrysign.png");
             }
 
             .blog-preview p .pinned .icon {
-                content: url("https://chairfiles.vercel.app/pin.png");
+                content: url("ui/pin.png");
                 width: 20px;
                 height: 20px;
                 position: relative;
@@ -563,7 +563,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -578,7 +578,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 4px 4px #4e23cd48;
                 background-color: #FDF8FD;
                 width: 100%;
-                background: url("https://chairfiles.vercel.app/JINEBG.png");
+                background: url("background/JINEBG.png");
                 background-repeat: repeat;
                 background-size: 50%;
             }
@@ -615,10 +615,10 @@ main {
             }
 
             a:hover {
-                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+                cursor: url('ui/cursor.png'), auto;
             }
             * {
-                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+                cursor: url('ui/cursor.png'), auto;
             }
 
             .innertime {
@@ -774,8 +774,8 @@ main {
             .origbg {
                 background:
                         linear-gradient(to right, transparent, transparent),
-                        url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
-                        url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                        url("background/spaceheyleftbg.png") no-repeat,
+                        url("background/spaceheyrightbg.png") no-repeat,
                         linear-gradient(to left, transparent, transparent);
                 background-attachment: fixed;
                 background-position: left center, left center, right center, right center;
@@ -853,7 +853,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                background-image: url("ui/grayednavbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -874,7 +874,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -891,7 +891,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -920,7 +920,7 @@ main {
                     border-bottom: 2px solid #4D23CD;
                     color: #4D21CB;
                     font-family: 'dinkie9px', sans-serif;
-                    background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                    background-image: url("ui/grayednavbuttons.png");
                     background-position: right center;
                     background-repeat: no-repeat;
                     padding-right: 12px;
@@ -981,7 +981,7 @@ main {
                     color: #4D21CB;
                     font-family: 'dinkie9px', sans-serif;
                     font-weight: 400;
-                    background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                    background-image: url("ui/navbuttons.png");
                     background-position: right center;
                     background-repeat: no-repeat;
                     padding-right: 12px;
@@ -1005,7 +1005,7 @@ main {
             }
 
             #comments .inner {
-                background: url("https://chairfiles.vercel.app/result_bg_tile.png"), rgb(216, 230, 242);
+                background: url("background/result_bg_tile.png"), rgb(216, 230, 242);
                 background-size:contain;
                 background-repeat:repeat-x;
                 margin: 6px;
@@ -1021,7 +1021,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1105,7 +1105,7 @@ main {
                 display: block;
             }
             .friends .inner .comments-table tr td .report a:before {
-                content: url("https://chairfiles.vercel.app/priv.png");
+                content: url("ui/priv.png");
             }
 
             .comments-table td:first-child img:not(.icon) {
@@ -1160,7 +1160,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1191,7 +1191,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1215,7 +1215,7 @@ main {
                 border-bottom: 2px solid #4D23CD;
                 font-family: 'dinkie9px', sans-serif;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1321,7 +1321,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1332,10 +1332,10 @@ main {
             }
 
             a:hover {
-                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+                cursor: url('ui/cursor.png'), auto;
             }
             * {
-                cursor: url('https://chairfiles.vercel.app/cursor.png'), auto;
+                cursor: url('ui/cursor.png'), auto;
             }
 
             .innertime {
@@ -1435,8 +1435,8 @@ main {
             .origbg {
                 background:
                         linear-gradient(to right, transparent, transparent),
-                        url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
-                        url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                        url("background/spaceheyleftbg.png") no-repeat,
+                        url("background/spaceheyrightbg.png") no-repeat,
                         linear-gradient(to left, transparent, transparent);
                 background-attachment: fixed;
                 background-position: left center, left center, right center, right center;
@@ -1514,7 +1514,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #DEDEDE, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                background-image: url("ui/grayednavbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1535,7 +1535,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1552,7 +1552,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1581,7 +1581,7 @@ main {
                     border-bottom: 2px solid #4D23CD;
                     color: #4D21CB;
                     font-family: 'dinkie9px', sans-serif;
-                    background-image: url("https://chairfiles.vercel.app/grayednavbuttons.png");
+                    background-image: url("ui/grayednavbuttons.png");
                     background-position: right center;
                     background-repeat: no-repeat;
                     padding-right: 12px;
@@ -1642,7 +1642,7 @@ main {
                     color: #4D21CB;
                     font-family: 'dinkie9px', sans-serif;
                     font-weight: 400;
-                    background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                    background-image: url("ui/navbuttons.png");
                     background-position: right center;
                     background-repeat: no-repeat;
                     padding-right: 12px;
@@ -1666,7 +1666,7 @@ main {
             }
 
             #comments .inner {
-                background: url("https://chairfiles.vercel.app/result_bg_tile.png"), rgb(216, 230, 242);
+                background: url("background/result_bg_tile.png"), rgb(216, 230, 242);
                 background-size:contain;
                 background-repeat:repeat-x;
                 margin: 6px;
@@ -1682,7 +1682,7 @@ main {
                 color: #4D21CB;
                 font-family: 'dinkie9px', sans-serif;
                 font-weight: 400;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1766,7 +1766,7 @@ main {
                 display: block;
             }
             .friends .inner .comments-table tr td .report a:before {
-                content: url("https://chairfiles.vercel.app/priv.png");
+                content: url("ui/priv.png");
             }
 
             .comments-table td:first-child img:not(.icon) {
@@ -1821,7 +1821,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1852,7 +1852,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1876,7 +1876,7 @@ main {
                 border-bottom: 2px solid #4D23CD;
                 font-family: 'dinkie9px', sans-serif;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1982,7 +1982,7 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
                 color: #4D21CB;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 padding-right: 12px;
@@ -1999,7 +1999,7 @@ main {
             body {
                 margin: 0;
                 background-color: #05010a;
-                background-image: url("https://chairfiles.vercel.app/nsotilebg.png");
+                background-image: url("background/nsotilebg.png");
                 background-repeat: repeat;
                 color: #4D21CB;
             }
@@ -2057,10 +2057,10 @@ main {
                 z-index: -5;
                 background:
                     linear-gradient(to right, transparent, transparent),
-                    url("https://chairfiles.vercel.app/spaceheyleftbg.png") no-repeat,
-                    url("https://chairfiles.vercel.app/spaceheyrightbg.png") no-repeat,
+                    url("background/spaceheyleftbg.png") no-repeat,
+                    url("background/spaceheyrightbg.png") no-repeat,
                     linear-gradient(to left, transparent, transparent),
-                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                    url("background/nsotilebg.png") repeat;
                 background-attachment: fixed;
                 background-position: left center, left center, right center, right center, left top;
                 background-size: auto, contain, contain, auto, auto;
@@ -2074,10 +2074,10 @@ main {
                 z-index: -5;
                 background:
                     linear-gradient(to right, transparent, transparent),
-                    url("https://chairfiles.vercel.app/spaceheyleftduskbg.png") no-repeat,
-                    url("https://chairfiles.vercel.app/spaceheyrightduskbg.png") no-repeat,
+                    url("background/spaceheyleftduskbg.png") no-repeat,
+                    url("background/spaceheyrightduskbg.png") no-repeat,
                     linear-gradient(to left, transparent, transparent),
-                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                    url("background/nsotilebg.png") repeat;
                 background-attachment: fixed;
                 background-position: left center, left center, right center, right center, left top;
                 background-size: auto, contain, contain, auto, auto;
@@ -2091,10 +2091,10 @@ main {
                 z-index: -5;
                 background:
                     linear-gradient(to right, transparent, transparent),
-                    url("https://chairfiles.vercel.app/spaceheyleftnightbg.png") no-repeat,
-                    url("https://chairfiles.vercel.app/spaceheyrightnightbg.png") no-repeat,
+                    url("background/spaceheyleftnightbg.png") no-repeat,
+                    url("background/spaceheyrightnightbg.png") no-repeat,
                     linear-gradient(to left, transparent, transparent),
-                    url("https://chairfiles.vercel.app/nsotilebg.png") repeat;
+                    url("background/nsotilebg.png") repeat;
                 background-attachment: fixed;
                 background-position: left center, left center, right center, right center, left top;
                 background-size: auto, contain, contain, auto, auto;
@@ -2129,13 +2129,14 @@ main {
                 border: 2px solid #4D23CD;
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD, 8px 8px #4e23cd48;
                 background: #FDF8FD;
+                margin-bottom: 16px;
             }
             .nso-panel__title {
                 padding: 8px 12px;
                 background-color: #EFCFEF;
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
                 border-bottom: 2px solid #4D23CD;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
                 letter-spacing: 0.045em;
@@ -2591,7 +2592,7 @@ main {
                 padding: 0 8px 0 14px;
                 font-size: 15px;
                 border-bottom: 0;
-                background-image: url("https://chairfiles.vercel.app/navbuttons.png");
+                background-image: url("ui/navbuttons.png");
                 background-position: right center;
                 background-repeat: no-repeat;
             }
@@ -2637,7 +2638,7 @@ main {
                 display: flex;
                 align-items: flex-start;
                 gap: 9px;
-                margin-bottom: 10px;
+                margin-bottom: 14px;
             }
             .jine-avatar {
                 --nso-icon-size: 46px;
@@ -2660,7 +2661,7 @@ main {
                 word-break: break-word;
             }
             .jine-bubble--self {
-                margin: 4px 12px 0 auto;
+                margin: 4px 12px 14px auto;
                 background: #5eff3a;
                 color: #2a3db8;
                 max-width: 72%;
@@ -2700,163 +2701,465 @@ main {
                 box-shadow: inset 0px 0px 0px 4px #90F3E1, inset 0px 0px 0px 6px #4D23CD;
             }
 .nso-icon{display:inline-block;width:var(--nso-icon-size,28px);height:var(--nso-icon-size,28px);background:var(--nso-icon) center/contain no-repeat;vertical-align:middle}
-.nso-icon--achivement-un-happy-end-world{--nso-icon:url("Icons/Achivement/(Un)happy%20End%20World.png")}
-.nso-icon--achivement-21-42{--nso-icon:url("Icons/Achivement/21%2042.png")}
-.nso-icon--achivement-blazing-hell{--nso-icon:url("Icons/Achivement/Blazing%20Hell.png")}
-.nso-icon--achivement-bomber-girl{--nso-icon:url("Icons/Achivement/Bomber%20Girl.png")}
-.nso-icon--achivement-catastrophe{--nso-icon:url("Icons/Achivement/Catastrophe.png")}
-.nso-icon--achivement-comment-te-dire-adieu{--nso-icon:url("Icons/Achivement/Comment%20te%20dire%20adieu.png")}
-.nso-icon--achivement-cucked{--nso-icon:url("Icons/Achivement/Cucked.png")}
-.nso-icon--achivement-cut-wrists{--nso-icon:url("Icons/Achivement/Cut%20wrists.png")}
-.nso-icon--achivement-dark-angel-aka-ame-turned-emo{--nso-icon:url("Icons/Achivement/DARK%20ANGEL%20(aka.%20Ame%20turned%20Emo).png")}
-.nso-icon--achivement-fallen-angel{--nso-icon:url("Icons/Achivement/Fallen%20Angel.png")}
-.nso-icon--achivement-flatline{--nso-icon:url("Icons/Achivement/Flatline.png")}
-.nso-icon--achivement-galactic-express{--nso-icon:url("Icons/Achivement/Galactic%20Express.png")}
-.nso-icon--achivement-ground-control-to-psychoelectric-angel{--nso-icon:url("Icons/Achivement/Ground%20Control%20to%20Psychoelectric%20Angel.png")}
-.nso-icon--achivement-happy-end-world{--nso-icon:url("Icons/Achivement/Happy%20End%20World.png")}
-.nso-icon--achivement-internet-overdose{--nso-icon:url("Icons/Achivement/INTERNET%20OVERDOSE.png")}
-.nso-icon--achivement-internet-runaway-angel-be-invoked{--nso-icon:url("Icons/Achivement/Internet%20Runaway%20Angel%3A%20Be%20Invoked.png")}
-.nso-icon--achivement-labor-is-evil{--nso-icon:url("Icons/Achivement/Labor%20is%20evil.png")}
-.nso-icon--achivement-milestone{--nso-icon:url("Icons/Achivement/Milestone.png")}
-.nso-icon--achivement-monetization{--nso-icon:url("Icons/Achivement/Monetization.png")}
-.nso-icon--achivement-needy-girl-overdose{--nso-icon:url("Icons/Achivement/Needy%20Girl%20Overdose.png")}
-.nso-icon--achivement-nerdy-girl-overload{--nso-icon:url("Icons/Achivement/Nerdy%20Girl%20Overload.png")}
-.nso-icon--achivement-normie-life{--nso-icon:url("Icons/Achivement/Normie%20Life.png")}
-.nso-icon--achivement-nymphomania{--nso-icon:url("Icons/Achivement/Nymphomania.png")}
-.nso-icon--achivement-overdosed{--nso-icon:url("Icons/Achivement/Overdosed.png")}
-.nso-icon--achivement-painful-future{--nso-icon:url("Icons/Achivement/Painful%20Future.png")}
-.nso-icon--achivement-rainbow-girl{--nso-icon:url("Icons/Achivement/Rainbow%20Girl.png")}
-.nso-icon--achivement-smoked-grass{--nso-icon:url("Icons/Achivement/Smoked%20grass.png")}
-.nso-icon--achivement-smt{--nso-icon:url("Icons/Achivement/SMT.png")}
-.nso-icon--achivement-so-close-yet-so-far{--nso-icon:url("Icons/Achivement/So%20Close%20Yet%20So%20Far.png")}
-.nso-icon--achivement-there-are-no-angels{--nso-icon:url("Icons/Achivement/There%20Are%20No%20Angels.png")}
-.nso-icon--achivement-took-psychedelics{--nso-icon:url("Icons/Achivement/Took%20psychedelics.png")}
-.nso-icon--achivement-utopian-parody{--nso-icon:url("Icons/Achivement/Utopian%20Parody.png")}
-.nso-icon--achivement-welcome-to-my-religion{--nso-icon:url("Icons/Achivement/Welcome%20To%20My%20Religion.png")}
-.nso-icon--icon-emotes-a-jar-a-pot{--nso-icon:url("Icons/Icon%20Emotes/A%20jar%2C%20A%20pot.png")}
-.nso-icon--icon-emotes-a-very-comfy-bed{--nso-icon:url("Icons/Icon%20Emotes/A%20very%20comfy%20bed.png")}
-.nso-icon--icon-emotes-a-very-small-letters{--nso-icon:url("Icons/Icon%20Emotes/A%20very%20small%20letters.png")}
-.nso-icon--icon-emotes-activity{--nso-icon:url("Icons/Icon%20Emotes/Activity.png")}
-.nso-icon--icon-emotes-ame-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Ame-happy%20%3AD.png")}
-.nso-icon--icon-emotes-ame-sad{--nso-icon:url("Icons/Icon%20Emotes/Ame-sad.png")}
-.nso-icon--icon-emotes-ame-stare{--nso-icon:url("Icons/Icon%20Emotes/Ame-stare.png")}
-.nso-icon--icon-emotes-cake{--nso-icon:url("Icons/Icon%20Emotes/cake.png")}
-.nso-icon--icon-emotes-candies{--nso-icon:url("Icons/Icon%20Emotes/candies.png")}
-.nso-icon--icon-emotes-computer-but-cute{--nso-icon:url("Icons/Icon%20Emotes/Computer%20but%20cute.png")}
-.nso-icon--icon-emotes-cookie-p-chan{--nso-icon:url("Icons/Icon%20Emotes/Cookie%20P-chan%3F%3F.png")}
-.nso-icon--icon-emotes-don-t-smoke-be-ame-chan-example{--nso-icon:url("Icons/Icon%20Emotes/Don't%20smoke%2C%20Be%20Ame-chan%20example.png")}
-.nso-icon--icon-emotes-don-t-take-it-too-much{--nso-icon:url("Icons/Icon%20Emotes/don't%20take%20it%20too%20much.png")}
-.nso-icon--icon-emotes-dont-forget-to-take-your-med{--nso-icon:url("Icons/Icon%20Emotes/dont%20forget%20to%20take%20your%20med.png")}
-.nso-icon--icon-emotes-donut-without-topping{--nso-icon:url("Icons/Icon%20Emotes/donut%20without%20topping.png")}
-.nso-icon--icon-emotes-emo-ame-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Emo-Ame-happy%20%3AD.png")}
-.nso-icon--icon-emotes-emo-ame-sad{--nso-icon:url("Icons/Icon%20Emotes/Emo-Ame-sad.png")}
-.nso-icon--icon-emotes-folder1{--nso-icon:url("Icons/Icon%20Emotes/Folder1.png")}
-.nso-icon--icon-emotes-folder2{--nso-icon:url("Icons/Icon%20Emotes/Folder2.png")}
-.nso-icon--icon-emotes-folderbutevil{--nso-icon:url("Icons/Icon%20Emotes/Folderbutevil%3F.png")}
-.nso-icon--icon-emotes-gaming-but-pink{--nso-icon:url("Icons/Icon%20Emotes/Gaming%20but%20pink.png")}
-.nso-icon--icon-emotes-go-to-sleep{--nso-icon:url("Icons/Icon%20Emotes/GO%20TO%20SLEEP.png")}
-.nso-icon--icon-emotes-i-just-feel-like-putting-it-here{--nso-icon:url("Icons/Icon%20Emotes/I%20just%20feel%20like%20putting%20it%20here.png")}
-.nso-icon--icon-emotes-i-stole-this-design-again{--nso-icon:url("Icons/Icon%20Emotes/I%20stole%20this%20design%20again.png")}
-.nso-icon--icon-emotes-i-stole-this-design{--nso-icon:url("Icons/Icon%20Emotes/I%20stole%20this%20design.png")}
-.nso-icon--icon-emotes-image{--nso-icon:url("Icons/Icon%20Emotes/Image.png")}
-.nso-icon--icon-emotes-internet{--nso-icon:url("Icons/Icon%20Emotes/Internet.png")}
-.nso-icon--icon-emotes-it-is-day{--nso-icon:url("Icons/Icon%20Emotes/It%20is%20day.png")}
-.nso-icon--icon-emotes-kangel-happy-d{--nso-icon:url("Icons/Icon%20Emotes/Kangel%20happy%20%3AD.png")}
-.nso-icon--icon-emotes-kangel-sad{--nso-icon:url("Icons/Icon%20Emotes/Kangel%20sad.png")}
-.nso-icon--icon-emotes-keep-the-meter-down{--nso-icon:url("Icons/Icon%20Emotes/Keep%20the%20meter%20down.png")}
-.nso-icon--icon-emotes-klender{--nso-icon:url("Icons/Icon%20Emotes/Klender.png")}
-.nso-icon--icon-emotes-location{--nso-icon:url("Icons/Icon%20Emotes/location.png")}
-.nso-icon--icon-emotes-metflix{--nso-icon:url("Icons/Icon%20Emotes/metflix%3F.png")}
-.nso-icon--icon-emotes-note{--nso-icon:url("Icons/Icon%20Emotes/Note.png")}
-.nso-icon--icon-emotes-otopus{--nso-icon:url("Icons/Icon%20Emotes/otopus.png")}
-.nso-icon--icon-emotes-p-chan-d{--nso-icon:url("Icons/Icon%20Emotes/P-chan%20%3AD.png")}
-.nso-icon--icon-emotes-phone{--nso-icon:url("Icons/Icon%20Emotes/Phone.png")}
-.nso-icon--icon-emotes-pinkthingy-sus{--nso-icon:url("Icons/Icon%20Emotes/Pinkthingy(sus).png")}
-.nso-icon--icon-emotes-pleading{--nso-icon:url("Icons/Icon%20Emotes/Pleading.png")}
-.nso-icon--icon-emotes-purplethingy{--nso-icon:url("Icons/Icon%20Emotes/Purplethingy.png")}
-.nso-icon--icon-emotes-search{--nso-icon:url("Icons/Icon%20Emotes/Search.png")}
-.nso-icon--icon-emotes-setting{--nso-icon:url("Icons/Icon%20Emotes/setting.png")}
-.nso-icon--icon-emotes-sun-is-down{--nso-icon:url("Icons/Icon%20Emotes/Sun%20is%20down.png")}
-.nso-icon--icon-emotes-sweet1{--nso-icon:url("Icons/Icon%20Emotes/sweet1.png")}
-.nso-icon--icon-emotes-sweet2{--nso-icon:url("Icons/Icon%20Emotes/sweet2.png")}
-.nso-icon--icon-emotes-sweet3{--nso-icon:url("Icons/Icon%20Emotes/sweet3.png")}
-.nso-icon--icon-emotes-sweet4{--nso-icon:url("Icons/Icon%20Emotes/sweet4.png")}
-.nso-icon--icon-emotes-sweet5{--nso-icon:url("Icons/Icon%20Emotes/sweet5.png")}
-.nso-icon--icon-emotes-sweet6-5{--nso-icon:url("Icons/Icon%20Emotes/sweet6.5.png")}
-.nso-icon--icon-emotes-sweet6{--nso-icon:url("Icons/Icon%20Emotes/sweet6.png")}
-.nso-icon--icon-emotes-take-your-med{--nso-icon:url("Icons/Icon%20Emotes/TAKE%20YOUR%20MED.png")}
-.nso-icon--icon-emotes-task-manager{--nso-icon:url("Icons/Icon%20Emotes/Task%20Manager.png")}
-.nso-icon--icon-emotes-teddybear{--nso-icon:url("Icons/Icon%20Emotes/TeddyBear.png")}
-.nso-icon--icon-emotes-this-is-ame-s-love{--nso-icon:url("Icons/Icon%20Emotes/This%20is%20Ame's%20love.png")}
-.nso-icon--icon-emotes-this-waste-my-time{--nso-icon:url("Icons/Icon%20Emotes/This%20waste%20my%20time.png")}
-.nso-icon--icon-emotes-tinder{--nso-icon:url("Icons/Icon%20Emotes/Tinder.png")}
-.nso-icon--icon-emotes-trash{--nso-icon:url("Icons/Icon%20Emotes/trash.png")}
-.nso-icon--icon-emotes-twitch{--nso-icon:url("Icons/Icon%20Emotes/twitch.png")}
-.nso-icon--icon-emotes-twitter{--nso-icon:url("Icons/Icon%20Emotes/Twitter.png")}
-.nso-icon--icon-emotes-two-hearts{--nso-icon:url("Icons/Icon%20Emotes/two%20hearts.png")}
-.nso-icon--icon-emotes-vid{--nso-icon:url("Icons/Icon%20Emotes/Vid.png")}
-.nso-icon--icon-emotes-yellowthingy{--nso-icon:url("Icons/Icon%20Emotes/Yellowthingy.png")}
-.nso-icon--icon-emotes-you-need-this{--nso-icon:url("Icons/Icon%20Emotes/You%20need%20this.png")}
-.nso-icon--icon-emotes-youtube{--nso-icon:url("Icons/Icon%20Emotes/Youtube.png")}
-.nso-icon--icon-emotes-zipfolder{--nso-icon:url("Icons/Icon%20Emotes/ZipFolder.png")}
-.nso-icon--shinanegen-3{--nso-icon:url("Icons/Shinanegen/%3A3.png")}
-.nso-icon--shinanegen-3-again{--nso-icon:url("Icons/Shinanegen/%3C3%20again.png")}
-.nso-icon--shinanegen-3-2{--nso-icon:url("Icons/Shinanegen/%3C3.png")}
-.nso-icon--shinanegen-aidle-be-angel{--nso-icon:url("Icons/Shinanegen/aidle%20be%20angel.png")}
-.nso-icon--shinanegen-battery-dont-swallow-it{--nso-icon:url("Icons/Shinanegen/Battery%2C%20dont%20swallow%20it.png")}
-.nso-icon--shinanegen-blush{--nso-icon:url("Icons/Shinanegen/blush%20%E2%81%84%E2%81%84%E2%81%84%E2%81%84.png")}
-.nso-icon--shinanegen-boo{--nso-icon:url("Icons/Shinanegen/Boo!.png")}
-.nso-icon--shinanegen-cake-just-a-cake{--nso-icon:url("Icons/Shinanegen/Cake%2C%20just%20a%20cake.png")}
-.nso-icon--shinanegen-chart{--nso-icon:url("Icons/Shinanegen/chart.png")}
-.nso-icon--shinanegen-clap{--nso-icon:url("Icons/Shinanegen/clap.png")}
-.nso-icon--shinanegen-congrat-thingy{--nso-icon:url("Icons/Shinanegen/congrat%20thingy.png")}
-.nso-icon--shinanegen-crying{--nso-icon:url("Icons/Shinanegen/Crying.png")}
-.nso-icon--shinanegen-devilish{--nso-icon:url("Icons/Shinanegen/Devilish.png")}
-.nso-icon--shinanegen-dog-why-do-i-waste-my-time-on-this{--nso-icon:url("Icons/Shinanegen/dog...%20why%20do%20I%20waste%20my%20time%20on%20this%3F.png")}
-.nso-icon--shinanegen-dont-spin-it{--nso-icon:url("Icons/Shinanegen/dont%20spin%20it.png")}
-.nso-icon--shinanegen-dress{--nso-icon:url("Icons/Shinanegen/Dress.png")}
-.nso-icon--shinanegen-fist-bump-classic{--nso-icon:url("Icons/Shinanegen/fist%20bump(classic).png")}
-.nso-icon--shinanegen-green-tea{--nso-icon:url("Icons/Shinanegen/Green%20Tea.png")}
-.nso-icon--shinanegen-haaa{--nso-icon:url("Icons/Shinanegen/haaa.png")}
-.nso-icon--shinanegen-happy-d{--nso-icon:url("Icons/Shinanegen/HAPPY%20%3AD.png")}
-.nso-icon--shinanegen-heart-but-very-red{--nso-icon:url("Icons/Shinanegen/heart%20but%20very%20red.png")}
-.nso-icon--shinanegen-heart{--nso-icon:url("Icons/Shinanegen/Heart.png")}
-.nso-icon--shinanegen-hmph{--nso-icon:url("Icons/Shinanegen/hmph.png")}
-.nso-icon--shinanegen-i-doubt-that-this-is-a-dog-again{--nso-icon:url("Icons/Shinanegen/I%20doubt%20that%20this%20is%20a%20dog%20again.png")}
-.nso-icon--shinanegen-it-so-pixel{--nso-icon:url("Icons/Shinanegen/IT%20SO%20PIXEL.png")}
-.nso-icon--shinanegen-kangel-s-bow{--nso-icon:url("Icons/Shinanegen/Kangel's%20bow.png")}
-.nso-icon--shinanegen-kangeldepressed{--nso-icon:url("Icons/Shinanegen/KangelDEPRESSED.png")}
-.nso-icon--shinanegen-kangeldoomscrolling{--nso-icon:url("Icons/Shinanegen/KangelDOOMSCROLLING.png")}
-.nso-icon--shinanegen-kangelhappy{--nso-icon:url("Icons/Shinanegen/KangelHAPPY.png")}
-.nso-icon--shinanegen-kangelheart{--nso-icon:url("Icons/Shinanegen/KangelHeart.png")}
-.nso-icon--shinanegen-kangelpissed{--nso-icon:url("Icons/Shinanegen/KangelPISSED.png")}
-.nso-icon--shinanegen-laugh{--nso-icon:url("Icons/Shinanegen/laugh.png")}
-.nso-icon--shinanegen-linux{--nso-icon:url("Icons/Shinanegen/Linux%3F.png")}
-.nso-icon--shinanegen-lock{--nso-icon:url("Icons/Shinanegen/Lock.png")}
-.nso-icon--shinanegen-look{--nso-icon:url("Icons/Shinanegen/Look.png")}
-.nso-icon--shinanegen-music{--nso-icon:url("Icons/Shinanegen/music.png")}
-.nso-icon--shinanegen-nerd{--nso-icon:url("Icons/Shinanegen/Nerd.png")}
-.nso-icon--shinanegen-oouggh{--nso-icon:url("Icons/Shinanegen/oouggh.png")}
-.nso-icon--shinanegen-owww{--nso-icon:url("Icons/Shinanegen/owww.png")}
-.nso-icon--shinanegen-peace-sign{--nso-icon:url("Icons/Shinanegen/peace%20sign.png")}
-.nso-icon--shinanegen-point-down{--nso-icon:url("Icons/Shinanegen/point%20down.png")}
-.nso-icon--shinanegen-point-up{--nso-icon:url("Icons/Shinanegen/point%20up.png")}
-.nso-icon--shinanegen-pov-you-watch-kangel{--nso-icon:url("Icons/Shinanegen/POV%3B%20you%20watch%20Kangel.png")}
-.nso-icon--shinanegen-red-bow{--nso-icon:url("Icons/Shinanegen/Red%20bow.png")}
-.nso-icon--shinanegen-sad{--nso-icon:url("Icons/Shinanegen/sad.png")}
-.nso-icon--shinanegen-shush{--nso-icon:url("Icons/Shinanegen/shush.png")}
-.nso-icon--shinanegen-sigh{--nso-icon:url("Icons/Shinanegen/sigh.png")}
-.nso-icon--shinanegen-silent{--nso-icon:url("Icons/Shinanegen/Silent.png")}
-.nso-icon--shinanegen-simp{--nso-icon:url("Icons/Shinanegen/Simp.png")}
-.nso-icon--shinanegen-sus{--nso-icon:url("Icons/Shinanegen/sus.png")}
-.nso-icon--shinanegen-sweating{--nso-icon:url("Icons/Shinanegen/sweating.png")}
-.nso-icon--shinanegen-think{--nso-icon:url("Icons/Shinanegen/Think.png")}
-.nso-icon--shinanegen-this-might-be-you{--nso-icon:url("Icons/Shinanegen/This%20might%20be%20you.png")}
-.nso-icon--shinanegen-two-hearts{--nso-icon:url("Icons/Shinanegen/two%20hearts.png")}
-.nso-icon--shinanegen-uogghh{--nso-icon:url("Icons/Shinanegen/uogghh.png")}
-.nso-icon--shinanegen-whack{--nso-icon:url("Icons/Shinanegen/whack.png")}
-.nso-icon--shinanegen-yayyyy{--nso-icon:url("Icons/Shinanegen/yayyyy.png")}
-.nso-icon--shinanegen-yikes{--nso-icon:url("Icons/Shinanegen/yikes.png")}
-.nso-icon--shinanegen-you-burned-your-house{--nso-icon:url("Icons/Shinanegen/you%20burned%20your%20house.png")}
-.nso-icon--shinanegen-you-need-this-when-angry{--nso-icon:url("Icons/Shinanegen/you%20need%20this%20when%20angry.png")}
-.nso-icon--shinanegen-you-threw-this{--nso-icon:url("Icons/Shinanegen/you%20threw%20this.png")}
+.nso-icon--achivement-un-happy-end-world{--nso-icon:url("icons/Achivement/(Un)happy%20End%20World.png")}
+.nso-icon--achivement-21-42{--nso-icon:url("icons/Achivement/21%2042.png")}
+.nso-icon--achivement-blazing-hell{--nso-icon:url("icons/Achivement/Blazing%20Hell.png")}
+.nso-icon--achivement-bomber-girl{--nso-icon:url("icons/Achivement/Bomber%20Girl.png")}
+.nso-icon--achivement-catastrophe{--nso-icon:url("icons/Achivement/Catastrophe.png")}
+.nso-icon--achivement-comment-te-dire-adieu{--nso-icon:url("icons/Achivement/Comment%20te%20dire%20adieu.png")}
+.nso-icon--achivement-cucked{--nso-icon:url("icons/Achivement/Cucked.png")}
+.nso-icon--achivement-cut-wrists{--nso-icon:url("icons/Achivement/Cut%20wrists.png")}
+.nso-icon--achivement-dark-angel-aka-ame-turned-emo{--nso-icon:url("icons/Achivement/DARK%20ANGEL%20(aka.%20Ame%20turned%20Emo).png")}
+.nso-icon--achivement-fallen-angel{--nso-icon:url("icons/Achivement/Fallen%20Angel.png")}
+.nso-icon--achivement-flatline{--nso-icon:url("icons/Achivement/Flatline.png")}
+.nso-icon--achivement-galactic-express{--nso-icon:url("icons/Achivement/Galactic%20Express.png")}
+.nso-icon--achivement-ground-control-to-psychoelectric-angel{--nso-icon:url("icons/Achivement/Ground%20Control%20to%20Psychoelectric%20Angel.png")}
+.nso-icon--achivement-happy-end-world{--nso-icon:url("icons/Achivement/Happy%20End%20World.png")}
+.nso-icon--achivement-internet-overdose{--nso-icon:url("icons/Achivement/INTERNET%20OVERDOSE.png")}
+.nso-icon--achivement-internet-runaway-angel-be-invoked{--nso-icon:url("icons/Achivement/Internet%20Runaway%20Angel%3A%20Be%20Invoked.png")}
+.nso-icon--achivement-labor-is-evil{--nso-icon:url("icons/Achivement/Labor%20is%20evil.png")}
+.nso-icon--achivement-milestone{--nso-icon:url("icons/Achivement/Milestone.png")}
+.nso-icon--achivement-monetization{--nso-icon:url("icons/Achivement/Monetization.png")}
+.nso-icon--achivement-needy-girl-overdose{--nso-icon:url("icons/Achivement/Needy%20Girl%20Overdose.png")}
+.nso-icon--achivement-nerdy-girl-overload{--nso-icon:url("icons/Achivement/Nerdy%20Girl%20Overload.png")}
+.nso-icon--achivement-normie-life{--nso-icon:url("icons/Achivement/Normie%20Life.png")}
+.nso-icon--achivement-nymphomania{--nso-icon:url("icons/Achivement/Nymphomania.png")}
+.nso-icon--achivement-overdosed{--nso-icon:url("icons/Achivement/Overdosed.png")}
+.nso-icon--achivement-painful-future{--nso-icon:url("icons/Achivement/Painful%20Future.png")}
+.nso-icon--achivement-rainbow-girl{--nso-icon:url("icons/Achivement/Rainbow%20Girl.png")}
+.nso-icon--achivement-smoked-grass{--nso-icon:url("icons/Achivement/Smoked%20grass.png")}
+.nso-icon--achivement-smt{--nso-icon:url("icons/Achivement/SMT.png")}
+.nso-icon--achivement-so-close-yet-so-far{--nso-icon:url("icons/Achivement/So%20Close%20Yet%20So%20Far.png")}
+.nso-icon--achivement-there-are-no-angels{--nso-icon:url("icons/Achivement/There%20Are%20No%20Angels.png")}
+.nso-icon--achivement-took-psychedelics{--nso-icon:url("icons/Achivement/Took%20psychedelics.png")}
+.nso-icon--achivement-utopian-parody{--nso-icon:url("icons/Achivement/Utopian%20Parody.png")}
+.nso-icon--achivement-welcome-to-my-religion{--nso-icon:url("icons/Achivement/Welcome%20To%20My%20Religion.png")}
+.nso-icon--icon-emotes-a-jar-a-pot{--nso-icon:url("icons/Icon%20Emotes/A%20jar%2C%20A%20pot.png")}
+.nso-icon--icon-emotes-a-very-comfy-bed{--nso-icon:url("icons/Icon%20Emotes/A%20very%20comfy%20bed.png")}
+.nso-icon--icon-emotes-a-very-small-letters{--nso-icon:url("icons/Icon%20Emotes/A%20very%20small%20letters.png")}
+.nso-icon--icon-emotes-activity{--nso-icon:url("icons/Icon%20Emotes/Activity.png")}
+.nso-icon--icon-emotes-ame-happy-d{--nso-icon:url("icons/Icon%20Emotes/Ame-happy%20%3AD.png")}
+.nso-icon--icon-emotes-ame-sad{--nso-icon:url("icons/Icon%20Emotes/Ame-sad.png")}
+.nso-icon--icon-emotes-ame-stare{--nso-icon:url("icons/Icon%20Emotes/Ame-stare.png")}
+.nso-icon--icon-emotes-cake{--nso-icon:url("icons/Icon%20Emotes/cake.png")}
+.nso-icon--icon-emotes-candies{--nso-icon:url("icons/Icon%20Emotes/candies.png")}
+.nso-icon--icon-emotes-computer-but-cute{--nso-icon:url("icons/Icon%20Emotes/Computer%20but%20cute.png")}
+.nso-icon--icon-emotes-cookie-p-chan{--nso-icon:url("icons/Icon%20Emotes/Cookie%20P-chan%3F%3F.png")}
+.nso-icon--icon-emotes-don-t-smoke-be-ame-chan-example{--nso-icon:url("icons/Icon%20Emotes/Don't%20smoke%2C%20Be%20Ame-chan%20example.png")}
+.nso-icon--icon-emotes-don-t-take-it-too-much{--nso-icon:url("icons/Icon%20Emotes/don't%20take%20it%20too%20much.png")}
+.nso-icon--icon-emotes-dont-forget-to-take-your-med{--nso-icon:url("icons/Icon%20Emotes/dont%20forget%20to%20take%20your%20med.png")}
+.nso-icon--icon-emotes-donut-without-topping{--nso-icon:url("icons/Icon%20Emotes/donut%20without%20topping.png")}
+.nso-icon--icon-emotes-emo-ame-happy-d{--nso-icon:url("icons/Icon%20Emotes/Emo-Ame-happy%20%3AD.png")}
+.nso-icon--icon-emotes-emo-ame-sad{--nso-icon:url("icons/Icon%20Emotes/Emo-Ame-sad.png")}
+.nso-icon--icon-emotes-folder1{--nso-icon:url("icons/Icon%20Emotes/Folder1.png")}
+.nso-icon--icon-emotes-folder2{--nso-icon:url("icons/Icon%20Emotes/Folder2.png")}
+.nso-icon--icon-emotes-folderbutevil{--nso-icon:url("icons/Icon%20Emotes/Folderbutevil%3F.png")}
+.nso-icon--icon-emotes-gaming-but-pink{--nso-icon:url("icons/Icon%20Emotes/Gaming%20but%20pink.png")}
+.nso-icon--icon-emotes-go-to-sleep{--nso-icon:url("icons/Icon%20Emotes/GO%20TO%20SLEEP.png")}
+.nso-icon--icon-emotes-i-just-feel-like-putting-it-here{--nso-icon:url("icons/Icon%20Emotes/I%20just%20feel%20like%20putting%20it%20here.png")}
+.nso-icon--icon-emotes-i-stole-this-design-again{--nso-icon:url("icons/Icon%20Emotes/I%20stole%20this%20design%20again.png")}
+.nso-icon--icon-emotes-i-stole-this-design{--nso-icon:url("icons/Icon%20Emotes/I%20stole%20this%20design.png")}
+.nso-icon--icon-emotes-image{--nso-icon:url("icons/Icon%20Emotes/Image.png")}
+.nso-icon--icon-emotes-internet{--nso-icon:url("icons/Icon%20Emotes/Internet.png")}
+.nso-icon--icon-emotes-it-is-day{--nso-icon:url("icons/Icon%20Emotes/It%20is%20day.png")}
+.nso-icon--icon-emotes-kangel-happy-d{--nso-icon:url("icons/Icon%20Emotes/Kangel%20happy%20%3AD.png")}
+.nso-icon--icon-emotes-kangel-sad{--nso-icon:url("icons/Icon%20Emotes/Kangel%20sad.png")}
+.nso-icon--icon-emotes-keep-the-meter-down{--nso-icon:url("icons/Icon%20Emotes/Keep%20the%20meter%20down.png")}
+.nso-icon--icon-emotes-klender{--nso-icon:url("icons/Icon%20Emotes/Klender.png")}
+.nso-icon--icon-emotes-location{--nso-icon:url("icons/Icon%20Emotes/location.png")}
+.nso-icon--icon-emotes-metflix{--nso-icon:url("icons/Icon%20Emotes/metflix%3F.png")}
+.nso-icon--icon-emotes-note{--nso-icon:url("icons/Icon%20Emotes/Note.png")}
+.nso-icon--icon-emotes-otopus{--nso-icon:url("icons/Icon%20Emotes/otopus.png")}
+.nso-icon--icon-emotes-p-chan-d{--nso-icon:url("icons/Icon%20Emotes/P-chan%20%3AD.png")}
+.nso-icon--icon-emotes-phone{--nso-icon:url("icons/Icon%20Emotes/Phone.png")}
+.nso-icon--icon-emotes-pinkthingy-sus{--nso-icon:url("icons/Icon%20Emotes/Pinkthingy(sus).png")}
+.nso-icon--icon-emotes-pleading{--nso-icon:url("icons/Icon%20Emotes/Pleading.png")}
+.nso-icon--icon-emotes-purplethingy{--nso-icon:url("icons/Icon%20Emotes/Purplethingy.png")}
+.nso-icon--icon-emotes-search{--nso-icon:url("icons/Icon%20Emotes/Search.png")}
+.nso-icon--icon-emotes-setting{--nso-icon:url("icons/Icon%20Emotes/setting.png")}
+.nso-icon--icon-emotes-sun-is-down{--nso-icon:url("icons/Icon%20Emotes/Sun%20is%20down.png")}
+.nso-icon--icon-emotes-sweet1{--nso-icon:url("icons/Icon%20Emotes/sweet1.png")}
+.nso-icon--icon-emotes-sweet2{--nso-icon:url("icons/Icon%20Emotes/sweet2.png")}
+.nso-icon--icon-emotes-sweet3{--nso-icon:url("icons/Icon%20Emotes/sweet3.png")}
+.nso-icon--icon-emotes-sweet4{--nso-icon:url("icons/Icon%20Emotes/sweet4.png")}
+.nso-icon--icon-emotes-sweet5{--nso-icon:url("icons/Icon%20Emotes/sweet5.png")}
+.nso-icon--icon-emotes-sweet6-5{--nso-icon:url("icons/Icon%20Emotes/sweet6.5.png")}
+.nso-icon--icon-emotes-sweet6{--nso-icon:url("icons/Icon%20Emotes/sweet6.png")}
+.nso-icon--icon-emotes-take-your-med{--nso-icon:url("icons/Icon%20Emotes/TAKE%20YOUR%20MED.png")}
+.nso-icon--icon-emotes-task-manager{--nso-icon:url("icons/Icon%20Emotes/Task%20Manager.png")}
+.nso-icon--icon-emotes-teddybear{--nso-icon:url("icons/Icon%20Emotes/TeddyBear.png")}
+.nso-icon--icon-emotes-this-is-ame-s-love{--nso-icon:url("icons/Icon%20Emotes/This%20is%20Ame's%20love.png")}
+.nso-icon--icon-emotes-this-waste-my-time{--nso-icon:url("icons/Icon%20Emotes/This%20waste%20my%20time.png")}
+.nso-icon--icon-emotes-tinder{--nso-icon:url("icons/Icon%20Emotes/Tinder.png")}
+.nso-icon--icon-emotes-trash{--nso-icon:url("icons/Icon%20Emotes/trash.png")}
+.nso-icon--icon-emotes-twitch{--nso-icon:url("icons/Icon%20Emotes/twitch.png")}
+.nso-icon--icon-emotes-twitter{--nso-icon:url("icons/Icon%20Emotes/Twitter.png")}
+.nso-icon--icon-emotes-two-hearts{--nso-icon:url("icons/Icon%20Emotes/two%20hearts.png")}
+.nso-icon--icon-emotes-vid{--nso-icon:url("icons/Icon%20Emotes/Vid.png")}
+.nso-icon--icon-emotes-yellowthingy{--nso-icon:url("icons/Icon%20Emotes/Yellowthingy.png")}
+.nso-icon--icon-emotes-you-need-this{--nso-icon:url("icons/Icon%20Emotes/You%20need%20this.png")}
+.nso-icon--icon-emotes-youtube{--nso-icon:url("icons/Icon%20Emotes/Youtube.png")}
+.nso-icon--icon-emotes-zipfolder{--nso-icon:url("icons/Icon%20Emotes/ZipFolder.png")}
+.nso-icon--shinanegen-3{--nso-icon:url("icons/Shinanegen/%3A3.png")}
+.nso-icon--shinanegen-3-again{--nso-icon:url("icons/Shinanegen/%3C3%20again.png")}
+.nso-icon--shinanegen-3-2{--nso-icon:url("icons/Shinanegen/%3C3.png")}
+.nso-icon--shinanegen-aidle-be-angel{--nso-icon:url("icons/Shinanegen/aidle%20be%20angel.png")}
+.nso-icon--shinanegen-battery-dont-swallow-it{--nso-icon:url("icons/Shinanegen/Battery%2C%20dont%20swallow%20it.png")}
+.nso-icon--shinanegen-blush{--nso-icon:url("icons/Shinanegen/blush%20%E2%81%84%E2%81%84%E2%81%84%E2%81%84.png")}
+.nso-icon--shinanegen-boo{--nso-icon:url("icons/Shinanegen/Boo!.png")}
+.nso-icon--shinanegen-cake-just-a-cake{--nso-icon:url("icons/Shinanegen/Cake%2C%20just%20a%20cake.png")}
+.nso-icon--shinanegen-chart{--nso-icon:url("icons/Shinanegen/chart.png")}
+.nso-icon--shinanegen-clap{--nso-icon:url("icons/Shinanegen/clap.png")}
+.nso-icon--shinanegen-congrat-thingy{--nso-icon:url("icons/Shinanegen/congrat%20thingy.png")}
+.nso-icon--shinanegen-crying{--nso-icon:url("icons/Shinanegen/Crying.png")}
+.nso-icon--shinanegen-devilish{--nso-icon:url("icons/Shinanegen/Devilish.png")}
+.nso-icon--shinanegen-dog-why-do-i-waste-my-time-on-this{--nso-icon:url("icons/Shinanegen/dog...%20why%20do%20I%20waste%20my%20time%20on%20this%3F.png")}
+.nso-icon--shinanegen-dont-spin-it{--nso-icon:url("icons/Shinanegen/dont%20spin%20it.png")}
+.nso-icon--shinanegen-dress{--nso-icon:url("icons/Shinanegen/Dress.png")}
+.nso-icon--shinanegen-fist-bump-classic{--nso-icon:url("icons/Shinanegen/fist%20bump(classic).png")}
+.nso-icon--shinanegen-green-tea{--nso-icon:url("icons/Shinanegen/Green%20Tea.png")}
+.nso-icon--shinanegen-haaa{--nso-icon:url("icons/Shinanegen/haaa.png")}
+.nso-icon--shinanegen-happy-d{--nso-icon:url("icons/Shinanegen/HAPPY%20%3AD.png")}
+.nso-icon--shinanegen-heart-but-very-red{--nso-icon:url("icons/Shinanegen/heart%20but%20very%20red.png")}
+.nso-icon--shinanegen-heart{--nso-icon:url("icons/Shinanegen/Heart.png")}
+.nso-icon--shinanegen-hmph{--nso-icon:url("icons/Shinanegen/hmph.png")}
+.nso-icon--shinanegen-i-doubt-that-this-is-a-dog-again{--nso-icon:url("icons/Shinanegen/I%20doubt%20that%20this%20is%20a%20dog%20again.png")}
+.nso-icon--shinanegen-it-so-pixel{--nso-icon:url("icons/Shinanegen/IT%20SO%20PIXEL.png")}
+.nso-icon--shinanegen-kangel-s-bow{--nso-icon:url("icons/Shinanegen/Kangel's%20bow.png")}
+.nso-icon--shinanegen-kangeldepressed{--nso-icon:url("icons/Shinanegen/KangelDEPRESSED.png")}
+.nso-icon--shinanegen-kangeldoomscrolling{--nso-icon:url("icons/Shinanegen/KangelDOOMSCROLLING.png")}
+.nso-icon--shinanegen-kangelhappy{--nso-icon:url("icons/Shinanegen/KangelHAPPY.png")}
+.nso-icon--shinanegen-kangelheart{--nso-icon:url("icons/Shinanegen/KangelHeart.png")}
+.nso-icon--shinanegen-kangelpissed{--nso-icon:url("icons/Shinanegen/KangelPISSED.png")}
+.nso-icon--shinanegen-laugh{--nso-icon:url("icons/Shinanegen/laugh.png")}
+.nso-icon--shinanegen-linux{--nso-icon:url("icons/Shinanegen/Linux%3F.png")}
+.nso-icon--shinanegen-lock{--nso-icon:url("icons/Shinanegen/Lock.png")}
+.nso-icon--shinanegen-look{--nso-icon:url("icons/Shinanegen/Look.png")}
+.nso-icon--shinanegen-music{--nso-icon:url("icons/Shinanegen/music.png")}
+.nso-icon--shinanegen-nerd{--nso-icon:url("icons/Shinanegen/Nerd.png")}
+.nso-icon--shinanegen-oouggh{--nso-icon:url("icons/Shinanegen/oouggh.png")}
+.nso-icon--shinanegen-owww{--nso-icon:url("icons/Shinanegen/owww.png")}
+.nso-icon--shinanegen-peace-sign{--nso-icon:url("icons/Shinanegen/peace%20sign.png")}
+.nso-icon--shinanegen-point-down{--nso-icon:url("icons/Shinanegen/point%20down.png")}
+.nso-icon--shinanegen-point-up{--nso-icon:url("icons/Shinanegen/point%20up.png")}
+.nso-icon--shinanegen-pov-you-watch-kangel{--nso-icon:url("icons/Shinanegen/POV%3B%20you%20watch%20Kangel.png")}
+.nso-icon--shinanegen-red-bow{--nso-icon:url("icons/Shinanegen/Red%20bow.png")}
+.nso-icon--shinanegen-sad{--nso-icon:url("icons/Shinanegen/sad.png")}
+.nso-icon--shinanegen-shush{--nso-icon:url("icons/Shinanegen/shush.png")}
+.nso-icon--shinanegen-sigh{--nso-icon:url("icons/Shinanegen/sigh.png")}
+.nso-icon--shinanegen-silent{--nso-icon:url("icons/Shinanegen/Silent.png")}
+.nso-icon--shinanegen-simp{--nso-icon:url("icons/Shinanegen/Simp.png")}
+.nso-icon--shinanegen-sus{--nso-icon:url("icons/Shinanegen/sus.png")}
+.nso-icon--shinanegen-sweating{--nso-icon:url("icons/Shinanegen/sweating.png")}
+.nso-icon--shinanegen-think{--nso-icon:url("icons/Shinanegen/Think.png")}
+.nso-icon--shinanegen-this-might-be-you{--nso-icon:url("icons/Shinanegen/This%20might%20be%20you.png")}
+.nso-icon--shinanegen-two-hearts{--nso-icon:url("icons/Shinanegen/two%20hearts.png")}
+.nso-icon--shinanegen-uogghh{--nso-icon:url("icons/Shinanegen/uogghh.png")}
+.nso-icon--shinanegen-whack{--nso-icon:url("icons/Shinanegen/whack.png")}
+.nso-icon--shinanegen-yayyyy{--nso-icon:url("icons/Shinanegen/yayyyy.png")}
+.nso-icon--shinanegen-yikes{--nso-icon:url("icons/Shinanegen/yikes.png")}
+.nso-icon--shinanegen-you-burned-your-house{--nso-icon:url("icons/Shinanegen/you%20burned%20your%20house.png")}
+.nso-icon--shinanegen-you-need-this-when-angry{--nso-icon:url("icons/Shinanegen/you%20need%20this%20when%20angry.png")}
+.nso-icon--shinanegen-you-threw-this{--nso-icon:url("icons/Shinanegen/you%20threw%20this.png")}
+
+.nso-btn--sm {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+.nso-btn--lg {
+    font-size: 20px;
+    padding: 12px 18px;
+}
+
+.nso-badge {
+    display: inline-block;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 13px;
+    padding: 3px 10px;
+    background: #f0d1f1;
+    box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+    color: #4d23cf;
+    border: 2px solid #f0d1f1;
+    border-radius: 2px;
+    line-height: 1.3;
+}
+.nso-badge--primary {
+    background: #90F3E1;
+    border-color: #90F3E1;
+    box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
+}
+.nso-badge--ghost {
+    background: #FDF8FD;
+    box-shadow: none;
+    border-color: #4D23CD;
+}
+.nso-badge--sm {
+    font-size: 10px;
+    padding: 1px 6px;
+}
+.nso-badge--lg {
+    font-size: 18px;
+    padding: 6px 14px;
+}
+
+.nso-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    align-items: center;
+    justify-content: center;
+}
+.nso-modal--open {
+    display: flex;
+}
+.nso-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 1, 10, 0.65);
+}
+.nso-modal__content {
+    position: relative;
+    width: min(460px, 90vw);
+    background: #FDF8FD;
+    border: 2px solid #4D23CD;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 8px 8px #4e23cd48;
+    z-index: 1;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+}
+.nso-modal--sm .nso-modal__content {
+    width: min(320px, 85vw);
+}
+.nso-modal__title {
+    padding: 8px 56px 8px 14px;
+    min-height: 32px;
+    line-height: 32px;
+    background: #EFCFEF;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+    border-bottom: 2px solid #4D23CD;
+    color: #4D21CB;
+    background-image: url("ui/navbuttons.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    letter-spacing: 0.045em;
+    position: relative;
+}
+.nso-modal__close {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 1px solid #4D23CD;
+    color: #4D23CD;
+    font-size: 16px;
+    padding: 2px 8px;
+    cursor: pointer;
+    font-family: 'dinkie9px', sans-serif;
+}
+.nso-modal__body {
+    padding: 14px;
+    font-size: 14px;
+    color: #251f33;
+    overflow-y: auto;
+    flex: 1;
+}
+.nso-modal__footer {
+    padding: 10px 14px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    border-top: 2px solid #90F3E1;
+}
+
+.nso-tabs {
+    border: 2px solid #4D23CD;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+    background: #FDF8FD;
+    margin-bottom: 16px;
+}
+.nso-tabs__nav {
+    display: flex;
+    background: #EFCFEF;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+    border-bottom: 2px solid #4D23CD;
+    padding: 4px 4px 0;
+    gap: 2px;
+}
+.nso-tabs__tab {
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 14px;
+    padding: 6px 16px;
+    background: #F7E0FA;
+    border: 2px solid #4D23CD;
+    border-bottom: none;
+    color: #4D23CD;
+    cursor: pointer;
+    box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+    margin-bottom: -2px;
+    position: relative;
+}
+.nso-tabs__tab--active {
+    background: #FDF8FD;
+    box-shadow: none;
+    border-bottom: 2px solid #FDF8FD;
+    z-index: 1;
+}
+.nso-tabs__panel {
+    display: none;
+    padding: 14px;
+    font-size: 14px;
+    color: #251f33;
+}
+.nso-tabs__panel--active {
+    display: block;
+}
+
+.nso-toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 300;
+    display: grid;
+    gap: 10px;
+    pointer-events: none;
+}
+.nso-toast {
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 15px;
+    padding: 10px 18px;
+    background: #FDF8FD;
+    border: 2px solid #4D23CD;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+    color: #4D23CD;
+    pointer-events: auto;
+    animation: nso-toast-in 300ms ease;
+    max-width: 320px;
+}
+.nso-toast--success {
+    border-color: #34D399;
+    box-shadow: inset 0 0 0 4px #34D399, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+}
+.nso-toast--warning {
+    border-color: #f9c56c;
+    box-shadow: inset 0 0 0 4px #f9c56c, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+}
+.nso-toast--out {
+    animation: nso-toast-out 350ms ease forwards;
+}
+@keyframes nso-toast-in {
+    from { opacity: 0; transform: translateX(40px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes nso-toast-out {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(40px); }
+}
+
+.nso-tooltip-wrap {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dashed #4D23CD;
+    font-size: 15px;
+    color: #4D23CD;
+}
+.nso-tooltip {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #251f33;
+    color: #90F3E1;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 12px;
+    padding: 4px 10px;
+    border: 2px solid #4D23CD;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 200ms;
+    z-index: 10;
+}
+.nso-tooltip-wrap:hover .nso-tooltip {
+    opacity: 1;
+}
+.nso-tooltip--top {
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nso-tooltip--bottom {
+    top: calc(100% + 6px);
+    bottom: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nso-spinner {
+    --nso-spinner-color: #4D23CD;
+    width: 32px;
+    height: 32px;
+    border: 3px solid #F7E0FA;
+    border-top-color: var(--nso-spinner-color);
+    border-radius: 50%;
+    animation: nso-spin 0.7s linear infinite;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.nso-spinner--sm {
+    width: 18px;
+    height: 18px;
+    border-width: 2px;
+}
+.nso-spinner--lg {
+    width: 48px;
+    height: 48px;
+    border-width: 4px;
+}
+@keyframes nso-spin {
+    to { transform: rotate(360deg); }
+}
+.nso-ellipsis::after {
+    content: "";
+    animation: nso-dot 1.4s steps(4) infinite;
+}
+@keyframes nso-dot {
+    0% { content: ""; }
+    25% { content: "."; }
+    50% { content: ".."; }
+    75% { content: "..."; }
+}
+
+.nso-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 14px;
+    color: #251f33;
+}
+.nso-table th {
+    background: #EFCFEF;
+    box-shadow: inset 0 -2px 0 #4D23CD;
+    color: #4D23CD;
+    font-weight: 400;
+    text-align: left;
+    padding: 8px 12px;
+    letter-spacing: 0.045em;
+}
+.nso-table td {
+    padding: 8px 12px;
+    border-bottom: 1px solid #90F3E1;
+}
+.nso-table tbody tr:hover {
+    background: rgba(144, 243, 225, 0.12);
+}
+.nso-table--up {
+    color: #34D399;
+}
+.nso-table--down {
+    color: #ED0707;
+}
