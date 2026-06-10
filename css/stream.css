@@ -1,0 +1,321 @@
+.nso-stream {
+    border: 2px solid #4D23CD;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 8px 8px #4e23cd48;
+    background: #FDF8FD;
+    width: 100%;
+    max-width: 980px;
+    margin: 12px auto 20px;
+    box-sizing: border-box;
+}
+.nso-stream__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 32px;
+    padding: 6px 72px 6px 14px;
+    background: #EFCFEF;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+    border-bottom: 2px solid #4D23CD;
+    background-image: url("../ui/navbuttons.png");
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    color: #4D23CD;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.045em;
+}
+.nso-stream__header-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nso-stream__live {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #fff;
+    background: #e02050;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: normal;
+}
+.nso-stream__live::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border-radius: 50%;
+    animation: nso-pulse 1s ease infinite;
+}
+@keyframes nso-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+.nso-stream__body {
+    display: flex;
+    gap: 0;
+    min-height: 280px;
+    margin: 12px 14px 0;
+    border: 2px solid #4D23CD;
+    box-sizing: border-box;
+}
+.nso-stream__cam {
+    flex: 1 1 60%;
+    position: relative;
+    background: #0a0015;
+    overflow: hidden;
+    border-right: 2px solid #4D23CD;
+    min-height: 280px;
+}
+.nso-stream__cam-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    image-rendering: auto;
+}
+.nso-stream__cam-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a0033 0%, #0d001a 50%, #1a0033 100%);
+    color: #90F3E1;
+    font-size: 14px;
+    font-family: 'dinkie9px', sans-serif;
+}
+.nso-stream__cam-subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    font-family: 'dinkie9px', sans-serif;
+    text-align: center;
+}
+.nso-stream__cam-subtitle em {
+    color: #90F3E1;
+}
+.nso-stream__chat {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+.nso-stream__chat-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    background: #EFCFEF;
+    border-bottom: 2px solid #90F3E1;
+    font-size: 12px;
+    color: #4D23CD;
+}
+.nso-stream__chat-skip {
+    background: none;
+    border: 1px solid #4D23CD;
+    color: #4D23CD;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 11px;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+.nso-stream__chat-speed {
+    font-size: 11px;
+}
+.nso-stream__chat-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+    background: #fdf8fd;
+}
+.nso-stream__chat-msg {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.3;
+}
+.nso-stream__chat-user {
+    color: #4D23CD;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+.nso-stream__chat-user::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-top: 1px;
+    background: currentColor;
+    flex: 0 0 10px;
+}
+.nso-stream__chat-text {
+    color: #251f33;
+    word-break: break-word;
+}
+.nso-stream__chat-msg--highlight {
+    background: rgba(144, 243, 225, 0.25);
+    padding: 2px 4px;
+    border-left: 2px solid #90F3E1;
+}
+.nso-stream__chat-input {
+    display: flex;
+    border-top: 2px solid #4D23CD;
+}
+.nso-stream__chat-input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 6px 10px;
+    font-family: 'dinkie9px', sans-serif;
+    font-size: 13px;
+    color: #4D23CD;
+    background: #F7E0FA;
+}
+.nso-stream__chat-input input::placeholder {
+    color: #9a7cc0;
+}
+.nso-stream__info {
+    padding: 10px 14px;
+    border-top: 2px solid #90F3E1;
+    font-size: 14px;
+    color: #251f33;
+    margin: 0 14px;
+}
+.nso-stream__info-title {
+    font-size: 16px;
+    color: #4D23CD;
+    margin-bottom: 4px;
+}
+.nso-stream__info-meta {
+    font-size: 12px;
+    color: #9a7cc0;
+}
+.nso-stream__actions {
+    display: flex;
+    gap: 8px;
+    padding: 10px 14px;
+    border-top: 2px solid #4D23CD;
+    background: #F7E0FA;
+    margin: 0 14px 14px;
+}
+.nso-stream__actions .nso-btn {
+    flex: 1;
+    text-align: center;
+    font-size: 13px;
+    padding: 6px 8px;
+}
+.nso-stream__chat-colors {
+    display: flex;
+    gap: 3px;
+    padding: 4px 8px;
+    background: #F7E0FA;
+    border-top: 1px solid #90F3E1;
+    flex-wrap: wrap;
+}
+.nso-stream__chat-color {
+    width: 14px;
+    height: 14px;
+    border: 2px solid #4D23CD;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.nso-stream__chat-color:hover {
+    box-shadow: 0 0 0 2px #90F3E1;
+}
+.nso-stream__chat-color--active {
+    border-color: #fff;
+    box-shadow: 0 0 0 2px #4D23CD;
+}
+.nso-stream__chat-msg .nso-stream__chat-user {
+    font-weight: normal;
+}
+.nso-stream__chat-msg .nso-stream__chat-text {
+    font-size: 12px;
+}
+.nso-stream__cam-overlay {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 2;
+}
+.nso-stream__cam-viewers {
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 8px;
+    font-family: 'dinkie9px', sans-serif;
+}
+.nso-stream__cam-day {
+    background: rgba(0,0,0,0.6);
+    color: #90F3E1;
+    font-size: 11px;
+    padding: 2px 8px;
+    font-family: 'dinkie9px', sans-serif;
+}
+.nso-stream__read-comments {
+    padding: 6px 14px;
+    border-top: 1px solid #90F3E1;
+    font-size: 12px;
+    color: #4D23CD;
+    cursor: pointer;
+    margin: 0 14px;
+}
+.nso-stream__read-comments:hover {
+    text-decoration: underline;
+}
+.nso-stream__cam-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+.nso-stream__cam-subtitle {
+    position: relative;
+    padding: 20px 12px 8px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'dinkie9px', sans-serif;
+    text-align: center;
+    background: none;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+.nso-stream__cam-subtitle em {
+    color: #90F3E1;
+}
+.nso-stream__cam-bar {
+    display: flex;
+    gap: 4px;
+    padding: 4px 8px;
+    justify-content: center;
+}
+.nso-stream__cam-bar-dot {
+    width: 8px;
+    height: 4px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 1px;
+}
+.nso-stream__cam-bar-dot--active {
+    background: #90F3E1;
+}
+.nso-table--down {
+    color: #ED0707;
+}

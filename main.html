@@ -352,14 +352,14 @@
                         <button class="nso-stream__chat-skip">SKIP ▸▸</button>
                     </div>
                     <div class="nso-stream__chat-list" id="streamChatList">
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">■ weird name</span> <span class="nso-stream__chat-text">hello kangel!!</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#5577ff;">■ ?!</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#22aa44;">■ !!!!</span> <span class="nso-stream__chat-text">so cute</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#cc8800;">■ lefao</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#aa44cc;">■ Oh boy here come the nerds in the comments</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#ff6644;">■ dont go depression on us</span></div>
-                        <div class="nso-stream__chat-msg nso-stream__chat-msg--highlight"><span class="nso-stream__chat-user" style="color:#4D23CD;">■ thank u for gracing us</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">■ etc bannnn</span> <span class="nso-stream__chat-text">KEKW KEKW</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">weird name</span> <span class="nso-stream__chat-text">hello kangel!!</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#5577ff;">?!</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#22aa44;">!!!!</span> <span class="nso-stream__chat-text">so cute</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#cc8800;">lefao</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#aa44cc;">Oh boy here come the nerds in the comments</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#ff6644;">dont go depression on us</span></div>
+                        <div class="nso-stream__chat-msg nso-stream__chat-msg--highlight"><span class="nso-stream__chat-user" style="color:#4D23CD;">thank u for gracing us</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">etc bannnn</span> <span class="nso-stream__chat-text">KEKW KEKW</span></div>
                     </div>
                     <div class="nso-stream__chat-colors" id="streamColors">
                         <span class="nso-stream__chat-color nso-stream__chat-color--active" style="background:#4D23CD;" data-color="#4D23CD"></span>
@@ -702,7 +702,7 @@ document.getElementById('streamChatSend').addEventListener('click', function() {
     var list = document.getElementById('streamChatList');
     var msg = document.createElement('div');
     msg.className = 'nso-stream__chat-msg nso-stream__chat-msg--highlight';
-    msg.innerHTML = '<span class="nso-stream__chat-user" style="color:' + streamChatColor + ';">■ you</span> <span class="nso-stream__chat-text" style="color:' + streamChatColor + ';">' + text.replace(/</g, '&lt;') + '</span>';
+    msg.innerHTML = '<span class="nso-stream__chat-user" style="color:' + streamChatColor + ';">you</span> <span class="nso-stream__chat-text" style="color:' + streamChatColor + ';">' + text.replace(/</g, '&lt;') + '</span>';
     list.appendChild(msg);
     list.scrollTop = list.scrollHeight;
     input.value = '';
