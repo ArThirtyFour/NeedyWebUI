@@ -3166,22 +3166,54 @@ main {
     color: #ED0707;
 }
 
+.nso-window .table-section .inner {
+    padding: var(--window-padding);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nso-window .table-section .inner > .nso-btn {
+    margin: 4px 0;
+}
+
+.jine-panel {
+    width: min(620px, 100%);
+}
+
+.jine-panel .table-section .inner {
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.jine-panel .jine-chat {
+    width: 100%;
+    min-height: 390px;
+    border: 2px solid #4D23CD;
+    box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+    box-sizing: border-box;
+}
+
 .nso-stream {
     border: 2px solid #4D23CD;
     box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 8px 8px #4e23cd48;
     background: #FDF8FD;
     width: 100%;
+    max-width: 980px;
+    margin: 12px auto 20px;
+    box-sizing: border-box;
 }
 .nso-stream__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 14px;
+    min-height: 32px;
+    padding: 6px 72px 6px 14px;
     background: #EFCFEF;
     box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
     border-bottom: 2px solid #4D23CD;
     background-image: url("ui/navbuttons.png");
-    background-position: right center;
+    background-position: right 8px center;
     background-repeat: no-repeat;
     color: #4D23CD;
     font-family: 'dinkie9px', sans-serif;
@@ -3220,6 +3252,9 @@ main {
     display: flex;
     gap: 0;
     min-height: 280px;
+    margin: 12px 14px 0;
+    border: 2px solid #4D23CD;
+    box-sizing: border-box;
 }
 .nso-stream__cam {
     flex: 1 1 60%;
@@ -3338,6 +3373,7 @@ main {
     border-top: 2px solid #90F3E1;
     font-size: 14px;
     color: #251f33;
+    margin: 0 14px;
 }
 .nso-stream__info-title {
     font-size: 16px;
@@ -3354,6 +3390,7 @@ main {
     padding: 10px 14px;
     border-top: 2px solid #4D23CD;
     background: #F7E0FA;
+    margin: 0 14px 14px;
 }
 .nso-stream__actions .nso-btn {
     flex: 1;
@@ -3375,15 +3412,14 @@ main {
     border: 2px solid #4D23CD;
     cursor: pointer;
     display: inline-block;
-    transition: transform 100ms;
+    box-sizing: border-box;
 }
 .nso-stream__chat-color:hover {
-    transform: scale(1.3);
+    box-shadow: 0 0 0 2px #90F3E1;
 }
 .nso-stream__chat-color--active {
     border-color: #fff;
     box-shadow: 0 0 0 2px #4D23CD;
-    transform: scale(1.2);
 }
 .nso-stream__chat-msg .nso-stream__chat-user {
     font-weight: normal;
@@ -3420,6 +3456,7 @@ main {
     font-size: 12px;
     color: #4D23CD;
     cursor: pointer;
+    margin: 0 14px;
 }
 .nso-stream__read-comments:hover {
     text-decoration: underline;
