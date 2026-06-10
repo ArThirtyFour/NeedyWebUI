@@ -507,37 +507,14 @@ main {
                 padding-top:8px;
             }
 
-            .contact .inner a img {
-                image-rendering: pixelated;
-                font-size: 0;
+            .contact .inner .f-row {
+                display: flex;
+                gap: 8px;
             }
-            .contact .inner a img:before {
-                font-size: 1em;
-                display: block;
-            }
-            .contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
-                content: url("../ui/1heart.png");
-            }
-            .contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
-                content: url("../ui/2doubleheart.png");
-            }
-            .contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
-                content: url("../ui/32fingers.png");
-            }
-            .contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
-                content: url("../ui/4sparkle.png");
-            }
-            .contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
-                content: url("../ui/5musicalnote.png");
-            }
-            .contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
-                content: url("../ui/6explosion.png");
-            }
-            .contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
-                content: url("../ui/7confetti.png");
-            }
-            .contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
-                content: url("../ui/8angrysign.png");
+            .contact .inner .f-col {
+                display: flex;
+                align-items: center;
+                gap: 6px;
             }
 
             .blog-preview p .pinned .icon {
@@ -2014,15 +1991,7 @@ main {
                 flex-direction: column;
                 box-sizing: border-box;
             }
-            .noonbg > .container, .duskbg > .container {
-                flex: 1 1 auto;
-                min-height: 100vh;
-                margin: 0 auto;
-                width: 100%;
-                max-width: 1440px;
-                background: transparent;
-            }
-            .nightbg > .container {
+            .noonbg > .container, .duskbg > .container, .nightbg > .container {
                 flex: 1 1 auto;
                 min-height: 100vh;
                 margin: 0 auto;

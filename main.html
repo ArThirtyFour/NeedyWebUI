@@ -34,9 +34,9 @@
             <div class="table-section">
                 <div class="heading"><h4>Background Selector</h4></div>
                 <div class="inner">
-                    <div class="noonbutton"><a href="#">Noon</a><span class="nso-icon nso-icon--icon-emotes-it-is-day" style="--nso-icon-size:18px"></span></div>
-                    <div class="duskbutton"><a href="#">Dusk</a><span class="nso-icon nso-icon--icon-emotes-sun-is-down" style="--nso-icon-size:18px"></span></div>
-                    <div class="nightbutton"><a href="#">Night</a><span class="nso-icon nso-icon--icon-emotes-go-to-sleep" style="--nso-icon-size:18px"></span></div>
+                    <div class="noonbutton"><a href="#" onclick="switchBg('noonbg');return false">Noon</a><span class="nso-icon nso-icon--icon-emotes-it-is-day" style="--nso-icon-size:18px"></span></div>
+                    <div class="duskbutton"><a href="#" onclick="switchBg('duskbg');return false">Dusk</a><span class="nso-icon nso-icon--icon-emotes-sun-is-down" style="--nso-icon-size:18px"></span></div>
+                    <div class="nightbutton"><a href="#" onclick="switchBg('nightbg');return false">Night</a><span class="nso-icon nso-icon--icon-emotes-go-to-sleep" style="--nso-icon-size:18px"></span></div>
                 </div>
             </div>
         </div>
@@ -47,12 +47,12 @@
                 <div class="heading"><h4>Contact</h4></div>
                 <div class="inner">
                     <div class="f-row">
-                        <div class="f-col"><a href="#">Add Friend</a></div>
-                        <div class="f-col"><a href="#">Favorite</a></div>
+                        <div class="f-col"><a href="#">Add Friend</a> <span class="nso-icon nso-icon--shinanegen-heart" style="--nso-icon-size:16px"></span></div>
+                        <div class="f-col"><a href="#">Favorite</a> <span class="nso-icon nso-icon--shinanegen-two-hearts" style="--nso-icon-size:16px"></span></div>
                     </div>
                     <div class="f-row">
-                        <div class="f-col"><a href="#">Message</a></div>
-                        <div class="f-col"><a href="#">Share</a></div>
+                        <div class="f-col"><a href="#">Message</a> <span class="nso-icon nso-icon--icon-emotes-phone" style="--nso-icon-size:16px"></span></div>
+                        <div class="f-col"><a href="#">Share</a> <span class="nso-icon nso-icon--icon-emotes-activity" style="--nso-icon-size:16px"></span></div>
                     </div>
                 </div>
             </div>
@@ -530,6 +530,11 @@
 
 
 <script>
+function switchBg(cls) {
+    document.querySelectorAll('.noonbg, .duskbg, .nightbg').forEach(function(el) {
+        el.className = cls;
+    });
+}
 (function(){
     const slider = document.getElementById('nsoTimeSlider');
     const current = document.getElementById('nsoTimeCurrent');
