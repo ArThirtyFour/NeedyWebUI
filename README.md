@@ -11,7 +11,9 @@ Plans:
 - [X] Customization
 - [X] JINE UI
 - [X] Task Manager
-- [ ] Streams Windows
+- [X] Streams Windows
+
+FOR NOW IT'S COMPLETE
 
 How to add? 
 In your file add this code:
