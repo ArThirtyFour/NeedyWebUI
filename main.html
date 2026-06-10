@@ -24,6 +24,7 @@
             <button class="nso-btn" onclick="document.getElementById('sect-windows').scrollIntoView({behavior:'smooth'})">Windows</button>
             <button class="nso-btn" onclick="document.getElementById('sect-icons').scrollIntoView({behavior:'smooth'})">Icons</button>
             <button class="nso-btn" onclick="document.getElementById('sect-jine').scrollIntoView({behavior:'smooth'})">JINE</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'})">Stream</button>
             <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'})">Modals</button>
             <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'})">Tabs</button>
             <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'})">Misc</button>
@@ -104,19 +105,19 @@
         <div class="nso-kpi">
             <div class="nso-kpi__item">
                 <div class="nso-kpi__label">Followers</div>
-                <div class="nso-kpi__value">133,742</div>
+                <div class="nso-kpi__value">271,000</div>
             </div>
             <div class="nso-kpi__item">
                 <div class="nso-kpi__label">Stream Time</div>
-                <div class="nso-kpi__value">420h</div>
+                <div class="nso-kpi__value">320kg ShefOS</div>
             </div>
             <div class="nso-kpi__item">
                 <div class="nso-kpi__label">Donations</div>
-                <div class="nso-kpi__value">$6,942</div>
+                <div class="nso-kpi__value">$6,228</div>
             </div>
             <div class="nso-kpi__item">
                 <div class="nso-kpi__label">Stress</div>
-                <div class="nso-kpi__value">66%</div>
+                <div class="nso-kpi__value">67%</div>
             </div>
         </div>
 
@@ -312,6 +313,85 @@
                         <div class="jine-bubble jine-bubble--self">TAKE A BREAK !! 🫵</div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <h3 id="sect-stream" style="margin-top:24px;">Stream Window</h3>
+        <div class="nso-stream" style="margin-top:12px;">
+            <div class="nso-stream__header">
+                <div class="nso-stream__header-title">
+                    <span class="nso-stream__live">LIVE</span>
+                    STREAM
+                </div>
+                <div style="display:flex;gap:4px;">
+                    <span style="width:16px;height:16px;border:1px solid #3f2cbe;background:#d7b8ef;display:inline-flex;align-items:center;justify-content:center;font-size:10px;">_</span>
+                    <span style="width:16px;height:16px;border:1px solid #3f2cbe;background:#d7b8ef;display:inline-flex;align-items:center;justify-content:center;font-size:10px;">□</span>
+                    <span style="width:16px;height:16px;border:1px solid #3f2cbe;background:#d7b8ef;display:inline-flex;align-items:center;justify-content:center;font-size:10px;">✕</span>
+                </div>
+            </div>
+            <div class="nso-stream__body">
+                <div class="nso-stream__cam">
+                    <div class="nso-stream__cam-placeholder">
+                        <span class="nso-icon nso-icon--icon-emotes-kangel-happy-d" style="--nso-icon-size:120px;opacity:0.3;"></span>
+                    </div>
+                    <div class="nso-stream__cam-overlay">
+                        <span class="nso-stream__cam-viewers">168 viewers</span>
+                        <span class="nso-stream__cam-day">DAY 1</span>
+                    </div>
+                    <div class="nso-stream__cam-bottom">
+                        <div class="nso-stream__cam-subtitle">
+                            <em>And while I'm at it, I'm going to become the biggest streamer on NetTube! That's a threat AND a promise!</em>
+                        </div>
+                        <div class="nso-stream__cam-bar">
+                            <div class="nso-stream__cam-bar-dot nso-stream__cam-bar-dot--active"></div>
+                            <div class="nso-stream__cam-bar-dot nso-stream__cam-bar-dot--active"></div>
+                            <div class="nso-stream__cam-bar-dot nso-stream__cam-bar-dot--active"></div>
+                            <div class="nso-stream__cam-bar-dot"></div>
+                            <div class="nso-stream__cam-bar-dot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nso-stream__chat">
+                    <div class="nso-stream__chat-head">
+                        <span class="nso-stream__chat-speed">Stream Speed: As Usual</span>
+                        <button class="nso-stream__chat-skip">SKIP ▸▸</button>
+                    </div>
+                    <div class="nso-stream__chat-list" id="streamChatList">
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">■ weird name</span> <span class="nso-stream__chat-text">hello kangel!!</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#5577ff;">■ ?!</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#22aa44;">■ !!!!</span> <span class="nso-stream__chat-text">so cute</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#cc8800;">■ lefao</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#aa44cc;">■ Oh boy here come the nerds in the comments</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#ff6644;">■ dont go depression on us</span></div>
+                        <div class="nso-stream__chat-msg nso-stream__chat-msg--highlight"><span class="nso-stream__chat-user" style="color:#4D23CD;">■ thank u for gracing us</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">■ etc bannnn</span> <span class="nso-stream__chat-text">KEKW KEKW</span></div>
+                    </div>
+                    <div class="nso-stream__chat-colors" id="streamColors">
+                        <span class="nso-stream__chat-color nso-stream__chat-color--active" style="background:#4D23CD;" data-color="#4D23CD"></span>
+                        <span class="nso-stream__chat-color" style="background:#e02050;" data-color="#e02050"></span>
+                        <span class="nso-stream__chat-color" style="background:#5577ff;" data-color="#5577ff"></span>
+                        <span class="nso-stream__chat-color" style="background:#22aa44;" data-color="#22aa44"></span>
+                        <span class="nso-stream__chat-color" style="background:#cc8800;" data-color="#cc8800"></span>
+                        <span class="nso-stream__chat-color" style="background:#aa44cc;" data-color="#aa44cc"></span>
+                        <span class="nso-stream__chat-color" style="background:#ff6644;" data-color="#ff6644"></span>
+                        <span class="nso-stream__chat-color" style="background:#e060a0;" data-color="#e060a0"></span>
+                        <span class="nso-stream__chat-color" style="background:#00b8d4;" data-color="#00b8d4"></span>
+                        <span class="nso-stream__chat-color" style="background:#888888;" data-color="#888888"></span>
+                    </div>
+                    <div class="nso-stream__chat-input">
+                        <input id="streamChatInput" type="text" placeholder="Type a message...">
+                        <button id="streamChatSend" class="nso-btn nso-btn--primary" style="border:none;border-radius:0;padding:6px 12px;">▸</button>
+                    </div>
+                </div>
+            </div>
+            <div class="nso-stream__info">
+                <div class="nso-stream__info-title">Here Comes KAngel!</div>
+                <div class="nso-stream__info-meta">168 watching now · Started streaming on DAY 1</div>
+            </div>
+            <div class="nso-stream__read-comments">Read comments▸</div>
+            <div class="nso-stream__actions">
+                <button class="nso-btn">thank u for gracing us</button>
+                <button class="nso-btn nso-btn--ghost">Get out of here</button>
             </div>
         </div>
 
@@ -609,6 +689,32 @@ function showToast(msg, type) {
     container.appendChild(toast);
     setTimeout(() => { toast.classList.add('nso-toast--out'); setTimeout(() => toast.remove(), 400); }, 2500);
 }
+
+var streamChatColor = '#4D23CD';
+document.querySelectorAll('#streamColors .nso-stream__chat-color').forEach(function(c) {
+    c.addEventListener('click', function() {
+        document.querySelectorAll('#streamColors .nso-stream__chat-color').forEach(function(x) { x.classList.remove('nso-stream__chat-color--active'); });
+        c.classList.add('nso-stream__chat-color--active');
+        streamChatColor = c.dataset.color;
+        var input = document.getElementById('streamChatInput');
+        if (input) input.style.color = streamChatColor;
+    });
+});
+document.getElementById('streamChatSend').addEventListener('click', function() {
+    var input = document.getElementById('streamChatInput');
+    var text = input.value.trim();
+    if (!text) return;
+    var list = document.getElementById('streamChatList');
+    var msg = document.createElement('div');
+    msg.className = 'nso-stream__chat-msg nso-stream__chat-msg--highlight';
+    msg.innerHTML = '<span class="nso-stream__chat-user" style="color:' + streamChatColor + ';">■ you</span> <span class="nso-stream__chat-text" style="color:' + streamChatColor + ';">' + text.replace(/</g, '&lt;') + '</span>';
+    list.appendChild(msg);
+    list.scrollTop = list.scrollHeight;
+    input.value = '';
+});
+document.getElementById('streamChatInput').addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') document.getElementById('streamChatSend').click();
+});
 </script>
 </body>
 </html>

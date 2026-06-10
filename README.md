@@ -1,7 +1,7 @@
 ![alt text](image.png)
 
 ---
-### Yes it's a project for porting UI from **Needy Streamer Overload** in web (for now it's on pre beta)
+### Yes it's a project for porting UI from **Needy Streamer Overload** in web (for now it's on beta)
 
 Plans:
 - [X] Windows
@@ -10,12 +10,12 @@ Plans:
 - [X] Icons 
 - [X] Customization
 - [X] JINE UI
+- [X] Task Manager
 - [ ] Streams Windows
-- [ ] Task Manager
 
 How to add? 
 In your file add this code:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ArThirtyFour/NeedyWebUI@main/nso_ui.css">
 ```
-Because for now it's a alpha version example on html file in this repository how to use this
+Because for now it's a beta version example on html file in this repository how to use this , because i lazy for write docs LOL
