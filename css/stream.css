@@ -319,3 +319,39 @@
 .nso-table--down {
     color: #ED0707;
 }
+
+@media (max-width: 600px) {
+    .nso-stream {
+        max-width: 100%;
+        margin: 8px auto 12px;
+    }
+    .nso-stream__body {
+        flex-direction: column;
+        margin: 8px 8px 0;
+    }
+    .nso-stream__cam {
+        flex: none;
+        border-right: none;
+        border-bottom: 2px solid #4D23CD;
+        min-height: 200px;
+    }
+    .nso-stream__chat {
+        flex: none;
+        min-height: 200px;
+    }
+    .nso-stream__info {
+        margin: 0 8px;
+        padding: 8px;
+    }
+    .nso-stream__actions {
+        margin: 0 8px 8px;
+        flex-wrap: wrap;
+    }
+    .nso-stream__read-comments {
+        margin: 0 8px;
+    }
+    .nso-stream__header {
+        padding: 6px 48px 6px 10px;
+        font-size: 15px;
+    }
+}
