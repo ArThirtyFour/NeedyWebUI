@@ -11,12 +11,7 @@ Plans:
 - [X] Customization
 - [X] JINE UI
 - [X] Task Manager
-- [X] Streams Windows
-- [ ] Animations
-- [ ] Side Menu/etc
-- [ ] Based UI moments
-
-~~FOR NOW IT'S COMPLETE~~
+- [ ] Streams Windows
 
 How to add? 
 In your file add this code:
@@ -24,5 +19,3 @@ In your file add this code:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ArThirtyFour/NeedyWebUI@main/nso_ui.css">
 ```
 Because for now it's a beta version example on html file in this repository how to use this , because i lazy for write docs LOL
-
-

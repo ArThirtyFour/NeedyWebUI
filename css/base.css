@@ -2168,33 +2168,7 @@ main {
             .nso-nav button {
                 width: 100%;
             }
-            .nso-btn {
-                background: #f0d1f1;
-                box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
-                color: #4d23cf;
-                font-size: 15px;
-                font-weight: normal;
-                text-shadow: #f0d1f1 0px 2px 5px;
-                border: 2px solid #f0d1f1;
-                border-radius: 2px;
-                padding: 8px 10px;
-                text-align: left;
-                font-family: 'dinkie9px', sans-serif;
-            }
-            .nso-btn:active {
-                transform: translate(1px, 1px);
-            }
-            .nso-btn--ghost {
-                background: #FDF8FD;
-                box-shadow: none;
-                border: 2px solid #4D23CD;
-            }
-            .nso-btn--primary {
-                background: #90F3E1;
-                box-shadow: inset 2px 2px #4D23CD, 2px 2px #FDFDFD;
-                border: 2px solid #90F3E1;
-                color: #4D23CD;
-            }
+
 
             input[type="radio"] {
                 appearance: none;
@@ -2701,3 +2675,20 @@ main {
                     grid-template-columns: 1fr;
                 }
             }
+
+            .u-mt8 { margin-top: 8px; }
+            .u-mt12 { margin-top: 12px; }
+            .u-mt16 { margin-top: 16px; }
+            .u-mt24 { margin-top: 24px; }
+            .u-mb8 { margin-bottom: 8px; }
+            .u-mb12 { margin-bottom: 12px; }
+            .u-mb16 { margin-bottom: 16px; }
+            .u-flex { display: flex; }
+            .u-flex-wrap { flex-wrap: wrap; }
+            .u-gap8 { gap: 8px; }
+            .u-gap10 { gap: 10px; }
+            .u-gap16 { gap: 16px; }
+            .u-gap20 { gap: 20px; }
+            .u-items-center { align-items: center; }
+            .u-w-full { width: 100%; }
+            .u-w-half { width: 50%; }
