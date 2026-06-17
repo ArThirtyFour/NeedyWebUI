@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Needy UI — Component Library</title>
-    <link rel="stylesheet" href="nso_ui.css">
+    <link rel="stylesheet" href="./nso_ui.css">
 </head>
 <body>
 <div class="nightbg">
@@ -13,21 +13,22 @@
     <button class="nso-btn u-mb8" data-sidebar-toggle=".nso-sidebar-demo" style="position:fixed;top:12px;left:12px;z-index:160;">☰ Menu</button>
 
     <aside class="nso-sidebar nso-sidebar-demo">
-        <div class="nso-sidebar__head">
-            <span>NEEDY UI</span>
-            <button class="nso-sidebar__close" data-sidebar-toggle=".nso-sidebar-demo">✕</button>
-        </div>
-        <div class="nso-sidebar__body">
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-buttons').scrollIntoView({behavior:'smooth'});return false">Buttons</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-forms').scrollIntoView({behavior:'smooth'});return false">Forms</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-windows').scrollIntoView({behavior:'smooth'});return false">Windows</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-icons').scrollIntoView({behavior:'smooth'});return false">Icons</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-components').scrollIntoView({behavior:'smooth'});return false">Components</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-jine').scrollIntoView({behavior:'smooth'});return false">JINE</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'});return false">Stream</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'});return false">Modals</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'});return false">Tabs</a>
-            <a class="nso-sidebar__item" href="#" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'});return false">Misc</a>
+        <div class="profile" style="height:100%;display:flex;flex-direction:column;">
+            <div class="table-section" style="height:100%;display:flex;flex-direction:column;">
+                <div class="heading" style="flex:0 0 auto;"><h4>■ NEEDY UI</h4></div>
+                <div class="inner" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:6px;">
+                    <button class="nso-btn" onclick="document.getElementById('sect-buttons').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Buttons</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-forms').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Forms</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-windows').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Windows</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-icons').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Icons</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-components').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Components</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-jine').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">JINE</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Stream</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Modals</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Tabs</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Misc</button>
+                </div>
+            </div>
         </div>
     </aside>
     <div class="nso-sidebar__backdrop" data-sidebar-toggle=".nso-sidebar-demo"></div>
@@ -555,6 +556,31 @@
             </div>
         </div>
 
+        <h3 class="u-mt24">Progress Bars</h3>
+        <div class="nso-panel">
+            <div class="nso-panel__body">
+                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Followers — 74%</label>
+                <div class="nso-progress-bar u-mb12">
+                    <div class="nso-progress-bar__fill" style="width:74%;"></div>
+                    <span class="nso-progress-bar__label">133,742 / 180,000</span>
+                </div>
+                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Stress — 82%</label>
+                <div class="nso-progress-bar nso-progress-bar--stress nso-progress-bar--lg u-mb12">
+                    <div class="nso-progress-bar__fill" style="width:82%;"></div>
+                </div>
+                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Affection — 96%</label>
+                <div class="nso-progress-bar nso-progress-bar--affection nso-progress-bar--sm u-mb12">
+                    <div class="nso-progress-bar__fill" style="width:96%;"></div>
+                </div>
+                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Animated Demo</label>
+                <div class="nso-progress-bar" id="demoAnimatedBar">
+                    <div class="nso-progress-bar__fill" id="demoAnimatedFill" style="width:10%;"></div>
+                </div>
+                <button class="nso-btn nso-btn--sm u-mt8" onclick="var f=document.getElementById('demoAnimatedFill');var w=parseInt(f.style.width)||0;f.style.width=Math.min(w+10,100)+'%';">+10%</button>
+                <button class="nso-btn nso-btn--sm" onclick="document.getElementById('demoAnimatedFill').style.width='10%';">Reset</button>
+            </div>
+        </div>
+
         <h3 id="sect-misc" class="u-mt24">Toast Notifications</h3>
         <div class="nso-panel">
             <div class="nso-panel__body u-flex u-flex-wrap u-gap10">
@@ -615,6 +641,6 @@
 
 <div id="toast-container" class="nso-toast-container"></div>
 
-<script src="nso.js"></script>
+<script src="./nso.js"></script>
 </body>
 </html>

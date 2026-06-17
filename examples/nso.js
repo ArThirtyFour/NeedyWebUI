@@ -214,6 +214,11 @@
       });
     },
 
+    closeSidebar: function(sel) {
+      var el = document.querySelector(sel);
+      if (el) el.classList.remove('nso-sidebar--open');
+    },
+
     initDropdowns: function() {
       document.addEventListener('click', function(e) {
         var dd = e.target.closest('.nso-dropdown');
