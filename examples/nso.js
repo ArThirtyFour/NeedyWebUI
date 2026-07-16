@@ -155,8 +155,21 @@
     },
 
     initToast: function() {
-      window.showToast = function(msg, type) {
-        var container = document.getElementById('toast-container');
+      var positions = ['top-right','top-left','top-center','bottom-right','bottom-left','bottom-center'];
+      var containers = {};
+
+      function getContainer(pos) {
+        pos = pos || 'top-right';
+        if (containers[pos]) return containers[pos];
+        var el = document.createElement('div');
+        el.className = 'nso-toast-container nso-toast-container--' + pos;
+        document.body.appendChild(el);
+        containers[pos] = el;
+        return el;
+      }
+
+      window.showToast = function(msg, type, position) {
+        var container = getContainer(position);
         var toast = document.createElement('div');
         toast.className = 'nso-toast nso-toast--' + (type || 'info');
         toast.textContent = msg;

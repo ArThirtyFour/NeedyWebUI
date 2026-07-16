@@ -588,6 +588,13 @@
                 <button class="nso-btn nso-btn--primary" onclick="showToast('Stream started!','success')">Success Toast</button>
                 <button class="nso-btn nso-btn--ghost" onclick="showToast('Stress level critical!','warning')">Warning Toast</button>
             </div>
+            <div class="nso-panel__body u-flex u-flex-wrap u-gap10" style="border-top:1px solid #e8d0f0;">
+                <button class="nso-btn nso-btn--sm" onclick="showToast('Top Left','info','top-left')">Top Left</button>
+                <button class="nso-btn nso-btn--sm" onclick="showToast('Top Center','info','top-center')">Top Center</button>
+                <button class="nso-btn nso-btn--sm" onclick="showToast('Bottom Right','info','bottom-right')">Bottom Right</button>
+                <button class="nso-btn nso-btn--sm" onclick="showToast('Bottom Left','info','bottom-left')">Bottom Left</button>
+                <button class="nso-btn nso-btn--sm" onclick="showToast('Bottom Center','info','bottom-center')">Bottom Center</button>
+            </div>
         </div>
 
         <h3 class="u-mt24">Tooltips</h3>
@@ -639,7 +646,7 @@
 </div>
 </div>
 
-<div id="toast-container" class="nso-toast-container"></div>
+
 
 <script src="./nso.js"></script>
 </body>

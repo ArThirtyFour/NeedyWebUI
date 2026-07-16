@@ -246,15 +246,22 @@
 
 .nso-toast-container {
   position: fixed;
-  top: 20px;
-  right: 20px;
   z-index: 300;
   display: grid;
   gap: 10px;
   pointer-events: none;
 }
 
+.nso-toast-container--top-right    { top: 20px;  right: 20px; }
+.nso-toast-container--top-left     { top: 20px;  left: 20px; }
+.nso-toast-container--top-center   { top: 20px;  left: 50%; transform: translateX(-50%); }
+.nso-toast-container--bottom-right { bottom: 20px; right: 20px; }
+.nso-toast-container--bottom-left  { bottom: 20px; left: 20px; }
+.nso-toast-container--bottom-center { bottom: 20px; left: 50%; transform: translateX(-50%); }
+
 .nso-toast {
+  --toast-x: 40px;
+  --toast-y: 0;
   font-family: 'dinkie9px', sans-serif;
   font-size: 15px;
   padding: 10px 18px;
@@ -265,6 +272,21 @@
   pointer-events: auto;
   animation: nso-toast-in 300ms ease;
   max-width: 320px;
+}
+
+.nso-toast-container--top-left .nso-toast,
+.nso-toast-container--bottom-left .nso-toast {
+  --toast-x: -40px;
+}
+
+.nso-toast-container--top-center .nso-toast {
+  --toast-x: 0;
+  --toast-y: -40px;
+}
+
+.nso-toast-container--bottom-center .nso-toast {
+  --toast-x: 0;
+  --toast-y: 40px;
 }
 
 .nso-toast--success {
@@ -292,13 +314,13 @@
 }
 
 @keyframes nso-toast-in {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
+  from { opacity: 0; transform: translate(var(--toast-x), var(--toast-y)); }
+  to   { opacity: 1; transform: translate(0, 0); }
 }
 
 @keyframes nso-toast-out {
-  from { opacity: 1; transform: translateX(0); }
-  to { opacity: 0; transform: translateX(40px); }
+  from { opacity: 1; transform: translate(0, 0); }
+  to   { opacity: 0; transform: translate(var(--toast-x), var(--toast-y)); }
 }
 
 .nso-tooltip-wrap {
