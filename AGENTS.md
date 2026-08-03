@@ -7,13 +7,16 @@ A dependency-free CSS component library that ports the UI from *Needy Streamer O
 ## Project structure
 
 ```
-nso_ui.css            ← entry point (imports the 5 modules below)
+nso_ui.css            ← entry point (imports 6 modules)
 css/base.css          ← core styles, variables, layout, utilities (~2694 lines)
-css/components.css    ← buttons, modals, tabs, tooltips, toggles, etc. (~716 lines)
+css/components.css    ← buttons, modals, tabs, tooltips, toggles, etc. (~738 lines)
+css/article.css       ← article/reading layout, callouts, code blocks, risk badges, tables
 css/icons.css         ← icon system via CSS custom properties (~160 icons)
+css/hljs-nso.css      ← highlight.js theme (brand palette: purple/teal/pink)
 css/sidebar.css       ← sliding sidebar nav
 css/stream.css        ← live-stream window layout
 examples/index.html   ← full component showcase / demo
+examples/nso_ui.css   ← example-local copy of the entry point
 examples/nso.js       ← vanilla JS for interactive components (global window.NSO)
 fonts/                ← DinkieBitmap-9px.woff2 (pixel font — core to aesthetic)
 background/           ← tile/background PNGs (day/dusk/night themes)
@@ -54,3 +57,4 @@ Do not introduce new colors without reason. The palette is intentionally limited
 - The pixel-art aesthetic is intentional: `image-rendering: pixelated`, bitmap font, custom cursor.
 - Game-specific terminology in class names (`JINE`, `shinanegen`) is canonical — do not "translate" to generic names.
 - Distribution via CDN: `cdn.jsdelivr.net/gh/ArThirtyFour/NeedyWebUI@main/nso_ui.css`.
+- highlight.js theme (`css/hljs-nso.css`) uses brand palette colors on `#2a1b4d` background — load highlight.js core from CDN separately, theme is included in `nso_ui.css`.

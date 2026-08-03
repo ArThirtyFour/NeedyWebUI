@@ -26,6 +26,7 @@
                     <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Stream</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Modals</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Tabs</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-article').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Article</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Misc</button>
                 </div>
             </div>
@@ -48,6 +49,7 @@
             <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'})">Stream</button>
             <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'})">Modals</button>
             <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'})">Tabs</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-article').scrollIntoView({behavior:'smooth'})">Article</button>
             <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'})">Misc</button>
         </div>
 
@@ -642,6 +644,99 @@
             </div>
         </div>
 
+        <h3 id="sect-article" class="u-mt24">Article</h3>
+        <article class="nso-article">
+            <h1>KAngel — Field Notes</h1>
+            <div class="nso-meta">P-chan · Updated DAY 30 · 12 min read</div>
+
+            <p>
+                KAngel is an attention-starved internet girl who streams until her stress meter
+                overdoses. These notes cover her <em>tropes</em>, her <em>triggers</em>, and the
+                buttons that push her over the edge.
+            </p>
+
+            <div class="nso-callout nso-callout--info">
+                <strong>TL;DR:</strong> Keep <code>stress</code> low, keep
+                <code>affection</code> high, and never skip the night.
+            </div>
+
+            <h2>1. Core Stats</h2>
+            <p>Two meters define the whole run. Let them swing and the girl flatlines.</p>
+            <ul>
+                <li><b>Stress</b> — climbs on every bad choice. Maxed out and streaming? Cooked.</li>
+                <li><b>Affection</b> — your leash. Zero means she stops caring.</li>
+                <li><b>Darkness</b> — hidden until it's already too late.</li>
+            </ul>
+
+            <h3>1.1. Thresholds</h3>
+            <div class="nso-table-container">
+                <table class="nso-table">
+                    <thead>
+                        <tr><th>Level</th><th class="wrap">Meaning</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><span class="nso-risk nso-risk--low">SAFE</span></td><td class="wrap">She's fine. So is your ego.</td></tr>
+                        <tr><td><span class="nso-risk nso-risk--med">EDGE</span></td><td class="wrap">Sweating, spacing out in chat.</td></tr>
+                        <tr><td><span class="nso-risk nso-risk--high">HIGH</span></td><td class="wrap">Crying, cancelling, spiraling.</td></tr>
+                        <tr><td><span class="nso-risk nso-risk--crit">CRIT</span></td><td class="wrap">Flatline territory. Game over.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <blockquote>
+                "The internet is a shared delusion. Ame isn't real and neither is your record."
+                — anonymous moderator
+            </blockquote>
+
+            <h2>2. Golden Rules</h2>
+            <ol>
+                <li>Never let <code>Darkness</code> pass <code>70%</code> silently.</li>
+                <li>Buy the clothes before the date, not after.</li>
+                <li>Ignore chat when guilty; then don't.</li>
+            </ol>
+
+            <h3>2.1. Sleep vs. Streak</h3>
+            <p>
+                The <kbd class="nso-kbd">⬅</kbd><kbd class="nso-kbd">➡</kbd> arrows steer her day,
+                but <b>going to sleep</b> is the real choice.
+            </p>
+            <pre><code class="language-javascript">const sanity = stress(gain: 40, daily: 2);
+// vs
+const streak = alive(days: 31) ? 'memorial' : 'comeback arc';
+
+function theJam() {
+  return (affection > 80)
+    ? 'happy end world'
+    : 'internet overdose'; // oops
+}</code></pre>
+
+            <div class="nso-callout nso-callout--warn">
+                <strong>Don't</strong> spam <kbd class="nso-kbd">SPACE</kbd> past every dialogue
+                line. Two seconds of attention now saves a whole recovery run.
+            </div>
+
+            <div class="nso-callout nso-callout--crit">
+                <strong>CRITICAL:</strong> Do not stream with stress above
+                <code class="nso-risk nso-risk--crit">90</code>. The end screen is not a meme.
+                <a href="#sect-tabs">See Tabs →</a>
+            </div>
+
+            <hr>
+
+            <h2>3. JINE Dump</h2>
+            <p>
+                Real snippets from the timeline. Anchors work via
+                <code class="nso-kbd">nso-anchor</code>.
+            </p>
+            <p>
+                "I'm fine" <a class="nso-anchor" href="#sect-article">¶</a>
+                — she is not fine.
+            </p>
+            <p>
+                "Blyyatt" <a class="nso-anchor" href="#sect-article">¶</a>
+            </p>
+        </article>
+
     </main>
 </div>
 </div>
@@ -649,5 +744,7 @@
 
 
 <script src="./nso.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
 </body>
 </html>

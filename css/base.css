@@ -166,7 +166,7 @@ html, body {
 }
 
 body {
-    font-family: dinkie9px;
+    font-family: dinkie9px, 'Segoe UI', system-ui, -apple-system, 'Noto Sans', Arial, sans-serif;
     font-weight: normal;
     text-decoration-color: #4D21CB;
 }

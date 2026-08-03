@@ -1,0 +1,92 @@
+/*
+ * Needy UI — highlight.js theme
+ * Brand palette: #4D23CD (purple), #90F3E1 (teal), #EFCFEF (pink)
+ * Code block bg: #2a1b4d
+ */
+
+.hljs {
+  background: #2a1b4d;
+  color: #efe6ff;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #7e6aa8;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-type {
+  color: #EFCFEF;
+  font-weight: 700;
+}
+
+.hljs-string,
+.hljs-template-variable,
+.hljs-regexp,
+.hljs-addition {
+  color: #90F3E1;
+}
+
+.hljs-number,
+.hljs-literal {
+  color: #ffd479;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #b8a6ff;
+}
+
+.hljs-function .hljs-title,
+.hljs-title.function_,
+.hljs-title {
+  color: #b8a6ff;
+}
+
+.hljs-params {
+  color: #efe6ff;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: #90F3E1;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #EFCFEF;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #EFCFEF;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword {
+  color: #8f86b8;
+}
+
+.hljs-section,
+.hljs-selector-id {
+  color: #EFCFEF;
+  font-weight: 700;
+}
+
+.hljs-selector-class {
+  color: #90F3E1;
+}
+
+.hljs-deletion {
+  color: #ff8a9a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
