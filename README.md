@@ -38,7 +38,6 @@ Add to your HTML `<head>`:
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ArThirtyFour/NeedyWebUI@main/nso_ui.css">
 ```
-```
 
 ---
 
