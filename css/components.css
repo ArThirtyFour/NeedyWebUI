@@ -820,76 +820,98 @@
 
 
 /* ===================================================================
-   nso-tweet — Social media / Tweeter card
-   Image + overlay text + username + retweet/like counts.
-   Matches the game's "Social Media" widget.
+   nso-tweet — Social media / Tweeter post card
    =================================================================== */
 
 .nso-tweet {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   width: var(--nso-tweet-width, 320px);
   max-width: 100%;
-  overflow: hidden;
-  border: 2px solid #4D23CF;
-  box-shadow: 5px 5px 0 #4d23cf6e;
-  background: #000;
+  border: 2px solid #4D23CD;
+  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+  background: #FDF8FD;
   font-family: 'dinkie9px', sans-serif;
   image-rendering: pixelated;
+  box-sizing: border-box;
+}
+
+.nso-tweet--sm { --nso-tweet-width: 260px; }
+.nso-tweet--md { --nso-tweet-width: 360px; }
+.nso-tweet--lg { --nso-tweet-width: 480px; }
+
+/* The visual media card (image + overlays) */
+.nso-tweet__media {
+  position: relative;
+  width: 100%;
+  min-height: 180px;
+  background: #251f33;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nso-tweet__image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
-.nso-tweet__overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  pointer-events: none;
-}
-
 .nso-tweet__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: flex-start;
   gap: 8px;
   padding: 10px;
-  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(5, 1, 15, 0.85) 0%, rgba(5, 1, 15, 0.4) 70%, transparent 100%);
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .nso-tweet__avatar {
   width: 32px;
   height: 32px;
-  border: 2px solid #4D23CF;
-  border-radius: 0;
+  border: 2px solid #90F3E1;
   flex-shrink: 0;
-  image-rendering: pixelated;
+  background: #EFCFEF;
+}
+
+.nso-tweet__meta {
+  flex: 1;
+  min-width: 0;
 }
 
 .nso-tweet__user {
   font-size: 11px;
-  color: #fff;
-  opacity: 0.85;
+  color: #90F3E1;
+  letter-spacing: 0.02em;
 }
 
 .nso-tweet__text {
   font-size: 13px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 1.4;
   margin-top: 2px;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 2px #000;
 }
 
-.nso-tweet__footer {
+/* Stats (retweets, likes) directly on the media bottom */
+.nso-tweet__stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
   align-items: center;
   gap: 16px;
   padding: 8px 10px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+  background: linear-gradient(0deg, rgba(5, 1, 15, 0.85) 0%, transparent 100%);
+  z-index: 2;
 }
 
 .nso-tweet__stat {
@@ -897,7 +919,6 @@
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  pointer-events: auto;
   cursor: default;
 }
 
@@ -910,12 +931,57 @@
 }
 
 .nso-tweet__stat-icon {
-  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-/* size modifier */
-.nso-tweet--lg { --nso-tweet-width: 440px; }
-.nso-tweet--sm { --nso-tweet-width: 240px; }
+/* Comments thread container (underneath media) */
+.nso-tweet__comments {
+  background: #FDF8FD;
+  border-top: 2px solid #4D23CD;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nso-tweet__comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.nso-tweet__comment-avatar {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #4D23CD;
+  flex-shrink: 0;
+}
+
+.nso-tweet__comment-user {
+  font-size: 11px;
+  color: #4D23CD;
+  font-weight: bold;
+}
+
+.nso-tweet__comment-text {
+  color: #251f33;
+  margin-top: 2px;
+}
+
+.nso-tweet__comment-reply {
+  margin-left: 28px;
+  padding-left: 8px;
+  border-left: 2px solid #90F3E1;
+}
+
+@media (max-width: 600px) {
+  .nso-tweet { --nso-tweet-width: 100%; }
+}
 
 
 /* ===================================================================
