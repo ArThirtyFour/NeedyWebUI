@@ -19,6 +19,17 @@
     --color-secondary: #90F3E1;
     --color-accent: #EFCFEF;
     --color-bg: #FDF8FD;
+
+    --color-stroke: #4D23CF;
+    --color-titlebar: #F0D1F1;
+    --color-shadow: #4d23cf6e;
+    --color-bottom-shape: #EAA0E8;
+    --color-label-blue: #6EB5DF;
+    --color-histogram-bg: #DBBEED;
+    --color-histogram-bar: #6EB4E1;
+    --color-critical: #E75353;
+    --color-retweet: #3F9B53;
+    --color-like: #B6B365;
 }
 
 .nso-window--small {

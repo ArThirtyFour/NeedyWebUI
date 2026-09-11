@@ -26,6 +26,7 @@
                     <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Stream</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Modals</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Tabs</button>
+                    <button class="nso-btn" onclick="document.getElementById('sect-media').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Media & Social</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-article').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Article</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Misc</button>
                 </div>
@@ -49,6 +50,7 @@
             <button class="nso-btn" onclick="document.getElementById('sect-stream').scrollIntoView({behavior:'smooth'})">Stream</button>
             <button class="nso-btn" onclick="document.getElementById('sect-modals').scrollIntoView({behavior:'smooth'})">Modals</button>
             <button class="nso-btn" onclick="document.getElementById('sect-tabs').scrollIntoView({behavior:'smooth'})">Tabs</button>
+            <button class="nso-btn" onclick="document.getElementById('sect-media').scrollIntoView({behavior:'smooth'})">Media & Social</button>
             <button class="nso-btn" onclick="document.getElementById('sect-article').scrollIntoView({behavior:'smooth'})">Article</button>
             <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'})">Misc</button>
         </div>
@@ -119,23 +121,35 @@
             </div>
         </div>
 
-        <h3 class="u-mt24">KPI Cards</h3>
+        <h3 class="u-mt24">KPI Cards (Task Manager Stats)</h3>
         <div class="nso-kpi">
             <div class="nso-kpi__item">
-                <div class="nso-kpi__label">Followers</div>
+                <div class="nso-kpi__label" style="display:flex;align-items:center;gap:4px;">
+                    <img src="./assets/status-icons/icon_status_follower.png" alt="Followers" style="width:16px;height:16px;image-rendering:pixelated;">
+                    Followers
+                </div>
                 <div class="nso-kpi__value">271,000</div>
             </div>
             <div class="nso-kpi__item">
-                <div class="nso-kpi__label">Stream Time</div>
-                <div class="nso-kpi__value">320kg ShefOS</div>
+                <div class="nso-kpi__label" style="display:flex;align-items:center;gap:4px;">
+                    <img src="./assets/status-icons/icon_status_stress.png" alt="Stress" style="width:16px;height:16px;image-rendering:pixelated;">
+                    Stress
+                </div>
+                <div class="nso-kpi__value" style="color:var(--color-critical,#E75353);">88%</div>
             </div>
             <div class="nso-kpi__item">
-                <div class="nso-kpi__label">Donations</div>
-                <div class="nso-kpi__value">$6,228</div>
+                <div class="nso-kpi__label" style="display:flex;align-items:center;gap:4px;">
+                    <img src="./assets/status-icons/icon_status_love.png" alt="Affection" style="width:16px;height:16px;image-rendering:pixelated;">
+                    Affection
+                </div>
+                <div class="nso-kpi__value">96/100</div>
             </div>
             <div class="nso-kpi__item">
-                <div class="nso-kpi__label">Stress</div>
-                <div class="nso-kpi__value">67%</div>
+                <div class="nso-kpi__label" style="display:flex;align-items:center;gap:4px;">
+                    <img src="./assets/status-icons/icon_status_yami.png" alt="Darkness" style="width:16px;height:16px;image-rendering:pixelated;">
+                    Darkness
+                </div>
+                <div class="nso-kpi__value">74%</div>
             </div>
         </div>
 
@@ -197,6 +211,35 @@
             <div class="table-section">
                 <div class="heading"><h4>Right</h4></div>
                 <div class="inner"><button class="nso-btn">Right Aligned</button></div>
+            </div>
+        </div>
+
+        <h3 class="u-mt24">Window Frame (.nso-frame)</h3>
+        <div class="u-flex u-flex-wrap u-gap16 u-mt12">
+            <div class="nso-frame nso-frame--sm">
+                <div class="nso-frame__titlebar">
+                    <h4 class="nso-frame__title">Task Manager</h4>
+                </div>
+                <div class="nso-frame__body">
+                    <p style="margin:0 0 8px;"><strong>CPU:</strong> 12%</p>
+                    <p style="margin:0 0 8px;"><strong>Memory:</strong> 44%</p>
+                    <p style="margin:0;"><strong>Stress:</strong> <span style="color:var(--color-critical,#E75353);">88% (CRIT)</span></p>
+                </div>
+            </div>
+
+            <div class="nso-frame nso-frame--md">
+                <div class="nso-frame__titlebar">
+                    <h4 class="nso-frame__title">Quick Notes — Day 15</h4>
+                </div>
+                <div class="nso-frame__body">
+                    <p style="margin:0 0 6px;">1. Don't forget to take medications 💊</p>
+                    <p style="margin:0 0 6px;">2. Stream at 21:00 (Dark Stream arc)</p>
+                    <p style="margin:0;">3. Reply to P-chan on JINE...</p>
+                </div>
+                <div class="nso-frame__footer">
+                    <button class="nso-btn nso-btn--sm" data-sfx="click">Save</button>
+                    <button class="nso-btn nso-btn--sm nso-btn--ghost">Clear</button>
+                </div>
             </div>
         </div>
 
@@ -363,21 +406,30 @@
                     <div class="nso-progress-group">
                         <div class="nso-progress-row">
                             <div class="nso-progress-meta">
-                                <span class="nso-progress-label">Stress</span>
+                                <span class="nso-progress-label" style="display:flex;align-items:center;gap:4px;">
+                                    <img src="./assets/status-icons/icon_status_stress.png" alt="Stress" style="width:14px;height:14px;image-rendering:pixelated;">
+                                    Stress
+                                </span>
                                 <span class="nso-progress-value" id="barStressValue">11/100</span>
                             </div>
                             <div id="barStress" class="nso-progress nso-progress--sm" data-max="100" data-value="11"></div>
                         </div>
                         <div class="nso-progress-row">
                             <div class="nso-progress-meta">
-                                <span class="nso-progress-label">Affection</span>
+                                <span class="nso-progress-label" style="display:flex;align-items:center;gap:4px;">
+                                    <img src="./assets/status-icons/icon_status_love.png" alt="Affection" style="width:14px;height:14px;image-rendering:pixelated;">
+                                    Affection
+                                </span>
                                 <span class="nso-progress-value" id="barAffectionValue">109/120</span>
                             </div>
                             <div id="barAffection" class="nso-progress" data-max="120" data-value="109"></div>
                         </div>
                         <div class="nso-progress-row">
                             <div class="nso-progress-meta">
-                                <span class="nso-progress-label">Darkness</span>
+                                <span class="nso-progress-label" style="display:flex;align-items:center;gap:4px;">
+                                    <img src="./assets/status-icons/icon_status_yami.png" alt="Darkness" style="width:14px;height:14px;image-rendering:pixelated;">
+                                    Darkness
+                                </span>
                                 <span class="nso-progress-value" id="barDarknessValue">18/100</span>
                             </div>
                             <div id="barDarkness" class="nso-progress nso-progress--lg" data-max="100" data-value="18"></div>
@@ -644,6 +696,91 @@
             </div>
         </div>
 
+        <h3 id="sect-media" class="u-mt24">Media Player & Social Cards</h3>
+
+        <h4 class="u-mt16">Media Player (.nso-player)</h4>
+        <div class="u-flex u-flex-wrap u-gap16 u-mt12">
+            <div class="nso-player" data-duration="210">
+                <div class="nso-player__titlebar">
+                    <span class="nso-player__titlebar-text">Music Player</span>
+                </div>
+                <div class="nso-player__content">
+                    <div class="nso-player__art-placeholder">♪</div>
+                    <div class="nso-player__info">
+                        <div class="nso-player__title">INTERNET OVERDOSE</div>
+                        <div class="nso-player__artist">Aiobahn feat. KOTOKO</div>
+                    </div>
+                </div>
+                <div class="nso-player__progress">
+                    <div class="nso-player__progress-track">
+                        <div class="nso-player__progress-fill" style="width:0%;"></div>
+                    </div>
+                    <div class="nso-player__progress-time">
+                        <span class="nso-player__time-pos">0:00</span>
+                        <span class="nso-player__time-dur">3:30</span>
+                    </div>
+                </div>
+                <div class="nso-player__controls">
+                    <button class="nso-player__btn nso-player__btn--prev">⏮</button>
+                    <button class="nso-player__btn nso-player__btn--play">▶</button>
+                    <button class="nso-player__btn nso-player__btn--next">⏭</button>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="u-mt16">Tweeter Post (.nso-tweet)</h4>
+        <div class="u-flex u-flex-wrap u-gap16 u-mt12">
+            <div class="nso-tweet">
+                <div style="width:100%;height:180px;background:linear-gradient(135deg,#4D23CD,#90F4E4);display:flex;align-items:center;justify-content:center;">
+                    <span class="nso-icon nso-icon--kangel-happy-d" style="--nso-icon-size:72px;"></span>
+                </div>
+                <div class="nso-tweet__overlay">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;">
+                            <span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span>
+                        </div>
+                        <div>
+                            <div class="nso-tweet__user">@x_angelkawaii_x</div>
+                            <div class="nso-tweet__text">streaming again tonight!! make sure to tune in ok?? †昇天†</div>
+                        </div>
+                    </div>
+                    <div class="nso-tweet__footer">
+                        <div class="nso-tweet__stat nso-tweet__stat--retweet">
+                            <span class="nso-tweet__stat-icon">🔁</span> 1,337
+                        </div>
+                        <div class="nso-tweet__stat nso-tweet__stat--like">
+                            <span class="nso-tweet__stat-icon">★</span> 9,999
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nso-tweet nso-tweet--sm">
+                <div style="width:100%;height:180px;background:linear-gradient(135deg,#251f33,#4D23CD);display:flex;align-items:center;justify-content:center;">
+                    <span class="nso-icon nso-icon--ame-sad" style="--nso-icon-size:56px;"></span>
+                </div>
+                <div class="nso-tweet__overlay">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#251f33;display:flex;align-items:center;justify-content:center;">
+                            <span class="nso-icon nso-icon--ame-stare" style="--nso-icon-size:24px;"></span>
+                        </div>
+                        <div>
+                            <div class="nso-tweet__user">@raincandy_U</div>
+                            <div class="nso-tweet__text">i hate everyone... except p-chan</div>
+                        </div>
+                    </div>
+                    <div class="nso-tweet__footer">
+                        <div class="nso-tweet__stat nso-tweet__stat--retweet">
+                            <span class="nso-tweet__stat-icon">🔁</span> 42
+                        </div>
+                        <div class="nso-tweet__stat nso-tweet__stat--like">
+                            <span class="nso-tweet__stat-icon">★</span> 328
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <h3 id="sect-article" class="u-mt24">Article</h3>
         <article class="nso-article">
             <h1>KAngel — Field Notes</h1>
@@ -744,6 +881,13 @@ function theJam() {
 
 
 <script src="./nso.js"></script>
+<script>
+    NSO.sfx.register('click', '../audio/execute.wav');
+    NSO.sfx.register('open', '../audio/open.wav');
+    NSO.sfx.register('close', '../audio/close.wav');
+    NSO.sfx.register('piporo', '../audio/piporo.wav');
+    NSO.sfx.register('toast', '../audio/pop_tutorial.wav');
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script>hljs.highlightAll();</script>
 </body>

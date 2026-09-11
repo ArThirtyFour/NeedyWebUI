@@ -736,3 +736,366 @@
     padding: 8px 10px;
   }
 }
+
+
+.nso-frame {
+  display: flex;
+  flex-direction: column;
+  width: var(--window-width, 400px);
+  max-width: 100%;
+  box-sizing: border-box;
+  background: #FDF8FD;
+  border: 2px solid #4D23CD;
+  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+  position: relative;
+  font-family: 'dinkie9px', sans-serif;
+  image-rendering: pixelated;
+}
+
+.nso-frame--sm  { --window-width: 280px; }
+.nso-frame--md  { --window-width: 400px; }
+.nso-frame--lg  { --window-width: 600px; }
+.nso-frame--xl  { --window-width: 800px; }
+.nso-frame--full { --window-width: 100%; }
+
+.nso-frame__titlebar {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 56px 0 14px;
+  background: #EFCFEF;
+  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+  border-bottom: 2px solid #4D23CD;
+  color: #4D21CB;
+  background-image: url("../ui/navbuttons.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  letter-spacing: 0.045em;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.nso-frame__title {
+  flex: 1;
+  font-size: 18px;
+  color: #4D21CB;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.045em;
+  margin: 0;
+}
+
+/* foreground / content area */
+.nso-frame__body {
+  background: #FDF8FD;
+  padding: 12px 14px;
+  flex: 1;
+  font-size: 14px;
+  color: #4D21CB;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* optional footer */
+.nso-frame__footer {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 8px 14px;
+  border-top: 2px solid #90F3E1;
+  background: #FDF8FD;
+}
+
+/* alignment helpers */
+.nso-frame--left   { margin: 0 auto 12px 0; }
+.nso-frame--center { margin: 0 auto 12px; }
+.nso-frame--right  { margin: 0 0 12px auto; }
+
+/* alignment helpers */
+.nso-frame--left   { margin: 0 auto 12px 0; }
+.nso-frame--center { margin: 0 auto 12px; }
+.nso-frame--right  { margin: 0 0 12px auto; }
+
+
+/* ===================================================================
+   nso-tweet — Social media / Tweeter card
+   Image + overlay text + username + retweet/like counts.
+   Matches the game's "Social Media" widget.
+   =================================================================== */
+
+.nso-tweet {
+  position: relative;
+  width: var(--nso-tweet-width, 320px);
+  max-width: 100%;
+  overflow: hidden;
+  border: 2px solid #4D23CF;
+  box-shadow: 5px 5px 0 #4d23cf6e;
+  background: #000;
+  font-family: 'dinkie9px', sans-serif;
+  image-rendering: pixelated;
+}
+
+.nso-tweet__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nso-tweet__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.nso-tweet__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.nso-tweet__avatar {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #4D23CF;
+  border-radius: 0;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.nso-tweet__user {
+  font-size: 11px;
+  color: #fff;
+  opacity: 0.85;
+}
+
+.nso-tweet__text {
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.4;
+  margin-top: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.nso-tweet__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 10px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.nso-tweet__stat {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  pointer-events: auto;
+  cursor: default;
+}
+
+.nso-tweet__stat--retweet {
+  color: #3F9B53;
+}
+
+.nso-tweet__stat--like {
+  color: #B6B365;
+}
+
+.nso-tweet__stat-icon {
+  font-size: 14px;
+}
+
+/* size modifier */
+.nso-tweet--lg { --nso-tweet-width: 440px; }
+.nso-tweet--sm { --nso-tweet-width: 240px; }
+
+
+/* ===================================================================
+   nso-player — Media player
+   Album art + title/artist + progress bar + transport controls.
+   Matches the game's "Media Player" widget.
+   =================================================================== */
+
+.nso-player {
+  display: flex;
+  flex-direction: column;
+  width: var(--nso-player-width, 320px);
+  max-width: 100%;
+  background: #FDF8FD;
+  border: 2px solid #4D23CD;
+  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
+  font-family: 'dinkie9px', sans-serif;
+  image-rendering: pixelated;
+}
+
+/* titlebar reuses standard heading pattern */
+.nso-player__titlebar {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 56px 0 14px;
+  background: #EFCFEF;
+  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD;
+  border-bottom: 2px solid #4D23CD;
+  color: #4D21CB;
+  background-image: url("../ui/navbuttons.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  letter-spacing: 0.045em;
+  box-sizing: border-box;
+}
+
+.nso-player__titlebar-text {
+  flex: 1;
+  font-size: 18px;
+  color: #4D21CB;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+/* main content */
+.nso-player__content {
+  display: flex;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #FDF8FD;
+  box-sizing: border-box;
+}
+
+.nso-player__art {
+  width: 85px;
+  height: 85px;
+  border: 2px solid #4D23CD;
+  flex-shrink: 0;
+  background: #DBBEED;
+  image-rendering: pixelated;
+  object-fit: cover;
+}
+
+.nso-player__art-placeholder {
+  width: 85px;
+  height: 85px;
+  border: 2px solid #4D23CD;
+  flex-shrink: 0;
+  background: #F7E0FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #4D23CD;
+  opacity: 0.6;
+}
+
+.nso-player__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  flex: 1;
+}
+
+.nso-player__title {
+  font-size: 16px;
+  color: #4D21CB;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nso-player__artist {
+  font-size: 12px;
+  color: #4D21CB;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* progress bar */
+.nso-player__progress {
+  padding: 0 14px 6px;
+  background: #FDF8FD;
+  box-sizing: border-box;
+}
+
+.nso-player__progress-track {
+  width: 100%;
+  height: 4px;
+  background: #F7E0FA;
+  border: 1px solid #4D23CD;
+  position: relative;
+}
+
+.nso-player__progress-fill {
+  height: 100%;
+  background: #4D23CD;
+  transition: width 300ms linear;
+}
+
+.nso-player__progress-time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #4D21CB;
+  margin-top: 4px;
+}
+
+/* transport controls */
+.nso-player__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 14px 12px;
+  background: #FDF8FD;
+  box-sizing: border-box;
+}
+
+.nso-player__btn {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #4D23CD;
+  background: #f0d1f1;
+  box-shadow: inset 2px 2px #815CDA, 2px 2px #FDFDFD;
+  color: #4D23CD;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  transition: background 100ms;
+  font-family: sans-serif;
+}
+
+.nso-player__btn:hover {
+  background: #e4bee6;
+}
+
+.nso-player__btn--play {
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* size modifiers */
+.nso-player--sm { --nso-player-width: 260px; }
+.nso-player--lg { --nso-player-width: 420px; }
+
+@media (max-width: 600px) {
+  .nso-tweet   { --nso-tweet-width: 100%; }
+  .nso-player  { --nso-player-width: 100%; }
+  .nso-frame   { --window-width: 100%; }
+}

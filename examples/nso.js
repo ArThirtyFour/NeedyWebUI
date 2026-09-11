@@ -13,6 +13,8 @@
       this.initDropdowns();
       this.initAccordions();
       this.initReveal();
+      this.initSfx();
+      this.initPlayer();
     },
 
     switchBg: function(cls) {
@@ -169,6 +171,7 @@
       }
 
       window.showToast = function(msg, type, position) {
+        if (NSO.sfx) NSO.sfx.play('toast');
         var container = getContainer(position);
         var toast = document.createElement('div');
         toast.className = 'nso-toast nso-toast--' + (type || 'info');
@@ -269,6 +272,113 @@
         });
       }, { threshold: 0.15 });
       els.forEach(function(el) { observer.observe(el); });
+    },
+
+    sfx: {
+      _sounds: {},
+      _ctx: null,
+      volume: 0.6,
+      muted: false,
+
+      _getCtx: function() {
+        if (!this._ctx) {
+          var AC = window.AudioContext || window.webkitAudioContext;
+          if (AC) this._ctx = new AC();
+        }
+        return this._ctx;
+      },
+
+      register: function(name, url) {
+        this._sounds[name] = { url: url, buffer: null };
+        var self = this;
+        var ctx = this._getCtx();
+        if (!ctx) return;
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'arraybuffer';
+        xhr.onload = function() {
+          ctx.decodeAudioData(xhr.response, function(buf) {
+            self._sounds[name].buffer = buf;
+          });
+        };
+        xhr.send();
+      },
+
+      play: function(name) {
+        if (this.muted) return;
+        var s = this._sounds[name];
+        var ctx = this._getCtx();
+        if (!s || !s.buffer || !ctx) return;
+        if (ctx.state === 'suspended') ctx.resume();
+        var source = ctx.createBufferSource();
+        var gain = ctx.createGain();
+        gain.gain.value = Math.max(0, Math.min(1, this.volume));
+        source.buffer = s.buffer;
+        source.connect(gain);
+        gain.connect(ctx.destination);
+        source.start(0);
+      }
+    },
+
+    initSfx: function() {
+      var self = this;
+      document.addEventListener('click', function(e) {
+        var el = e.target.closest('[data-sfx]');
+        if (el) self.sfx.play(el.dataset.sfx);
+      });
+    },
+
+    initPlayer: function() {
+      document.querySelectorAll('.nso-player').forEach(function(player) {
+        var playBtn = player.querySelector('.nso-player__btn--play');
+        var fill = player.querySelector('.nso-player__progress-fill');
+        var posEl = player.querySelector('.nso-player__time-pos');
+        var durEl = player.querySelector('.nso-player__time-dur');
+        if (!playBtn || !fill) return;
+
+        var state = { playing: false, pos: 0, dur: Number(player.dataset.duration || 210), raf: null };
+
+        var fmtTime = function(s) {
+          var m = Math.floor(s / 60);
+          var sec = Math.floor(s % 60);
+          return m + ':' + (sec < 10 ? '0' : '') + sec;
+        };
+
+        var update = function() {
+          var pct = Math.min(state.pos / Math.max(state.dur, 1) * 100, 100);
+          fill.style.width = pct + '%';
+          if (posEl) posEl.textContent = fmtTime(state.pos);
+          if (durEl) durEl.textContent = fmtTime(state.dur);
+        };
+
+        var tick = function() {
+          if (!state.playing) return;
+          state.pos = Math.min(state.pos + 0.25, state.dur);
+          update();
+          if (state.pos >= state.dur) {
+            state.playing = false;
+            playBtn.textContent = '\u25B6';
+            return;
+          }
+          state.raf = requestAnimationFrame(tick);
+        };
+
+        playBtn.addEventListener('click', function() {
+          state.playing = !state.playing;
+          playBtn.textContent = state.playing ? '\u275A\u275A' : '\u25B6';
+          if (state.playing) {
+            if (state.pos >= state.dur) state.pos = 0;
+            tick();
+          }
+        });
+
+        var prevBtn = player.querySelector('.nso-player__btn--prev');
+        var nextBtn = player.querySelector('.nso-player__btn--next');
+        if (prevBtn) prevBtn.addEventListener('click', function() { state.pos = 0; update(); });
+        if (nextBtn) nextBtn.addEventListener('click', function() { state.pos = state.dur; state.playing = false; playBtn.textContent = '\u25B6'; update(); });
+
+        update();
+      });
     }
   };
 
