@@ -85,12 +85,13 @@
         <h3 id="sect-buttons" class="u-mt24">Buttons</h3>
         <div class="nso-panel">
             <div class="nso-panel__body u-flex u-flex-wrap u-gap10">
-                <button class="nso-btn">Default</button>
-                <button class="nso-btn nso-btn--ghost">Ghost</button>
-                <button class="nso-btn nso-btn--primary">Primary</button>
+                <button class="nso-btn" data-sfx="click">Default (Sound)</button>
+                <button class="nso-btn nso-btn--ghost" data-sfx="open">Ghost (Open SFX)</button>
+                <button class="nso-btn nso-btn--primary" data-sfx="piporo">Primary (Piporo)</button>
+                <button class="nso-btn" data-sfx="close">Close SFX</button>
                 <button class="nso-btn" disabled>Disabled</button>
-                <button class="nso-btn nso-btn--sm">Small</button>
-                <button class="nso-btn nso-btn--lg">Large</button>
+                <button class="nso-btn nso-btn--sm" data-sfx="click">Small</button>
+                <button class="nso-btn nso-btn--lg" data-sfx="click">Large</button>
             </div>
         </div>
 
@@ -533,16 +534,16 @@
             </div>
             <div class="nso-stream__read-comments">Read comments▸</div>
             <div class="nso-stream__actions">
-                <button class="nso-btn">thank u for gracing us</button>
-                <button class="nso-btn nso-btn--ghost">Get out of here</button>
+                <button class="nso-btn" data-sfx="click">thank u for gracing us</button>
+                <button class="nso-btn nso-btn--ghost" data-sfx="piporo">Get out of here</button>
             </div>
         </div>
 
         <h3 id="sect-modals" class="u-mt24">Modal / Dialog</h3>
         <div class="nso-panel">
             <div class="nso-panel__body u-flex u-flex-wrap u-gap10">
-                <button class="nso-btn nso-btn--primary" onclick="document.getElementById('modal-demo').classList.add('nso-modal--open')">Open Modal</button>
-                <button class="nso-btn" onclick="document.getElementById('modal-demo2').classList.add('nso-modal--open')">Alert Dialog</button>
+                <button class="nso-btn nso-btn--primary" data-sfx="open" onclick="document.getElementById('modal-demo').classList.add('nso-modal--open')">Open Modal</button>
+                <button class="nso-btn" data-sfx="open" onclick="document.getElementById('modal-demo2').classList.add('nso-modal--open')">Alert Dialog</button>
             </div>
         </div>
 
@@ -550,7 +551,7 @@
             <div class="nso-modal__backdrop" onclick="this.parentElement.classList.remove('nso-modal--open')"></div>
             <div class="nso-modal__content">
                 <div class="nso-modal__title">Stream Settings
-                    <button class="nso-modal__close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
+                    <button class="nso-modal__close" data-sfx="close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
                 </div>
                 <div class="nso-modal__body">
                     <p style="margin:0 0 12px;">Configure your stream parameters:</p>
@@ -564,8 +565,8 @@
                     </label>
                 </div>
                 <div class="nso-modal__footer">
-                    <button class="nso-btn" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Cancel</button>
-                    <button class="nso-btn nso-btn--primary" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Save</button>
+                    <button class="nso-btn" data-sfx="close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Cancel</button>
+                    <button class="nso-btn nso-btn--primary" data-sfx="click" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Save</button>
                 </div>
             </div>
         </div>
@@ -574,14 +575,14 @@
             <div class="nso-modal__backdrop" onclick="this.parentElement.classList.remove('nso-modal--open')"></div>
             <div class="nso-modal__content">
                 <div class="nso-modal__title">⚠ Warning
-                    <button class="nso-modal__close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
+                    <button class="nso-modal__close" data-sfx="close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">✕</button>
                 </div>
                 <div class="nso-modal__body">
                     <p style="margin:0;">Stress levels are critically high!<br>Do you want to end the stream?</p>
                 </div>
                 <div class="nso-modal__footer">
-                    <button class="nso-btn" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">No</button>
-                    <button class="nso-btn nso-btn--primary" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Yes, end stream</button>
+                    <button class="nso-btn" data-sfx="close" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">No</button>
+                    <button class="nso-btn nso-btn--primary" data-sfx="click" onclick="this.closest('.nso-modal--open').classList.remove('nso-modal--open')">Yes, end stream</button>
                 </div>
             </div>
         </div>

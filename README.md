@@ -11,6 +11,7 @@ Ported from game:
 - JINE UI
 - Task Manager
 - Streams Windows
+- Poketer posts/comments
 - Background Selector (day/dusk/night)
 
 Added by us:
@@ -26,12 +27,27 @@ Added by us:
 - Badges
 - KPI Cards
 - Progress Bars (custom animated with canvas)
+- Music player
 - Loading States (spinners)
 - Tables
 
-How to add? 
-In your file add this code:
+## Quick Start
+
+Add to your HTML `<head>`:
+
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ArThirtyFour/NeedyWebUI@main/nso_ui.css">
 ```
-Because for now it's a beta version example how to use in exameples
+```
+
+---
+
+## Showcase & Live Examples
+
+- **Full Component Showcase:** `examples/index.html` — live demo of all UI compon
+- **[Etoneya Project](https://internet-tenshi.kangel.tech)** - Full wedsite realizaton of NSO UI
+
+
+---
+
+Big thanks [Needy Streamer Overload Skin by lezzthanthree/AR34 (me)](https://github.com/ArThirtyFour/Russian-Needy-Streamer-Overload) for the desktop UI assets and visual guidelines 
