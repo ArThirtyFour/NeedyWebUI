@@ -826,17 +826,17 @@
 .nso-tweet {
   display: flex;
   flex-direction: column;
-  width: var(--nso-tweet-width, 320px);
+  width: var(--nso-tweet-width, 360px);
   max-width: 100%;
-  border: 2px solid #4D23CD;
-  box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 4px 4px #4e23cd48;
-  background: #FDF8FD;
+  border: none;
+  box-shadow: none;
+  background: transparent;
   font-family: 'dinkie9px', sans-serif;
   image-rendering: pixelated;
   box-sizing: border-box;
 }
 
-.nso-tweet--sm { --nso-tweet-width: 260px; }
+.nso-tweet--sm { --nso-tweet-width: 280px; }
 .nso-tweet--md { --nso-tweet-width: 360px; }
 .nso-tweet--lg { --nso-tweet-width: 480px; }
 
@@ -844,12 +844,19 @@
 .nso-tweet__media {
   position: relative;
   width: 100%;
-  min-height: 180px;
+  height: 200px;
   background: #251f33;
+  border: 2px solid #4D23CD;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.nso-tweet--sm .nso-tweet__media {
+  height: 160px;
 }
 
 .nso-tweet__image {
@@ -937,11 +944,12 @@
 /* Comments thread container (underneath media) */
 .nso-tweet__comments {
   background: #FDF8FD;
-  border-top: 2px solid #4D23CD;
-  padding: 10px 12px;
+  padding: 10px 0 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 .nso-tweet__comment {
