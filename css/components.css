@@ -787,7 +787,6 @@
   margin: 0;
 }
 
-/* foreground / content area */
 .nso-frame__body {
   background: #FDF8FD;
   padding: 12px 14px;
@@ -798,7 +797,6 @@
   box-sizing: border-box;
 }
 
-/* optional footer */
 .nso-frame__footer {
   display: flex;
   gap: 8px;
@@ -808,20 +806,9 @@
   background: #FDF8FD;
 }
 
-/* alignment helpers */
 .nso-frame--left   { margin: 0 auto 12px 0; }
 .nso-frame--center { margin: 0 auto 12px; }
 .nso-frame--right  { margin: 0 0 12px auto; }
-
-/* alignment helpers */
-.nso-frame--left   { margin: 0 auto 12px 0; }
-.nso-frame--center { margin: 0 auto 12px; }
-.nso-frame--right  { margin: 0 0 12px auto; }
-
-
-/* ===================================================================
-   nso-tweet — Social media / Tweeter post card
-   =================================================================== */
 
 .nso-tweet {
   display: flex;
@@ -840,7 +827,6 @@
 .nso-tweet--md { --nso-tweet-width: 360px; }
 .nso-tweet--lg { --nso-tweet-width: 480px; }
 
-/* The visual media card (image + overlays) */
 .nso-tweet__media {
   position: relative;
   width: 100%;
@@ -906,7 +892,6 @@
   text-shadow: 1px 1px 2px #000;
 }
 
-/* Stats (retweets, likes) directly on the media bottom */
 .nso-tweet__stats {
   position: relative;
   display: flex;
@@ -941,7 +926,6 @@
   vertical-align: middle;
 }
 
-/* Comments thread container (underneath media) */
 .nso-tweet__comments {
   background: #FDF8FD;
   padding: 10px 0 0;
@@ -988,13 +972,6 @@
   .nso-tweet { --nso-tweet-width: 100%; }
 }
 
-
-/* ===================================================================
-   nso-player — Media player
-   Album art + title/artist + progress bar + transport controls.
-   Matches the game's "Media Player" widget.
-   =================================================================== */
-
 .nso-player {
   display: flex;
   flex-direction: column;
@@ -1007,7 +984,6 @@
   image-rendering: pixelated;
 }
 
-/* titlebar reuses standard heading pattern */
 .nso-player__titlebar {
   display: flex;
   align-items: center;
@@ -1035,7 +1011,6 @@
   margin: 0;
 }
 
-/* main content */
 .nso-player__content {
   display: flex;
   gap: 10px;
@@ -1094,7 +1069,6 @@
   text-overflow: ellipsis;
 }
 
-/* progress bar */
 .nso-player__progress {
   padding: 0 14px 6px;
   background: #FDF8FD;
@@ -1123,7 +1097,6 @@
   margin-top: 4px;
 }
 
-/* transport controls */
 .nso-player__controls {
   display: flex;
   align-items: center;
@@ -1161,7 +1134,6 @@
   line-height: 30px;
 }
 
-/* size modifiers */
 .nso-player--sm { --nso-player-width: 260px; }
 .nso-player--lg { --nso-player-width: 420px; }
 

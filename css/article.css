@@ -1,8 +1,3 @@
-/* ===================================================================
-   Article & Long-form Content Layout (.nso-article)
-   Clean, readable document container styled in NeedyOS aesthetic.
-   =================================================================== */
-
 .nso-article {
   max-width: var(--nso-page-w, 980px);
   margin: 16px auto;
@@ -86,10 +81,6 @@
   margin: 28px 0;
 }
 
-/* ===================================================================
-   Code Blocks & Inline Code
-   =================================================================== */
-
 .nso-article code,
 .nso-article pre,
 .nso-kbd {
@@ -135,10 +126,6 @@
   background: #90F3E1;
 }
 
-/* ===================================================================
-   Callout Boxes (Info / Warn / Crit)
-   =================================================================== */
-
 .nso-callout {
   padding: 12px 16px;
   margin: 16px 0;
@@ -175,10 +162,6 @@
 .nso-callout--crit strong {
   color: #e02050;
 }
-
-/* ===================================================================
-   Badges, Kbd & Metadata
-   =================================================================== */
 
 .nso-meta {
   font-size: 13px;
