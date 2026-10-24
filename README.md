@@ -12,6 +12,7 @@ Ported from game:
 - Task Manager
 - Streams Windows
 - Poketer posts/comments
+- Feed (Tweeter-style post list: queued new posts with open/fade animation, replies revealed one by one, loading indicator)
 - Background Selector (day/dusk/night)
 
 Added by us:

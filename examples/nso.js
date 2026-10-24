@@ -15,6 +15,7 @@
       this.initReveal();
       this.initSfx();
       this.initPlayer();
+      this.initFeeds();
     },
 
     switchBg: function(cls) {
@@ -379,6 +380,58 @@
 
         update();
       });
+    },
+
+    initFeeds: function() {
+      document.querySelectorAll('.nso-feed').forEach(function(feed) {
+        feed._queue = [];
+        feed._busy = false;
+      });
+    },
+
+    feedPush: function(feed, node) {
+      feed._queue = feed._queue || [];
+      feed._queue.push(node);
+      NSO.feedPump(feed);
+    },
+
+    feedPump: function(feed) {
+      var loading = feed.querySelector('.nso-feed__loading');
+      if (feed._busy) return;
+      if (!feed._queue || feed._queue.length === 0) {
+        if (loading) loading.hidden = true;
+        return;
+      }
+      feed._busy = true;
+      if (loading) loading.hidden = false;
+
+      var node = feed._queue.shift();
+      var empty = feed.querySelector('.nso-feed__empty');
+      if (empty) empty.remove();
+
+      node.classList.add('nso-feed__item', 'nso-feed__item--entering');
+      var replies = node.querySelectorAll('.nso-tweet__comment');
+      replies.forEach(function(r) { r.classList.add('nso-feed__reply--pending'); });
+
+      var anchor = loading ? loading.nextSibling : feed.firstChild;
+      var keepScroll = feed.scrollTop > 0;
+      feed.insertBefore(node, anchor);
+      if (keepScroll) feed.scrollTop += node.offsetHeight;
+
+      var bodyText = node.querySelector('.nso-tweet__text');
+      var bodyDelay = bodyText ? bodyText.textContent.length * 10 : 0;
+
+      setTimeout(function() {
+        replies.forEach(function(r, i) {
+          setTimeout(function() { r.classList.remove('nso-feed__reply--pending'); }, i * 400);
+        });
+      }, 1300 + bodyDelay);
+
+      setTimeout(function() {
+        node.classList.remove('nso-feed__item--entering');
+        feed._busy = false;
+        NSO.feedPump(feed);
+      }, 1300 + bodyDelay + replies.length * 400);
     }
   };
 
