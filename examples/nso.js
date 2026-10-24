@@ -310,53 +310,38 @@
     initPlayer: function() {
       document.querySelectorAll('.nso-player').forEach(function(player) {
         var playBtn = player.querySelector('.nso-player__btn--play');
-        var fill = player.querySelector('.nso-player__progress-fill');
-        var posEl = player.querySelector('.nso-player__time-pos');
-        var durEl = player.querySelector('.nso-player__time-dur');
-        if (!playBtn || !fill) return;
+        var title = player.querySelector('.nso-player__title');
+        var mask = player.querySelector('.nso-player__mask');
+        var slider = player.querySelector('.nso-player__slider');
+        var volValue = player.querySelector('.nso-player__vol-value');
 
-        var state = { playing: false, pos: 0, dur: Number(player.dataset.duration || 210), raf: null };
+        if (playBtn) {
+          playBtn.addEventListener('click', function() {
+            var on = playBtn.dataset.on !== '1';
+            playBtn.dataset.on = on ? '1' : '0';
+            playBtn.textContent = on ? '\u275A\u275A' : '\u25B6';
+          });
+        }
 
-        var fmtTime = function(s) {
-          var m = Math.floor(s / 60);
-          var sec = Math.floor(s % 60);
-          return m + ':' + (sec < 10 ? '0' : '') + sec;
-        };
+        if (slider) {
+          var applyVolume = function() {
+            player.style.setProperty('--nso-volume', slider.value / 100);
+            if (volValue) volValue.textContent = slider.value;
+          };
+          slider.addEventListener('input', applyVolume);
+          applyVolume();
+        }
 
-        var update = function() {
-          var pct = Math.min(state.pos / Math.max(state.dur, 1) * 100, 100);
-          fill.style.width = pct + '%';
-          if (posEl) posEl.textContent = fmtTime(state.pos);
-          if (durEl) durEl.textContent = fmtTime(state.dur);
-        };
-
-        var tick = function() {
-          if (!state.playing) return;
-          state.pos = Math.min(state.pos + 0.25, state.dur);
-          update();
-          if (state.pos >= state.dur) {
-            state.playing = false;
-            playBtn.textContent = '\u25B6';
-            return;
+        if (title && mask) {
+          var overflow = title.scrollWidth - (mask.clientWidth - 16);
+          if (overflow > 0) {
+            var len = title.textContent.length;
+            var duration = Math.max(4, 80 / Math.max(len, 1));
+            title.style.setProperty('--nso-marquee-x', -(overflow + 24) + 'px');
+            title.style.setProperty('--nso-marquee-duration', duration + 's');
+            title.classList.add('nso-player__title--scroll');
           }
-          state.raf = requestAnimationFrame(tick);
-        };
-
-        playBtn.addEventListener('click', function() {
-          state.playing = !state.playing;
-          playBtn.textContent = state.playing ? '\u275A\u275A' : '\u25B6';
-          if (state.playing) {
-            if (state.pos >= state.dur) state.pos = 0;
-            tick();
-          }
-        });
-
-        var prevBtn = player.querySelector('.nso-player__btn--prev');
-        var nextBtn = player.querySelector('.nso-player__btn--next');
-        if (prevBtn) prevBtn.addEventListener('click', function() { state.pos = 0; update(); });
-        if (nextBtn) nextBtn.addEventListener('click', function() { state.pos = state.dur; state.playing = false; playBtn.textContent = '\u25B6'; update(); });
-
-        update();
+        }
       });
     },
 

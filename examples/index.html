@@ -15,7 +15,7 @@
     <aside class="nso-sidebar nso-sidebar-demo">
         <div class="profile" style="height:100%;display:flex;flex-direction:column;">
             <div class="table-section" style="height:100%;display:flex;flex-direction:column;">
-                <div class="heading" style="flex:0 0 auto;"><h4>■ NEEDY UI</h4></div>
+                <div class="heading nso-titlebar" style="flex:0 0 auto;"><span class="nso-titlebar__icon"></span><h4>■ NEEDY UI</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:6px;">
                     <button class="nso-btn" onclick="document.getElementById('sect-buttons').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Buttons</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-forms').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Forms</button>
@@ -57,7 +57,7 @@
 
         <div class="profile u-mt16">
             <div class="table-section">
-                <div class="heading"><h4>Background Selector</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Background Selector</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner">
                     <div class="noonbutton"><a href="#" onclick="NSO.switchBg('noonbg');return false">Noon</a><span class="nso-icon nso-icon--it-is-day" style="--nso-icon-size:18px"></span></div>
                     <div class="duskbutton"><a href="#" onclick="NSO.switchBg('duskbg');return false">Dusk</a><span class="nso-icon nso-icon--sun-is-down" style="--nso-icon-size:18px"></span></div>
@@ -68,7 +68,7 @@
 
         <div class="profile">
             <div class="contact u-mt16">
-                <div class="heading"><h4>Contact</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Contact</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner">
                     <div class="f-row">
                         <div class="f-col"><a href="#">Add Friend</a> <span class="nso-icon nso-icon--heart" style="--nso-icon-size:16px"></span></div>
@@ -169,28 +169,28 @@
         <h3 id="sect-windows" class="u-mt24">Windows</h3>
         <div class="profile nso-window nso-window--small nso-window--left u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Small 250px</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Small 250px</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Small Button</button></div>
             </div>
         </div>
 
         <div class="profile nso-window nso-window--medium u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Medium 400px</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Medium 400px</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Medium Button</button></div>
             </div>
         </div>
 
         <div class="profile nso-window nso-window--large u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Large 600px</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Large 600px</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Large Button</button></div>
             </div>
         </div>
 
         <div class="profile nso-window nso-window--wide nso-window--right u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Wide 800px — Right</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Wide 800px — Right</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Right Button</button></div>
             </div>
         </div>
@@ -198,19 +198,19 @@
         <h3 class="u-mt24">Alignment</h3>
         <div class="profile nso-window nso-window--medium nso-window--left u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Left</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Left</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Left Aligned</button></div>
             </div>
         </div>
         <div class="profile nso-window nso-window--medium nso-window--center u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Center</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Center</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Center Aligned</button></div>
             </div>
         </div>
         <div class="profile nso-window nso-window--medium nso-window--right u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Right</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Right</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner"><button class="nso-btn">Right Aligned</button></div>
             </div>
         </div>
@@ -247,7 +247,7 @@
         <h3 id="sect-icons" class="u-mt24">Icons</h3>
         <div class="profile nso-window nso-window--large u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Icon Emotes</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Icon Emotes</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner u-flex u-flex-wrap u-gap8 u-items-center" style="--nso-icon-size:36px;">
                     <span class="nso-icon nso-icon--youtube" title="Youtube"></span>
                     <span class="nso-icon nso-icon--twitch" title="Twitch"></span>
@@ -271,7 +271,7 @@
 
         <div class="profile nso-window nso-window--large u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Achievements</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Achievements</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner u-flex u-flex-wrap u-gap8 u-items-center" style="--nso-icon-size:36px;">
                     <span class="nso-icon nso-icon--needy-girl-overdose" title="Needy Girl Overdose"></span>
                     <span class="nso-icon nso-icon--internet-overdose" title="INTERNET OVERDOSE"></span>
@@ -287,7 +287,7 @@
 
         <div class="profile nso-window nso-window--large u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Shinanegen</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Shinanegen</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner u-flex u-flex-wrap u-gap8 u-items-center" style="--nso-icon-size:36px;">
                     <span class="nso-icon nso-icon--kangelhappy" title="KangelHAPPY"></span>
                     <span class="nso-icon nso-icon--kangelheart" title="KangelHeart"></span>
@@ -390,7 +390,7 @@
 
         <div class="profile nso-window nso-window--medium u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>Stream Timer</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Stream Timer</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner">
                     <div class="nso-time-wrap">
                         <div class="nso-time-head">
@@ -443,7 +443,7 @@
         <h3 id="sect-jine" class="u-mt24">JINE Chat</h3>
         <div class="profile nso-window nso-window--large jine-panel u-mt12">
             <div class="table-section">
-                <div class="heading"><h4>■ JINE</h4></div>
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>■ JINE</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner">
                     <div class="jine-chat">
                         <span class="jine-date">Day 1 — Morning</span>
@@ -469,10 +469,12 @@
         <h3 id="sect-stream" class="u-mt24">Stream Window</h3>
         <div class="nso-stream u-mt12">
             <div class="nso-stream__header">
+                <span class="nso-titlebar__icon"></span>
                 <div class="nso-stream__header-title">
                     <span class="nso-stream__live">LIVE</span>
                     STREAM
                 </div>
+                <span class="nso-titlebar__buttons" style="margin-left:auto;"><i></i><i></i><i></i></span>
             </div>
             <div class="nso-stream__body">
                 <div class="nso-stream__cam">
@@ -574,6 +576,7 @@
 
         <h3 id="sect-tabs" class="u-mt24">Tabs</h3>
         <div class="nso-tabs">
+            <div class="nso-tabs__frame">
             <div class="nso-tabs__nav">
                 <button class="nso-tabs__tab nso-tabs__tab--active" data-tab="tab-stream">Stream</button>
                 <button class="nso-tabs__tab" data-tab="tab-chat">Chat</button>
@@ -593,31 +596,43 @@
                 <p>Followers: +420 today<br>
                 Donations: $69.42<br>
                 Stress: ████████░░ 82%</p>
-            </div>
+                </div>
+        </div>
         </div>
 
         <h3 class="u-mt24">Progress Bars</h3>
         <div class="nso-panel">
             <div class="nso-panel__body">
-                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Followers — 74%</label>
-                <div class="nso-progress-bar u-mb12">
-                    <div class="nso-progress-bar__fill" style="width:74%;"></div>
-                    <span class="nso-progress-bar__label">133,742 / 180,000</span>
+                <div class="nso-status">
+                    <span class="nso-status__icon" style="background-image:url(../ui/status/icon_status_follower.png);"></span>
+                    <div class="nso-status__body">
+                        <div class="nso-status__head"><span class="nso-status__name">Followers</span><span class="nso-status__value">133,742 / 180,000</span></div>
+                        <div class="nso-progress-bar "><div class="nso-progress-bar__fill" style="width:74%;"></div></div>
+                    </div>
                 </div>
-                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Stress — 82%</label>
-                <div class="nso-progress-bar nso-progress-bar--stress nso-progress-bar--lg u-mb12">
-                    <div class="nso-progress-bar__fill" style="width:82%;"></div>
+                <div class="nso-status">
+                    <span class="nso-status__icon" style="background-image:url(../ui/status/icon_status_stress.png);"></span>
+                    <div class="nso-status__body">
+                        <div class="nso-status__head"><span class="nso-status__name">Stress</span><span class="nso-status__value">82 / 100</span><span class="nso-status__diff nso-status__diff--down">↓↓↓</span><span class="nso-status__new">→ 76</span></div>
+                        <div class="nso-progress-bar nso-progress-bar--stress"><div class="nso-progress-bar__fill" style="width:82%;"></div></div>
+                    </div>
                 </div>
-                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Affection — 96%</label>
-                <div class="nso-progress-bar nso-progress-bar--affection nso-progress-bar--sm u-mb12">
-                    <div class="nso-progress-bar__fill" style="width:96%;"></div>
+                <div class="nso-status">
+                    <span class="nso-status__icon" style="background-image:url(../ui/status/icon_status_love.png);"></span>
+                    <div class="nso-status__body">
+                        <div class="nso-status__head"><span class="nso-status__name">Affection</span><span class="nso-status__value">96 / 100</span><span class="nso-status__diff nso-status__diff--up">↑</span><span class="nso-status__new">→ 97</span></div>
+                        <div class="nso-progress-bar nso-progress-bar--affection"><div class="nso-progress-bar__fill" style="width:96%;"></div></div>
+                    </div>
                 </div>
-                <label style="color:#4D23CD;display:block;margin-bottom:4px;">Animated Demo</label>
-                <div class="nso-progress-bar" id="demoAnimatedBar">
-                    <div class="nso-progress-bar__fill" id="demoAnimatedFill" style="width:10%;"></div>
+                <div class="nso-status">
+                    <span class="nso-status__icon" style="background-image:url(../ui/status/icon_status_yami.png);"></span>
+                    <div class="nso-status__body">
+                        <div class="nso-status__head"><span class="nso-status__name">Animated Demo</span><span class="nso-status__value" id="demoAnimatedValue">10%</span></div>
+                        <div class="nso-progress-bar"><div class="nso-progress-bar__fill" id="demoAnimatedFill" style="width:10%;"></div></div>
+                    </div>
                 </div>
-                <button class="nso-btn nso-btn--sm u-mt8" onclick="var f=document.getElementById('demoAnimatedFill');var w=parseInt(f.style.width)||0;f.style.width=Math.min(w+10,100)+'%';">+10%</button>
-                <button class="nso-btn nso-btn--sm" onclick="document.getElementById('demoAnimatedFill').style.width='10%';">Reset</button>
+                <button class="nso-btn nso-btn--sm u-mt8" onclick="var f=document.getElementById('demoAnimatedFill');var w=parseInt(f.style.width)||0;f.style.width=Math.min(w+10,100)+'%';document.getElementById('demoAnimatedValue').textContent=f.style.width;">+10%</button>
+                <button class="nso-btn nso-btn--sm" onclick="document.getElementById('demoAnimatedFill').style.width='10%';document.getElementById('demoAnimatedValue').textContent='10%';">Reset</button>
             </div>
         </div>
 
@@ -656,12 +671,9 @@
         <div class="nso-panel">
             <div class="nso-panel__body">
                 <div class="u-flex u-gap20 u-items-center">
-                    <div class="nso-spinner"></div>
-                    <div class="nso-spinner nso-spinner--sm"></div>
-                    <div class="nso-spinner nso-spinner--lg"></div>
-                    <span class="nso-spinner" style="--nso-spinner-color:#90F3E1;"></span>
+                    <span class="nso-loader"></span>
+                    <span class="nso-loader nso-loader--lg"></span>
                 </div>
-                <p class="u-mt12">Loading<span class="nso-ellipsis"></span></p>
             </div>
         </div>
 
@@ -686,30 +698,31 @@
 
         <h4 class="u-mt16">Media Player (.nso-player)</h4>
         <div class="u-flex u-flex-wrap u-gap16 u-mt12">
-            <div class="nso-player" data-duration="210">
-                <div class="nso-player__titlebar">
-                    <span class="nso-player__titlebar-text">Music Player</span>
-                </div>
-                <div class="nso-player__content">
-                    <div class="nso-player__art-placeholder">♪</div>
-                    <div class="nso-player__info">
-                        <div class="nso-player__title">INTERNET OVERDOSE</div>
-                        <div class="nso-player__artist">Aiobahn feat. KOTOKO</div>
+            <div class="nso-player">
+                <div class="nso-player__frame">
+                    <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Music Player</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
+                    <div class="nso-player__screen">
+                        <div class="nso-player__cover">♪</div>
+                        <div class="nso-player__mask"><span class="nso-player__title">♪ INTERNET OVERDOSE</span></div>
+                    </div>
+                    <div class="nso-player__controls">
+                        <button class="nso-player__btn nso-player__btn--play">▶</button>
+                        <label class="nso-player__vol">VOL
+                            <input class="nso-player__slider" type="range" min="0" max="100" value="70">
+                            <span class="nso-player__vol-value">70</span>
+                        </label>
                     </div>
                 </div>
-                <div class="nso-player__progress">
-                    <div class="nso-player__progress-track">
-                        <div class="nso-player__progress-fill" style="width:0%;"></div>
+            </div>
+
+            <div class="nso-player nso-player--sm">
+                <div class="nso-player__frame">
+                    <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Music Player (mini)</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
+                    <div class="nso-player__row">
+                        <div class="nso-player__cover">♪</div>
+                        <div class="nso-player__mask"><span class="nso-player__title">♪ INTERNET OVERDOSE</span></div>
+                        <button class="nso-player__btn nso-player__btn--play">▶</button>
                     </div>
-                    <div class="nso-player__progress-time">
-                        <span class="nso-player__time-pos">0:00</span>
-                        <span class="nso-player__time-dur">3:30</span>
-                    </div>
-                </div>
-                <div class="nso-player__controls">
-                    <button class="nso-player__btn nso-player__btn--prev">⏮</button>
-                    <button class="nso-player__btn nso-player__btn--play">▶</button>
-                    <button class="nso-player__btn nso-player__btn--next">⏭</button>
                 </div>
             </div>
         </div>
@@ -741,21 +754,49 @@
                     </div>
             </div>
         </template>
-        <div class="nso-feed" id="nsoFeed">
-            <div class="nso-feed__loading" hidden>
-                <span class="nso-spinner nso-spinner--sm"></span> loading...
-            </div>
-            <div class="nso-tweet nso-tweet--sm">
-                <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span></div>
-                    <div class="nso-tweet__meta">
-                        <div class="nso-tweet__user">@x_angelkawaii_x</div>
-                        <div class="nso-tweet__text">streaming again tonight!! †昇天†</div>
+        <div class="profile nso-window nso-feed-window">
+            <div class="table-section">
+                <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>Tweeter</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
+                <div class="inner nso-feed-window__inner">
+                    <button class="nso-btn" id="nsoFeedAdd">+ Add post</button>
+                    <template id="nsoFeedTemplate">
+                <div class="nso-tweet nso-tweet--sm">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#90F3E1;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span></div>
+                        <div class="nso-tweet__meta">
+                            <div class="nso-tweet__user">@x_angelkawaii_x</div>
+                            <div class="nso-tweet__text">just went live, come say hi!</div>
                         <img class="nso-tweet__photo" src="image.png" alt="" hidden>
-                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 1337</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 9999</div></div>
-                        <div class="nso-tweet__date">DAY 1 · 11:58</div>
+                            <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 0</div></div>
+                            <div class="nso-tweet__date">DAY 1 · 12:04</div>
+                        </div>
+                    </div>
+                    <div class="nso-tweet__comments">
+                    <div class="nso-tweet__comment">
+                        <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_pink.png);background-size:cover;"></div>
+                        <div>
+                            <div class="nso-tweet__comment-user">@p_chan</div>
+                            <div class="nso-tweet__comment-text">good luck!!</div>
+                        </div>
+                    </div>
                     </div>
                 </div>
+                    </template>
+                    <div class="nso-feed" id="nsoFeed">
+                        <div class="nso-feed__loading" hidden>
+                            <span class="nso-loader"></span>
+                        </div>
+                <div class="nso-tweet nso-tweet--sm">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span></div>
+                        <div class="nso-tweet__meta">
+                            <div class="nso-tweet__user">@x_angelkawaii_x</div>
+                            <div class="nso-tweet__text">streaming again tonight!! †昇天†</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="" hidden>
+                            <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 1337</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 9999</div></div>
+                            <div class="nso-tweet__date">DAY 1 · 11:58</div>
+                        </div>
+                    </div>
                     <div class="nso-tweet__comments">
                     <div class="nso-tweet__comment">
                         <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_black.png);background-size:cover;"></div>
@@ -772,18 +813,18 @@
                         </div>
                     </div>
                     </div>
-            </div>
-            <div class="nso-tweet nso-tweet--sm">
-                <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#251f33;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--ame-stare" style="--nso-icon-size:24px;"></span></div>
-                    <div class="nso-tweet__meta">
-                        <div class="nso-tweet__user">@raincandy_U</div>
-                        <div class="nso-tweet__text">i hate everyone... except p-chan</div>
-                        <img class="nso-tweet__photo" src="image.png" alt="">
-                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 42</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 328</div></div>
-                        <div class="nso-tweet__date">DAY 1 · 11:40</div>
-                    </div>
                 </div>
+                <div class="nso-tweet nso-tweet--sm">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#251f33;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--ame-stare" style="--nso-icon-size:24px;"></span></div>
+                        <div class="nso-tweet__meta">
+                            <div class="nso-tweet__user">@raincandy_U</div>
+                            <div class="nso-tweet__text">i hate everyone... except p-chan</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="">
+                            <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 42</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 328</div></div>
+                            <div class="nso-tweet__date">DAY 1 · 11:40</div>
+                        </div>
+                    </div>
                     <div class="nso-tweet__comments">
                     <div class="nso-tweet__comment">
                         <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_purple.png);background-size:cover;"></div>
@@ -793,16 +834,19 @@
                         </div>
                     </div>
                     </div>
-            </div>
-            <div class="nso-tweet nso-tweet--sm">
-                <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:24px;"></span></div>
-                    <div class="nso-tweet__meta">
-                        <div class="nso-tweet__user">@p_chan</div>
-                        <div class="nso-tweet__text">Don't forget to take your vitamins 🙏</div>
+                </div>
+                <div class="nso-tweet nso-tweet--sm">
+                    <div class="nso-tweet__header">
+                        <div class="nso-tweet__avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:24px;"></span></div>
+                        <div class="nso-tweet__meta">
+                            <div class="nso-tweet__user">@p_chan</div>
+                            <div class="nso-tweet__text">Don't forget to take your vitamins 🙏</div>
                         <img class="nso-tweet__photo" src="image.png" alt="" hidden>
-                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 77</div></div>
-                        <div class="nso-tweet__date">DAY 1 · 11:02</div>
+                            <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 77</div></div>
+                            <div class="nso-tweet__date">DAY 1 · 11:02</div>
+                        </div>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>
@@ -828,7 +872,7 @@
         <div class="u-flex u-flex-wrap u-gap20 u-mt12">
             <div class="profile nso-window nso-window--medium" style="margin:0;">
                 <div class="table-section">
-                    <div class="heading"><h4>■ Tweeter — @x_angelkawaii_x</h4></div>
+                    <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>■ Tweeter — @x_angelkawaii_x</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                     <div class="inner">
                         <div class="nso-tweet" style="width:100%;">
                             <div class="nso-tweet__media">
@@ -889,7 +933,7 @@
 
             <div class="profile nso-window nso-window--small" style="margin:0;">
                 <div class="table-section">
-                    <div class="heading"><h4>■ Tweeter — @raincandy_U</h4></div>
+                    <div class="heading nso-titlebar"><span class="nso-titlebar__icon"></span><h4>■ Tweeter — @raincandy_U</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                     <div class="inner">
                         <div class="nso-tweet" style="width:100%;">
                             <div class="nso-tweet__media" style="height:160px;">

@@ -81,3 +81,14 @@
 @media (prefers-reduced-motion: reduce) {
   .nso-feed__item--entering { animation: none; }
 }
+
+
+.nso-feed-window {
+  width: min(100%, 512px);
+  margin: 0 auto;
+}
+
+.nso-feed-window__inner {
+  padding: 10px;
+  box-sizing: border-box;
+}
