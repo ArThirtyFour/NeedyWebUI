@@ -1572,3 +1572,7 @@
   color: #4D23CD;
   text-align: right;
 }
+
+.jine-panel .table-section > .inner {
+  padding: 0;
+}
