@@ -50,4 +50,7 @@ Add to your HTML `<head>`:
 
 ---
 
-Big thanks [Needy Streamer Overload Skin by lezzthanthree/AR34 (me)](https://github.com/ArThirtyFour/Russian-Needy-Streamer-Overload) for the desktop UI assets and visual guidelines 
+Big thanks 
+* [Needy Streamer Overload Skin by lezzthanthree/AR34 (me)](https://github.com/ArThirtyFour/Russian-Needy-Streamer-Overload) for the desktop UI assets and visual guidelines 
+
+* Original Game for assests  ![alt text](image.png)
