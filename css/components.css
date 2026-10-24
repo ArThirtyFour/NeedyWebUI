@@ -1539,3 +1539,36 @@
   position: absolute;
   inset: 0;
 }
+
+.nso-sidebar .table-section > .inner {
+  padding: 0;
+}
+
+.nso-sidebar .table-section {
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.nso-sidebar .heading.nso-titlebar {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 4px !important;
+}
+
+.nso-sidebar .heading.nso-titlebar h4 {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.nso-sidebar .nso-titlebar__buttons {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+.nso-sidebar__version {
+  padding: 4px 8px;
+  font-family: 'dinkie9px', sans-serif;
+  font-size: 11px;
+  color: #4D23CD;
+  text-align: right;
+}

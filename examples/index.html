@@ -15,7 +15,7 @@
     <aside class="nso-sidebar nso-sidebar-demo">
         <div class="profile" style="height:100%;display:flex;flex-direction:column;">
             <div class="table-section" style="height:100%;display:flex;flex-direction:column;">
-                <div class="heading nso-titlebar" style="flex:0 0 auto;"><span class="nso-titlebar__icon"></span><h4>■ NEEDY UI</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
+                <div class="heading nso-titlebar" style="flex:0 0 auto;"><span class="nso-titlebar__icon"></span><h4>NEEDY UI</h4><span class="nso-titlebar__buttons"><i></i><i></i><i></i></span></div>
                 <div class="inner" style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:6px;">
                     <button class="nso-btn" onclick="document.getElementById('sect-buttons').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Buttons</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-forms').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Forms</button>
@@ -29,6 +29,7 @@
                     <button class="nso-btn" onclick="document.getElementById('sect-media').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Media & Social</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-article').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Article</button>
                     <button class="nso-btn" onclick="document.getElementById('sect-misc').scrollIntoView({behavior:'smooth'});NSO.closeSidebar('.nso-sidebar-demo')">Misc</button>
+                    <div class="nso-sidebar__version">NSO UI v<span id="nsoVersion"></span></div>
                 </div>
             </div>
         </div>
@@ -1075,6 +1076,7 @@ function theJam() {
 
 
 <script src="./nso.js"></script>
+<script>document.getElementById("nsoVersion").textContent = NSO.version;</script>
 <script>
     NSO.sfx.register('click', '../audio/execute.wav');
     NSO.sfx.register('open', '../audio/open.wav');
