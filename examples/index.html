@@ -446,6 +446,7 @@
                 <div class="heading"><h4>■ JINE</h4></div>
                 <div class="inner">
                     <div class="jine-chat">
+                        <span class="jine-date">Day 1 — Morning</span>
                         <div class="jine-msg">
                             <span class="nso-icon nso-icon--ame-sad jine-avatar"></span>
                             <div class="jine-bubble">OH NOO CRINGEEE</div>
@@ -501,30 +502,14 @@
                         <button class="nso-stream__chat-skip">SKIP ▸▸</button>
                     </div>
                     <div class="nso-stream__chat-list" id="streamChatList">
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">weird name</span> <span class="nso-stream__chat-text">hello kangel!!</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#5577ff;">?!</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#22aa44;">!!!!</span> <span class="nso-stream__chat-text">so cute</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#cc8800;">lefao</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#aa44cc;">Oh boy here come the nerds in the comments</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#ff6644;">dont go depression on us</span></div>
-                        <div class="nso-stream__chat-msg nso-stream__chat-msg--highlight"><span class="nso-stream__chat-user" style="color:#4D23CD;">thank u for gracing us</span></div>
-                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-user" style="color:#e02050;">etc bannnn</span> <span class="nso-stream__chat-text">KEKW KEKW</span></div>
-                    </div>
-                    <div class="nso-stream__chat-colors" id="streamColors">
-                        <span class="nso-stream__chat-color nso-stream__chat-color--active" style="background:#4D23CD;" data-color="#4D23CD"></span>
-                        <span class="nso-stream__chat-color" style="background:#e02050;" data-color="#e02050"></span>
-                        <span class="nso-stream__chat-color" style="background:#5577ff;" data-color="#5577ff"></span>
-                        <span class="nso-stream__chat-color" style="background:#22aa44;" data-color="#22aa44"></span>
-                        <span class="nso-stream__chat-color" style="background:#cc8800;" data-color="#cc8800"></span>
-                        <span class="nso-stream__chat-color" style="background:#aa44cc;" data-color="#aa44cc"></span>
-                        <span class="nso-stream__chat-color" style="background:#ff6644;" data-color="#ff6644"></span>
-                        <span class="nso-stream__chat-color" style="background:#e060a0;" data-color="#e060a0"></span>
-                        <span class="nso-stream__chat-color" style="background:#00b8d4;" data-color="#00b8d4"></span>
-                        <span class="nso-stream__chat-color" style="background:#888888;" data-color="#888888"></span>
-                    </div>
-                    <div class="nso-stream__chat-input">
-                        <input id="streamChatInput" type="text" placeholder="Type a message...">
-                        <button id="streamChatSend" class="nso-btn nso-btn--primary" style="border:none;border-radius:0;padding:6px 12px;">▸</button>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">weird name hello kangel!!</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">?!</span></div>
+                        <div class="nso-stream__chat-msg nso-stream__chat-msg--yellow"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">so cute</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">lefao</span></div>
+                        <div class="nso-stream__chat-msg nso-stream__chat-msg--orange"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">Oh boy here come the nerds in the comments</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">dont go depression on us</span></div>
+                        <div class="nso-stream__chat-msg nso-stream__chat-msg--magenta"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">thank u for gracing us</span></div>
+                        <div class="nso-stream__chat-msg"><span class="nso-stream__chat-icon"></span><span class="nso-stream__chat-text">etc bannnn KEKW KEKW</span></div>
                     </div>
                 </div>
             </div>
@@ -736,27 +721,24 @@
         <template id="nsoFeedTemplate">
             <div class="nso-tweet nso-tweet--sm">
                 <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#90F3E1;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span>
-                    </div>
+                    <div class="nso-tweet__avatar" style="background:#90F3E1;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span></div>
                     <div class="nso-tweet__meta">
                         <div class="nso-tweet__user">@x_angelkawaii_x</div>
                         <div class="nso-tweet__text">just went live, come say hi!</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="" hidden>
+                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 0</div></div>
+                        <div class="nso-tweet__date">DAY 1 · 12:04</div>
                     </div>
                 </div>
-                <img class="nso-tweet__photo" src="image.png" alt="" hidden>
-                <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 0</div></div>
-                <div class="nso-tweet__comments">
-                <div class="nso-tweet__comment">
-                    <div class="nso-tweet__comment-avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:18px;"></span>
+                    <div class="nso-tweet__comments">
+                    <div class="nso-tweet__comment">
+                        <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_pink.png);background-size:cover;"></div>
+                        <div>
+                            <div class="nso-tweet__comment-user">@p_chan</div>
+                            <div class="nso-tweet__comment-text">good luck!!</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="nso-tweet__comment-user">@p_chan</div>
-                        <div class="nso-tweet__comment-text">good luck!!</div>
                     </div>
-                </div>
-                </div>
             </div>
         </template>
         <div class="nso-feed" id="nsoFeed">
@@ -765,73 +747,64 @@
             </div>
             <div class="nso-tweet nso-tweet--sm">
                 <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span>
-                    </div>
+                    <div class="nso-tweet__avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--kangelhappy" style="--nso-icon-size:24px;"></span></div>
                     <div class="nso-tweet__meta">
                         <div class="nso-tweet__user">@x_angelkawaii_x</div>
                         <div class="nso-tweet__text">streaming again tonight!! †昇天†</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="" hidden>
+                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 1337</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 9999</div></div>
+                        <div class="nso-tweet__date">DAY 1 · 11:58</div>
                     </div>
                 </div>
-                <img class="nso-tweet__photo" src="image.png" alt="" hidden>
-                <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 1337</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 9999</div></div>
-                <div class="nso-tweet__comments">
-                <div class="nso-tweet__comment">
-                    <div class="nso-tweet__comment-avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:18px;"></span>
+                    <div class="nso-tweet__comments">
+                    <div class="nso-tweet__comment">
+                        <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_black.png);background-size:cover;"></div>
+                        <div>
+                            <div class="nso-tweet__comment-user">@p_chan</div>
+                            <div class="nso-tweet__comment-text">Don't forget to take your vitamins before going live 🙏</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="nso-tweet__comment-user">@p_chan</div>
-                        <div class="nso-tweet__comment-text">Don't forget to take your vitamins before going live 🙏</div>
+                    <div class="nso-tweet__comment">
+                        <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_cyan.png);background-size:cover;"></div>
+                        <div>
+                            <div class="nso-tweet__comment-user">@x_angelkawaii_x</div>
+                            <div class="nso-tweet__comment-text">YES P-CHAN I LOVE YOUUU &lt;3</div>
+                        </div>
                     </div>
-                </div>
-                <div class="nso-tweet__comment">
-                    <div class="nso-tweet__comment-avatar" style="background:#EFCFEF;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--kangelheart" style="--nso-icon-size:18px;"></span>
                     </div>
-                    <div>
-                        <div class="nso-tweet__comment-user">@x_angelkawaii_x</div>
-                        <div class="nso-tweet__comment-text">YES P-CHAN I LOVE YOUUU &lt;3</div>
-                    </div>
-                </div>
-                </div>
             </div>
             <div class="nso-tweet nso-tweet--sm">
                 <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#251f33;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--ame-stare" style="--nso-icon-size:24px;"></span>
-                    </div>
+                    <div class="nso-tweet__avatar" style="background:#251f33;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--ame-stare" style="--nso-icon-size:24px;"></span></div>
                     <div class="nso-tweet__meta">
                         <div class="nso-tweet__user">@raincandy_U</div>
                         <div class="nso-tweet__text">i hate everyone... except p-chan</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="">
+                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 42</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 328</div></div>
+                        <div class="nso-tweet__date">DAY 1 · 11:40</div>
                     </div>
                 </div>
-                <img class="nso-tweet__photo" src="image.png" alt="">
-                <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--retweet"><span class="nso-icon nso-icon--retweet nso-tweet__stat-icon"></span> 42</div><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 328</div></div>
-                <div class="nso-tweet__comments">
-                <div class="nso-tweet__comment">
-                    <div class="nso-tweet__comment-avatar" style="background:#90F3E1;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--simp" style="--nso-icon-size:18px;"></span>
+                    <div class="nso-tweet__comments">
+                    <div class="nso-tweet__comment">
+                        <div class="nso-tweet__comment-avatar" style="background-image:url(../icons/kusoripu/icon_kusoripu_purple.png);background-size:cover;"></div>
+                        <div>
+                            <div class="nso-tweet__comment-user">@otaku99</div>
+                            <div class="nso-tweet__comment-text">KANGEL MAJITENSHI!!! TAKE MY MONEY 💸</div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="nso-tweet__comment-user">@otaku99</div>
-                        <div class="nso-tweet__comment-text">KANGEL MAJITENSHI!!! TAKE MY MONEY 💸</div>
                     </div>
-                </div>
-                </div>
             </div>
             <div class="nso-tweet nso-tweet--sm">
                 <div class="nso-tweet__header">
-                    <div class="nso-tweet__avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;">
-                        <span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:24px;"></span>
-                    </div>
+                    <div class="nso-tweet__avatar" style="background:#f0d1f1;display:flex;align-items:center;justify-content:center;"><span class="nso-icon nso-icon--p-chan-d" style="--nso-icon-size:24px;"></span></div>
                     <div class="nso-tweet__meta">
                         <div class="nso-tweet__user">@p_chan</div>
                         <div class="nso-tweet__text">Don't forget to take your vitamins 🙏</div>
+                        <img class="nso-tweet__photo" src="image.png" alt="" hidden>
+                        <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 77</div></div>
+                        <div class="nso-tweet__date">DAY 1 · 11:02</div>
                     </div>
                 </div>
-                <img class="nso-tweet__photo" src="image.png" alt="" hidden>
-                <div class="nso-tweet__stats"><div class="nso-tweet__stat nso-tweet__stat--like"><span class="nso-icon nso-icon--star nso-tweet__stat-icon"></span> 77</div></div>
             </div>
         </div>
         <script>
@@ -845,6 +818,7 @@
                     var node = tpl.content.firstElementChild.cloneNode(true);
                     node.querySelector('.nso-tweet__text').textContent = 'new post #' + n;
                     if (n % 2 === 0) node.querySelector('.nso-tweet__photo').hidden = false;
+                    node.querySelector('.nso-tweet__comment-avatar').style.backgroundImage = 'url(' + NSO.randomKusoripu() + ')';
                     NSO.feedPush(feed, node);
                 });
             })();

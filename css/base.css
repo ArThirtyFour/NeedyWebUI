@@ -2582,32 +2582,40 @@ main {
                 margin-bottom: 14px;
             }
             .jine-avatar {
-                --nso-icon-size: 46px;
+                --nso-icon-size: 50px;
                 width: var(--nso-icon-size);
                 height: var(--nso-icon-size);
-                border-radius: 50%;
-                border: 2px solid rgba(88, 67, 172, 0.45);
-                background-color: #9f90c8;
                 flex: 0 0 auto;
             }
             .jine-bubble {
+                position: relative;
                 max-width: 84%;
-                background: #bad0eb;
-                color: #4330b4;
+                background: #CDECFD;
+                -webkit-mask-box-image: url("../background/jine-balloon.png") 7 fill;
+                mask-border: url("../background/jine-balloon.png") 7 fill / 7px / 0 stretch;
+                color: #1403A6;
                 font-size: 20px;
                 line-height: 1.36;
-                padding: 8px 12px;
-                border-radius: 8px;
+                padding: 12px 16px;
                 overflow-wrap: anywhere;
                 word-break: break-word;
             }
             .jine-bubble--self {
                 margin: 4px 12px 14px auto;
-                background: #5eff3a;
-                color: #2a3db8;
                 max-width: 72%;
-                padding: 7px 12px;
-                border-radius: 8px;
+                background: #4CF653;
+            }
+            .jine-date {
+                display: block;
+                width: fit-content;
+                margin: 0 auto 14px;
+                padding: 2px 14px;
+                background: #CDECFD;
+                -webkit-mask-box-image: url("../background/jine-balloon.png") 7 fill;
+                mask-border: url("../background/jine-balloon.png") 7 fill / 7px / 0 stretch;
+                color: #1403A6;
+                font-size: 13px;
+                line-height: 1.4;
             }
             @media (max-width: 30em) {
                 .jine-bubble {

@@ -1,7 +1,7 @@
 .nso-stream {
     border: 2px solid #4D23CD;
     box-shadow: inset 0 0 0 4px #90F3E1, inset 0 0 0 6px #4D23CD, 8px 8px #4e23cd48;
-    background: #FDF8FD;
+    background: #FEF8FE;
     width: 100%;
     max-width: 980px;
     margin: 12px auto 20px;
@@ -92,7 +92,7 @@
     left: 0;
     right: 0;
     padding: 8px 12px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(77, 35, 205, 0.8);
     color: #fff;
     font-size: 14px;
     font-family: 'dinkie9px', sans-serif;
@@ -137,35 +137,53 @@
 }
 .nso-stream__chat-msg {
     display: flex;
-    align-items: flex-start;
-    gap: 5px;
-    margin-bottom: 4px;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px 4px;
+    margin-bottom: 2px;
     font-size: 12px;
     line-height: 1.3;
-}
-.nso-stream__chat-user {
     color: #4D23CD;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+    transition: opacity 0.4s steps(4);
 }
-.nso-stream__chat-user::before {
+.nso-stream__chat-msg::after {
     content: "";
-    width: 10px;
-    height: 10px;
-    margin-top: 1px;
-    background: currentColor;
-    flex: 0 0 10px;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    width: 22px;
+    height: 26px;
+    margin-top: -13px;
+    background: url("../ui/trash-can.png") center / contain no-repeat;
+    image-rendering: pixelated;
+    opacity: 0;
+}
+.nso-stream__chat-msg:hover::after {
+    opacity: 1;
+}
+.nso-stream__chat-msg--deleted {
+    opacity: 0;
+}
+.nso-stream__chat-msg--red { background: #E75252; }
+.nso-stream__chat-msg--blue { background: #A1B7F0; }
+.nso-stream__chat-msg--cyan { background: #8BD5FF; }
+.nso-stream__chat-msg--lightgreen { background: #8DFFC6; }
+.nso-stream__chat-msg--yellow { background: #FAFF8D; }
+.nso-stream__chat-msg--orange { background: #FFCA10; }
+.nso-stream__chat-msg--magenta { background: #EAA0E8; }
+.nso-stream__chat-icon {
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    background: url("../ui/comment-icon.png") center / contain no-repeat;
+    image-rendering: pixelated;
 }
 .nso-stream__chat-text {
-    color: #251f33;
     word-break: break-word;
-}
-.nso-stream__chat-msg--highlight {
-    background: rgba(144, 243, 225, 0.25);
-    padding: 2px 4px;
-    border-left: 2px solid #90F3E1;
 }
 .nso-stream__chat-input {
     display: flex;
@@ -182,13 +200,13 @@
     background: #F7E0FA;
 }
 .nso-stream__chat-input input::placeholder {
-    color: #9a7cc0;
+    color: #AB9ED8;
 }
 .nso-stream__info {
     padding: 10px 14px;
     border-top: 2px solid #90F3E1;
     font-size: 14px;
-    color: #251f33;
+    color: #888888;
     margin: 0 14px;
 }
 .nso-stream__info-title {
@@ -198,7 +216,7 @@
 }
 .nso-stream__info-meta {
     font-size: 12px;
-    color: #9a7cc0;
+    color: #888888;
 }
 .nso-stream__actions {
     display: flex;
@@ -236,12 +254,6 @@
 .nso-stream__chat-color--active {
     border-color: #fff;
     box-shadow: 0 0 0 2px #4D23CD;
-}
-.nso-stream__chat-msg .nso-stream__chat-user {
-    font-weight: normal;
-}
-.nso-stream__chat-msg .nso-stream__chat-text {
-    font-size: 12px;
 }
 .nso-stream__cam-overlay {
     position: absolute;
@@ -293,7 +305,7 @@
     font-size: 14px;
     font-family: 'dinkie9px', sans-serif;
     text-align: center;
-    background: none;
+    background: rgba(77, 35, 205, 0.8);
     bottom: auto;
     left: auto;
     right: auto;

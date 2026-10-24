@@ -2,8 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: var(--nso-feed-width, 100%);
+  width: var(--nso-feed-width, min(100%, 512px));
   max-width: 100%;
+  margin: 0 auto;
   max-height: var(--nso-feed-height, 480px);
   overflow-y: auto;
   padding: 10px;
@@ -41,6 +42,10 @@
 
 .nso-feed__loading[hidden] {
   display: none;
+}
+
+.nso-feed > .nso-tweet {
+  --nso-tweet-width: 100%;
 }
 
 .nso-feed__item {

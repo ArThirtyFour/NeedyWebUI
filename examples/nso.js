@@ -183,35 +183,13 @@
     },
 
     initStreamChat: function() {
-      var streamChatColor = '#4D23CD';
-      var colorEls = document.querySelectorAll('#streamColors .nso-stream__chat-color');
-      colorEls.forEach(function(c) {
-        c.addEventListener('click', function() {
-          colorEls.forEach(function(x) { x.classList.remove('nso-stream__chat-color--active'); });
-          c.classList.add('nso-stream__chat-color--active');
-          streamChatColor = c.dataset.color;
-          var input = document.getElementById('streamChatInput');
-          if (input) input.style.color = streamChatColor;
+      document.querySelectorAll('.nso-stream__chat-msg').forEach(function(msg) {
+        msg.addEventListener('click', function() {
+          if (msg.classList.contains('nso-stream__chat-msg--deleted')) return;
+          msg.classList.add('nso-stream__chat-msg--deleted');
+          setTimeout(function() { msg.remove(); }, 400);
         });
       });
-      var sendBtn = document.getElementById('streamChatSend');
-      var chatInput = document.getElementById('streamChatInput');
-      if (sendBtn && chatInput) {
-        sendBtn.addEventListener('click', function() {
-          var text = chatInput.value.trim();
-          if (!text) return;
-          var list = document.getElementById('streamChatList');
-          var msg = document.createElement('div');
-          msg.className = 'nso-stream__chat-msg nso-stream__chat-msg--highlight';
-          msg.innerHTML = '<span class="nso-stream__chat-user" style="color:' + streamChatColor + ';">you</span> <span class="nso-stream__chat-text" style="color:' + streamChatColor + ';">' + text.replace(/</g, '&lt;') + '</span>';
-          list.appendChild(msg);
-          list.scrollTop = list.scrollHeight;
-          chatInput.value = '';
-        });
-        chatInput.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter') sendBtn.click();
-        });
-      }
     },
 
     initSidebar: function() {
@@ -380,6 +358,11 @@
 
         update();
       });
+    },
+
+    randomKusoripu: function() {
+      var names = ['black', 'blue', 'cyan', 'orange', 'pink', 'purple', 'yellow', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32'];
+      return '../icons/kusoripu/icon_kusoripu_' + names[Math.floor(Math.random() * names.length)] + '.png';
     },
 
     initFeeds: function() {

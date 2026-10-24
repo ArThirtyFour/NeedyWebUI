@@ -857,7 +857,7 @@
 .nso-tweet__header {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
 }
 
 .nso-tweet__avatar {
@@ -890,7 +890,13 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 6px;
+}
+
+.nso-tweet__date {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #888888;
 }
 
 .nso-tweet__stat {
